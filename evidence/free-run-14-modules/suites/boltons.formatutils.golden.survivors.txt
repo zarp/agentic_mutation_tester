@@ -1,0 +1,87 @@
+m00025.0-constant  line 80  string `'DeferredValue'` -> `'XX...XX'`
+m00026.0-constant  line 80  string `'get_format_args'` -> `'XX...XX'`
+m00027.0-constant  line 80  string `'tokenize_format_str'` -> `'XX...XX'`
+m00028.0-constant  line 81  string `'construct_format_fie...'` -> `'XX...XX'`
+m00029.0-constant  line 81  string `'infer_positional_for...'` -> `'XX...XX'`
+m00030.0-constant  line 82  string `'BaseFormatField'` -> `'XX...XX'`
+m00040.0-constant  line 85  string `'({{)|(}})|({[:!.\\[}]...'` -> `'XX...XX'`
+m00049.0-comparison  line 96  comparison `is` -> `is not`
+m00054.0-return  line 97  return value replaced with `None`
+m00055.0-constant  line 97  string `''` -> `'XX...XX'`
+m00059.0-arithmetic  line 98  operator `+` -> `-`
+m00060.0-constant  line 98  string `'{'` -> `'XX...XX'`
+m00067.0-arithmetic  line 100  augmented assign `+=` -> `-=`
+m00071.0-arithmetic  line 100  operator `+` -> `-`
+m00072.0-constant  line 100  string `'!'` -> `'XX...XX'`
+m00079.0-arithmetic  line 102  augmented assign `+=` -> `-=`
+m00083.0-arithmetic  line 102  operator `+` -> `-`
+m00084.0-constant  line 102  string `':'` -> `'XX...XX'`
+m00088.0-arithmetic  line 103  augmented assign `+=` -> `-=`
+m00092.0-constant  line 103  string `'}'` -> `'XX...XX'`
+m00093.0-return  line 104  return value replaced with `None`
+m00142.0-control  line 117  `continue` -> `break`
+m00184.0-constant  line 131  `0` -> `1`
+m00196.0-constant  line 133  `0` -> `1`
+m00197.0-constant  line 133  `0` -> `1`
+m00237.0-comparison  line 136  comparison `<` -> `<=`
+m00243.0-arithmetic  line 137  augmented assign `+=` -> `-=`
+m00262.0-boolean  line 139  `or` -> `and`
+m00264.0-comparison  line 139  comparison `==` -> `!=`
+m00268.0-constant  line 139  string `'{{'` -> `'XX...XX'`
+m00269.0-comparison  line 139  comparison `==` -> `!=`
+m00273.0-constant  line 139  string `'}}'` -> `'XX...XX'`
+m00274.0-arithmetic  line 140  augmented assign `+=` -> `-=`
+m00280.0-control  line 141  `continue` -> `break`
+m00281.0-arithmetic  line 142  augmented assign `+=` -> `-=`
+m00285.0-arithmetic  line 142  operator `%` -> `*`
+m00286.0-constant  line 142  string `'{%s%s'` -> `'XX...XX'`
+m00295.0-constant  line 142  `1` -> `2`
+m00298.0-arithmetic  line 143  augmented assign `+=` -> `-=`
+m00302.0-constant  line 143  `1` -> `2`
+m00320.0-constant  line 149  string `'bcdoxXn'` -> `'XX...XX'`
+m00324.0-constant  line 150  string `'eEfFgGn%'` -> `'XX...XX'`
+m00361.0-constant  line 153  string `'s'` -> `'XX...XX'`
+m00398.0-constant  line 175  string `'s'` -> `'XX...XX'`
+m00400.0-comparison  line 176  comparison `not in` -> `in`
+m00490.0-constant  line 186  `1` -> `2`
+m00500.0-constant  line 187  string `'[.[]'` -> `'XX...XX'`
+m00504.0-comparison  line 188  comparison `>` -> `>=`
+m00511.0-constant  line 188  `1` -> `2`
+m00516.0-arithmetic  line 189  operator `%` -> `*`
+m00517.0-constant  line 189  string `'encountered compound...'` -> `'XX...XX'`
+m00528.0-constant  line 191  `0` -> `1`
+m00544.0-constant  line 194  string `'encountered anonymou...'` -> `'XX...XX'`
+m00572.0-comparison  line 198  comparison `is not` -> `is`
+m00594.0-constant  line 203  `True` -> `False`
+m00654.0-control  line 218  `continue` -> `break`
+m00684.0-constant  line 233  string `''` -> `'XX...XX'`
+m00724.0-constant  line 241  string `'[.[]'` -> `'XX...XX'`
+m00735.0-constant  line 243  `0` -> `1`
+m00753.0-constant  line 245  `1` -> `2`
+m00760.0-boolean  line 246  `or` -> `and`
+m00762.0-negation  line 246  removed `not`
+m00784.0-boolean  line 250  `or` -> `and`
+m00788.0-constant  line 250  string `''` -> `'XX...XX'`
+m00814.0-comparison  line 253  comparison `is not` -> `is`
+m00852.0-constant  line 257  `1` -> `2`
+m00894.0-return  line 270  return value replaced with `None`
+m00934.0-comparison  line 275  comparison `is not` -> `is`
+m00958.0-comparison  line 277  comparison `!=` -> `==`
+m00964.0-constant  line 277  string `''` -> `'XX...XX'`
+m00980.0-constant  line 279  string `', '` -> `'XX...XX'`
+m00993.0-return  line 280  return value replaced with `None`
+m00994.0-arithmetic  line 280  operator `%` -> `*`
+m00995.0-constant  line 280  string `'%s(%s)'` -> `'XX...XX'`
+m01006.0-return  line 283  return value replaced with `None`
+m01027.0-constant  line 318  `True` -> `False`
+m01055.0-boolean  line 329  `and` -> `or`
+m01057.0-comparison  line 329  comparison `is not` -> `is`
+m01096.0-return  line 335  return value replaced with `None`
+m01102.0-return  line 338  return value replaced with `None`
+m01114.0-return  line 341  return value replaced with `None`
+m01126.0-return  line 344  return value replaced with `None`
+m01138.0-return  line 347  return value replaced with `None`
+m01150.0-return  line 350  return value replaced with `None`
+m01180.0-constant  line 355  `1` -> `2`
+m01195.0-return  line 359  return value replaced with `None`
+m01210.0-return  line 362  return value replaced with `None`

@@ -1,0 +1,193 @@
+m00024.0-constant  line 75  `1000000.0` -> `1000001.0`
+m00028.0-arithmetic  line 76  operator `+` -> `-`
+m00034.0-arithmetic  line 76  operator `*` -> `/`
+m00040.0-constant  line 76  `86400` -> `86401`
+m00044.0-arithmetic  line 77  operator `+` -> `-`
+m00050.0-arithmetic  line 77  operator `*` -> `/`
+m00056.0-return  line 78  return value replaced with `None`
+m00057.0-arithmetic  line 78  operator `/` -> `*`
+m00076.0-arithmetic  line 102  operator `-` -> `+`
+m00085.0-arithmetic  line 104  operator `-` -> `+`
+m00091.0-return  line 105  return value replaced with `None`
+m00105.0-constant  line 108  string `'\\D'` -> `'XX...XX'`
+m00130.0-return  line 135  return value replaced with `None`
+m00143.0-constant  line 138  `0` -> `1`
+m00148.0-constant  line 138  `1` -> `2`
+m00149.0-constant  line 138  string `'second'` -> `'XX...XX'`
+m00152.0-constant  line 139  `1` -> `2`
+m00157.0-constant  line 139  `60` -> `61`
+m00158.0-constant  line 139  string `'minute'` -> `'XX...XX'`
+m00161.0-constant  line 140  `1` -> `2`
+m00166.0-constant  line 140  `3600` -> `3601`
+m00167.0-constant  line 140  string `'hour'` -> `'XX...XX'`
+m00170.0-constant  line 141  `1` -> `2`
+m00175.0-constant  line 141  `1` -> `2`
+m00176.0-constant  line 141  string `'day'` -> `'XX...XX'`
+m00179.0-constant  line 142  `1` -> `2`
+m00184.0-constant  line 142  `7` -> `8`
+m00185.0-constant  line 142  string `'week'` -> `'XX...XX'`
+m00188.0-constant  line 143  `2` -> `3`
+m00193.0-constant  line 143  `30` -> `31`
+m00194.0-constant  line 143  string `'month'` -> `'XX...XX'`
+m00197.0-constant  line 144  `1` -> `2`
+m00202.0-constant  line 144  `365` -> `366`
+m00203.0-constant  line 144  string `'year'` -> `'XX...XX'`
+m00221.0-constant  line 145  `1` -> `2`
+m00226.0-constant  line 145  `1` -> `2`
+m00246.0-constant  line 146  `0` -> `1`
+m00256.0-constant  line 148  string `'[+-]?\\ *(\\d+(\\.\\d*)?...'` -> `'XX...XX'`
+m00266.0-constant  line 149  string `'((?P<value>%s)\\s*(?P...'` -> `'XX...XX'`
+m00281.0-constant  line 150  `0` -> `1`
+m00287.0-constant  line 150  string `'s'` -> `'XX...XX'`
+m00307.0-constant  line 151  `2` -> `3`
+m00341.0-constant  line 181  string `'value'` -> `'XX...XX'`
+m00347.0-constant  line 181  string `'unit'` -> `'XX...XX'`
+m00366.0-arithmetic  line 185  operator `%` -> `*`
+m00367.0-constant  line 185  string `'invalid time unit %r...'` -> `'XX...XX'`
+m00394.0-arithmetic  line 190  operator `%` -> `*`
+m00395.0-constant  line 190  string `'invalid time value f...'` -> `'XX...XX'`
+m00412.0-return  line 193  return value replaced with `None`
+m00429.0-comparison  line 202  comparison `==` -> `!=`
+m00433.0-constant  line 202  `1` -> `2`
+m00434.0-return  line 203  return value replaced with `None`
+m00437.0-return  line 204  return value replaced with `None`
+m00438.0-arithmetic  line 204  operator `+` -> `-`
+m00442.0-constant  line 204  string `'s'` -> `'XX...XX'`
+m00450.0-constant  line 207  `0` -> `1`
+m00451.0-constant  line 207  `True` -> `False`
+m00455.0-comparison  line 239  comparison `is` -> `is not`
+m00471.0-arithmetic  line 241  operator `-` -> `+`
+m00496.0-arithmetic  line 244  operator `-` -> `+`
+m00507.0-constant  line 244  `1` -> `2`
+m00526.0-arithmetic  line 246  operator `/` -> `*`
+m00548.0-return  line 249  return value replaced with `None`
+m00563.0-return  line 250  return value replaced with `None`
+m00576.0-constant  line 253  `0` -> `1`
+m00596.0-constant  line 278  `True` -> `False`
+m00600.0-constant  line 279  string `'ago'` -> `'XX...XX'`
+m00602.0-comparison  line 280  comparison `<` -> `<=`
+m00606.0-constant  line 280  `0` -> `1`
+m00610.0-constant  line 281  string `'from now'` -> `'XX...XX'`
+m00611.0-return  line 282  return value replaced with `None`
+m00612.0-arithmetic  line 282  operator `%` -> `*`
+m00613.0-constant  line 282  string `'%g %s %s'` -> `'XX...XX'`
+m00644.0-return  line 309  return value replaced with `None`
+m00656.0-constant  line 312  `1` -> `2`
+m00657.0-constant  line 312  `False` -> `True`
+m00661.0-negation  line 363  removed `not`
+m00674.0-constant  line 364  string `'start expected datet...'` -> `'XX...XX'`
+m00676.0-boolean  line 365  `and` -> `or`
+m00680.0-negation  line 365  removed `not`
+m00693.0-constant  line 366  string `'stop expected dateti...'` -> `'XX...XX'`
+m00719.0-constant  line 370  `0` -> `1`
+m00720.0-constant  line 370  `0` -> `1`
+m00776.0-arithmetic  line 378  operator `%` -> `*`
+m00777.0-constant  line 378  string `'step expected int, t...'` -> `'XX...XX'`
+m00781.0-arithmetic  line 381  augmented assign `+=` -> `-=`
+m00785.0-arithmetic  line 381  operator `*` -> `/`
+m00789.0-constant  line 381  `12` -> `13`
+m00791.0-comparison  line 383  comparison `is` -> `is not`
+m00803.0-constant  line 384  `False` -> `True`
+m00805.0-comparison  line 385  comparison `<=` -> `<`
+m00845.0-negation  line 391  removed `not`
+m00871.0-arithmetic  line 394  operator `+` -> `-`
+m00872.0-arithmetic  line 394  operator `-` -> `+`
+m00878.0-constant  line 394  `1` -> `2`
+m00882.0-constant  line 394  `12` -> `13`
+m00892.0-arithmetic  line 395  operator `+` -> `-`
+m00901.0-arithmetic  line 396  operator `+` -> `-`
+m00905.0-constant  line 396  `1` -> `2`
+m00909.0-arithmetic  line 397  operator `+` -> `-`
+m00930.0-constant  line 405  `1` -> `2`
+m00941.0-constant  line 417  string `'ConstantTZ'` -> `'XX...XX'`
+m00961.0-return  line 423  return value replaced with `None`
+m00962.0-arithmetic  line 423  operator `/` -> `*`
+m00971.0-arithmetic  line 423  operator `*` -> `/`
+m00972.0-constant  line 423  `60` -> `61`
+m00974.0-constant  line 423  `60` -> `61`
+m00990.0-return  line 429  return value replaced with `None`
+m01014.0-return  line 436  return value replaced with `None`
+m01015.0-arithmetic  line 436  operator `%` -> `*`
+m01016.0-constant  line 436  string `'%s(name=%r, offset=%...'` -> `'XX...XX'`
+m01036.0-constant  line 439  string `'UTC'` -> `'XX...XX'`
+m01045.0-constant  line 440  `0` -> `1`
+m01056.0-constant  line 441  `0` -> `1`
+m01135.0-constant  line 466  `0` -> `1`
+m01138.0-constant  line 466  `1` -> `2`
+m01155.0-return  line 468  return value replaced with `None`
+m01156.0-comparison  line 468  comparison `>` -> `>=`
+m01162.0-constant  line 468  `0` -> `1`
+m01175.0-return  line 472  return value replaced with `None`
+m01180.0-return  line 473  return value replaced with `None`
+m01197.0-return  line 477  return value replaced with `None`
+m01198.0-arithmetic  line 477  operator `-` -> `+`
+m01208.0-return  line 478  return value replaced with `None`
+m01215.0-return  line 481  return value replaced with `None`
+m01232.0-return  line 484  return value replaced with `None`
+m01233.0-arithmetic  line 484  operator `%` -> `*`
+m01234.0-constant  line 484  string `'%s()'` -> `'XX...XX'`
+m01254.0-arithmetic  line 491  operator `-` -> `+`
+m01255.0-constant  line 491  `6` -> `7`
+m01265.0-arithmetic  line 493  augmented assign `+=` -> `-=`
+m01274.0-return  line 494  return value replaced with `None`
+m01283.0-constant  line 507  `1` -> `2`
+m01284.0-constant  line 507  `3` -> `4`
+m01285.0-constant  line 507  `8` -> `9`
+m01286.0-constant  line 507  `2` -> `3`
+m01293.0-constant  line 509  `1` -> `2`
+m01294.0-constant  line 509  `11` -> `12`
+m01295.0-constant  line 509  `1` -> `2`
+m01296.0-constant  line 509  `1` -> `2`
+m01303.0-constant  line 513  `1` -> `2`
+m01304.0-constant  line 513  `4` -> `5`
+m01305.0-constant  line 513  `1` -> `2`
+m01306.0-constant  line 513  `2` -> `3`
+m01313.0-constant  line 514  `1` -> `2`
+m01314.0-constant  line 514  `10` -> `11`
+m01315.0-constant  line 514  `25` -> `26`
+m01316.0-constant  line 514  `1` -> `2`
+m01323.0-constant  line 519  `1` -> `2`
+m01324.0-constant  line 519  `4` -> `5`
+m01325.0-constant  line 519  `24` -> `25`
+m01326.0-constant  line 519  `2` -> `3`
+m01379.0-return  line 536  return value replaced with `None`
+m01396.0-return  line 540  return value replaced with `None`
+m01401.0-return  line 542  return value replaced with `None`
+m01410.0-return  line 545  return value replaced with `None`
+m01411.0-arithmetic  line 545  operator `+` -> `-`
+m01429.0-boolean  line 548  `or` -> `and`
+m01431.0-comparison  line 548  comparison `is` -> `is not`
+m01436.0-comparison  line 548  comparison `is` -> `is not`
+m01443.0-return  line 553  return value replaced with `None`
+m01447.0-comparison  line 554  comparison `is` -> `is not`
+m01456.0-comparison  line 558  comparison `<` -> `<=`
+m01457.0-constant  line 558  `2006` -> `2007`
+m01477.0-comparison  line 560  comparison `<` -> `<=`
+m01477.1-comparison  line 560  comparison `<` -> `<=`
+m01478.0-constant  line 560  `1986` -> `1987`
+m01485.0-constant  line 560  `2007` -> `2008`
+m01500.0-comparison  line 562  comparison `<` -> `<=`
+m01500.1-comparison  line 562  comparison `<` -> `<=`
+m01501.0-constant  line 562  `1966` -> `1967`
+m01508.0-constant  line 562  `1987` -> `1988`
+m01522.0-return  line 565  return value replaced with `None`
+m01558.0-comparison  line 572  comparison `<=` -> `<`
+m01558.1-comparison  line 572  comparison `<` -> `<=`
+m01572.0-return  line 573  return value replaced with `None`
+m01575.0-return  line 575  return value replaced with `None`
+m01586.0-constant  line 578  `5` -> `6`
+m01587.0-constant  line 578  string `'Eastern'` -> `'XX...XX'`
+m01588.0-constant  line 578  string `'EST'` -> `'XX...XX'`
+m01589.0-constant  line 578  string `'EDT'` -> `'XX...XX'`
+m01598.0-constant  line 579  `6` -> `7`
+m01599.0-constant  line 579  string `'Central'` -> `'XX...XX'`
+m01600.0-constant  line 579  string `'CST'` -> `'XX...XX'`
+m01601.0-constant  line 579  string `'CDT'` -> `'XX...XX'`
+m01610.0-constant  line 580  `7` -> `8`
+m01611.0-constant  line 580  string `'Mountain'` -> `'XX...XX'`
+m01612.0-constant  line 580  string `'MST'` -> `'XX...XX'`
+m01613.0-constant  line 580  string `'MDT'` -> `'XX...XX'`
+m01622.0-constant  line 581  `8` -> `9`
+m01623.0-constant  line 581  string `'Pacific'` -> `'XX...XX'`
+m01624.0-constant  line 581  string `'PST'` -> `'XX...XX'`
+m01625.0-constant  line 581  string `'PDT'` -> `'XX...XX'`

@@ -1,0 +1,368 @@
+m00029.0-constant  line 13  `0` -> `1`
+m00049.0-constant  line 17  string `'2.13.0'` -> `'XX...XX'`
+m00053.0-constant  line 18  string `'Kostiantyn Rybnikov'` -> `'XX...XX'`
+m00057.0-constant  line 19  string `'k-bx@k-bx.com'` -> `'XX...XX'`
+m00062.0-constant  line 20  string `'Sebastien Celles'` -> `'XX...XX'`
+m00063.0-constant  line 20  string `'Tom Schraitle'` -> `'XX...XX'`
+m00068.0-constant  line 21  string `'s.celles@gmail.com'` -> `'XX...XX'`
+m00073.0-constant  line 27  string `'bump_build'` -> `'XX...XX'`
+m00074.0-constant  line 28  string `'bump_major'` -> `'XX...XX'`
+m00076.0-constant  line 30  string `'bump_patch'` -> `'XX...XX'`
+m00077.0-constant  line 31  string `'bump_prerelease'` -> `'XX...XX'`
+m00078.0-constant  line 32  string `'compare'` -> `'XX...XX'`
+m00079.0-constant  line 33  string `'deprecated'` -> `'XX...XX'`
+m00080.0-constant  line 34  string `'finalize_version'` -> `'XX...XX'`
+m00081.0-constant  line 35  string `'format_version'` -> `'XX...XX'`
+m00082.0-constant  line 36  string `'match'` -> `'XX...XX'`
+m00083.0-constant  line 37  string `'max_ver'` -> `'XX...XX'`
+m00084.0-constant  line 38  string `'min_ver'` -> `'XX...XX'`
+m00085.0-constant  line 39  string `'parse'` -> `'XX...XX'`
+m00086.0-constant  line 40  string `'parse_version_info'` -> `'XX...XX'`
+m00087.0-constant  line 41  string `'replace'` -> `'XX...XX'`
+m00088.0-constant  line 44  string `'cmd_bump'` -> `'XX...XX'`
+m00089.0-constant  line 45  string `'cmd_check'` -> `'XX...XX'`
+m00091.0-constant  line 47  string `'createparser'` -> `'XX...XX'`
+m00092.0-constant  line 48  string `'main'` -> `'XX...XX'`
+m00093.0-constant  line 49  string `'process'` -> `'XX...XX'`
+m00094.0-constant  line 52  string `'SEMVER_SPEC_VERSION'` -> `'XX...XX'`
+m00095.0-constant  line 53  string `'VersionInfo'` -> `'XX...XX'`
+m00100.0-constant  line 57  string `'2.0.0'` -> `'XX...XX'`
+m00109.0-constant  line 60  string `'cmp'` -> `'XX...XX'`
+m00191.0-return  line 85  return value replaced with `None`
+m00197.0-return  line 89  return value replaced with `None`
+m00206.0-constant  line 89  string `'\\\\'` -> `'XX...XX'`
+m00207.0-constant  line 89  string `'\\\\\\\\'` -> `'XX...XX'`
+m00208.0-constant  line 89  string `'unicode_escape'` -> `'XX...XX'`
+m00214.0-constant  line 92  string `'utf-8'` -> `'XX...XX'`
+m00215.0-constant  line 92  string `'strict'` -> `'XX...XX'`
+m00236.0-arithmetic  line 106  operator `%` -> `*`
+m00237.0-constant  line 106  string `"not expecting type '..."` -> `'XX...XX'`
+m00337.0-constant  line 132  string `"Function '{m}.{f}' i..."` -> `'XX...XX'`
+m00348.0-constant  line 135  string `'Deprecated since ver...'` -> `'XX...XX'`
+m00355.0-constant  line 136  string `'This function will b...'` -> `'XX...XX'`
+m00365.0-constant  line 138  string `'Use {r!r} instead.'` -> `'XX...XX'`
+m00372.0-constant  line 140  string `"Use the respective '..."` -> `'XX...XX'`
+m00382.0-constant  line 143  string `'__qualname__'` -> `'XX...XX'`
+m00394.0-boolean  line 144  `or` -> `and`
+m00415.0-constant  line 148  string `' '` -> `'XX...XX'`
+m00504.0-constant  line 164  string `'2.10.0'` -> `'XX...XX'`
+m00532.0-negation  line 199  removed `not`
+m00546.0-constant  line 201  string `'other type %r must b...'` -> `'XX...XX'`
+m00557.0-return  line 203  return value replaced with `None`
+m00570.0-return  line 205  return value replaced with `None`
+m00582.0-constant  line 220  string `'_major'` -> `'XX...XX'`
+m00583.0-constant  line 220  string `'_minor'` -> `'XX...XX'`
+m00584.0-constant  line 220  string `'_patch'` -> `'XX...XX'`
+m00585.0-constant  line 220  string `'_prerelease'` -> `'XX...XX'`
+m00586.0-constant  line 220  string `'_build'` -> `'XX...XX'`
+m00596.0-constant  line 222  string `'(?:[^\\d]*(\\d+)[^\\d]*...'` -> `'XX...XX'`
+m00605.0-constant  line 225  string `'\n            ^\n     ...'` -> `'XX...XX'`
+m00618.0-constant  line 245  `0` -> `1`
+m00619.0-constant  line 245  `0` -> `1`
+m00626.0-constant  line 248  string `'major'` -> `'XX...XX'`
+m00627.0-constant  line 249  string `'minor'` -> `'XX...XX'`
+m00665.0-comparison  line 256  comparison `<` -> `<=`
+m00669.0-constant  line 256  `0` -> `1`
+m00676.0-constant  line 258  string `'{!r} is negative. A ...'` -> `'XX...XX'`
+m00688.0-constant  line 261  string `'major'` -> `'XX...XX'`
+m00698.0-constant  line 262  string `'minor'` -> `'XX...XX'`
+m00708.0-constant  line 263  string `'patch'` -> `'XX...XX'`
+m00716.0-comparison  line 264  comparison `is` -> `is not`
+m00733.0-comparison  line 265  comparison `is` -> `is not`
+m00749.0-return  line 270  return value replaced with `None`
+m00764.0-constant  line 274  string `"attribute 'major' is..."` -> `'XX...XX'`
+m00774.0-return  line 279  return value replaced with `None`
+m00789.0-constant  line 283  string `"attribute 'minor' is..."` -> `'XX...XX'`
+m00799.0-return  line 288  return value replaced with `None`
+m00814.0-constant  line 292  string `"attribute 'patch' is..."` -> `'XX...XX'`
+m00839.0-constant  line 301  string `"attribute 'prereleas..."` -> `'XX...XX'`
+m00849.0-return  line 306  return value replaced with `None`
+m00864.0-constant  line 310  string `"attribute 'build' is..."` -> `'XX...XX'`
+m00874.0-return  line 326  return value replaced with `None`
+m00902.0-return  line 344  return value replaced with `None`
+m00910.0-constant  line 346  string `'major'` -> `'XX...XX'`
+m00917.0-constant  line 347  string `'minor'` -> `'XX...XX'`
+m00924.0-constant  line 348  string `'patch'` -> `'XX...XX'`
+m00931.0-constant  line 349  string `'prerelease'` -> `'XX...XX'`
+m00938.0-constant  line 350  string `'build'` -> `'XX...XX'`
+m00958.0-constant  line 355  string `'semver.VersionInfo.t...'` -> `'XX...XX'`
+m00960.0-constant  line 355  string `'2.10.0'` -> `'XX...XX'`
+m00948.0-return  line 357  return value replaced with `None`
+m00985.0-constant  line 361  string `'2.10.0'` -> `'XX...XX'`
+m00973.0-return  line 363  return value replaced with `None`
+m01038.0-arithmetic  line 386  operator `+` -> `-`
+m01047.0-constant  line 386  `1` -> `2`
+m01049.0-constant  line 386  `1` -> `2`
+m01062.0-constant  line 387  `1` -> `2`
+m01066.0-arithmetic  line 388  operator `+` -> `-`
+m01067.0-arithmetic  line 388  operator `+` -> `-`
+m01075.0-arithmetic  line 388  operator `-` -> `+`
+m01098.0-return  line 389  return value replaced with `None`
+m01116.0-return  line 404  return value replaced with `None`
+m01120.0-arithmetic  line 404  operator `+` -> `-`
+m01126.0-constant  line 404  `1` -> `2`
+m01140.0-return  line 419  return value replaced with `None`
+m01148.0-arithmetic  line 419  operator `+` -> `-`
+m01168.0-return  line 434  return value replaced with `None`
+m01180.0-arithmetic  line 434  operator `+` -> `-`
+m01186.0-constant  line 434  `1` -> `2`
+m01191.0-constant  line 436  string `'rc'` -> `'XX...XX'`
+m01210.0-boolean  line 451  `or` -> `and`
+m01216.0-arithmetic  line 451  operator `+` -> `-`
+m01217.0-boolean  line 451  `or` -> `and`
+m01221.0-constant  line 451  string `'rc'` -> `'XX...XX'`
+m01223.0-constant  line 451  string `'.0'` -> `'XX...XX'`
+m01224.0-return  line 452  return value replaced with `None`
+m01246.0-constant  line 454  string `'build'` -> `'XX...XX'`
+m01265.0-boolean  line 469  `or` -> `and`
+m01271.0-arithmetic  line 469  operator `+` -> `-`
+m01276.0-constant  line 469  string `'build'` -> `'XX...XX'`
+m01278.0-constant  line 469  string `'.0'` -> `'XX...XX'`
+m01279.0-return  line 470  return value replaced with `None`
+m01373.0-negation  line 498  removed `not`
+m01388.0-constant  line 500  string `'Expected str or {} i...'` -> `'XX...XX'`
+m01409.0-constant  line 505  `3` -> `4`
+m01421.0-constant  line 506  `3` -> `4`
+m01436.0-return  line 509  return value replaced with `None`
+m01467.0-negation  line 514  removed `not`
+m01471.0-return  line 515  return value replaced with `None`
+m01472.0-constant  line 515  `0` -> `1`
+m01474.0-negation  line 516  removed `not`
+m01478.0-return  line 517  return value replaced with `None`
+m01479.0-constant  line 517  `1` -> `2`
+m01485.0-return  line 519  return value replaced with `None`
+m01488.0-constant  line 519  `1` -> `2`
+m01489.0-return  line 521  return value replaced with `None`
+m01497.0-constant  line 523  string `'rc'` -> `'XX...XX'`
+m01504.0-constant  line 544  string `'major'` -> `'XX...XX'`
+m01505.0-constant  line 545  string `'minor'` -> `'XX...XX'`
+m01506.0-constant  line 546  string `'patch'` -> `'XX...XX'`
+m01507.0-constant  line 547  string `'prerelease'` -> `'XX...XX'`
+m01509.0-comparison  line 550  comparison `not in` -> `in`
+m01521.0-constant  line 552  string `'Invalid part. Expect...'` -> `'XX...XX'`
+m01535.0-boolean  line 557  `and` -> `or`
+m01537.0-boolean  line 557  `or` -> `and`
+m01547.0-boolean  line 558  `or` -> `and`
+m01549.0-comparison  line 558  comparison `==` -> `!=`
+m01554.0-boolean  line 559  `and` -> `or`
+m01556.0-comparison  line 559  comparison `==` -> `!=`
+m01560.0-constant  line 559  string `'minor'` -> `'XX...XX'`
+m01561.0-comparison  line 559  comparison `==` -> `!=`
+m01567.0-constant  line 559  `0` -> `1`
+m01568.0-boolean  line 560  `and` -> `or`
+m01570.0-comparison  line 560  comparison `==` -> `!=`
+m01574.0-constant  line 560  string `'major'` -> `'XX...XX'`
+m01575.0-comparison  line 560  comparison `==` -> `!=`
+m01575.1-comparison  line 560  comparison `==` -> `!=`
+m01586.0-constant  line 560  `0` -> `1`
+m01587.0-return  line 562  return value replaced with `None`
+m01598.0-comparison  line 564  comparison `in` -> `not in`
+m01603.0-constant  line 564  string `'major'` -> `'XX...XX'`
+m01605.0-constant  line 564  string `'patch'` -> `'XX...XX'`
+m01607.0-return  line 565  return value replaced with `None`
+m01614.0-arithmetic  line 565  operator `+` -> `-`
+m01615.0-constant  line 565  string `'bump_'` -> `'XX...XX'`
+m01620.0-negation  line 567  removed `not`
+m01634.0-return  line 569  return value replaced with `None`
+m01646.0-return  line 573  return value replaced with `None`
+m01647.0-comparison  line 573  comparison `==` -> `!=`
+m01656.0-constant  line 573  `0` -> `1`
+m01663.0-return  line 577  return value replaced with `None`
+m01664.0-comparison  line 577  comparison `!=` -> `==`
+m01673.0-constant  line 577  `0` -> `1`
+m01680.0-return  line 581  return value replaced with `None`
+m01681.0-comparison  line 581  comparison `<` -> `<=`
+m01697.0-return  line 585  return value replaced with `None`
+m01698.0-comparison  line 585  comparison `<=` -> `<`
+m01707.0-constant  line 585  `0` -> `1`
+m01714.0-return  line 589  return value replaced with `None`
+m01715.0-comparison  line 589  comparison `>` -> `>=`
+m01724.0-constant  line 589  `0` -> `1`
+m01731.0-return  line 593  return value replaced with `None`
+m01732.0-comparison  line 593  comparison `>=` -> `>`
+m01741.0-constant  line 593  `0` -> `1`
+m01766.0-arithmetic  line 613  operator `+` -> `-`
+m01770.0-constant  line 613  `1` -> `2`
+m01772.0-boolean  line 616  `or` -> `and`
+m01774.0-boolean  line 616  `and` -> `or`
+m01785.0-comparison  line 617  comparison `is not` -> `is`
+m01792.0-comparison  line 617  comparison `<` -> `<=`
+m01798.0-constant  line 617  `0` -> `1`
+m01799.0-boolean  line 618  `and` -> `or`
+m01801.0-comparison  line 618  comparison `is not` -> `is`
+m01808.0-comparison  line 618  comparison `<` -> `<=`
+m01814.0-constant  line 618  `0` -> `1`
+m01819.0-constant  line 620  string `'Version index cannot...'` -> `'XX...XX'`
+m01832.0-comparison  line 622  comparison `is not` -> `is`
+m01847.0-comparison  line 624  comparison `==` -> `!=`
+m01854.0-constant  line 624  `1` -> `2`
+m01861.0-constant  line 625  `0` -> `1`
+m01864.0-negation  line 626  removed `not`
+m01872.0-constant  line 627  string `'Version part undefin...'` -> `'XX...XX'`
+m01884.0-constant  line 631  string `', '` -> `'XX...XX'`
+m01887.0-arithmetic  line 631  operator `%` -> `*`
+m01888.0-constant  line 631  string `'%s=%r'` -> `'XX...XX'`
+m01911.0-return  line 632  return value replaced with `None`
+m01912.0-arithmetic  line 632  operator `%` -> `*`
+m01913.0-constant  line 632  string `'%s(%s)'` -> `'XX...XX'`
+m01934.0-arithmetic  line 636  operator `%` -> `*`
+m01935.0-constant  line 636  string `'%d.%d.%d'` -> `'XX...XX'`
+m01956.0-arithmetic  line 638  augmented assign `+=` -> `-=`
+m01960.0-arithmetic  line 638  operator `%` -> `*`
+m01961.0-constant  line 638  string `'-%s'` -> `'XX...XX'`
+m01972.0-arithmetic  line 640  augmented assign `+=` -> `-=`
+m01976.0-arithmetic  line 640  operator `%` -> `*`
+m01977.0-constant  line 640  string `'+%s'` -> `'XX...XX'`
+m01989.0-return  line 644  return value replaced with `None`
+m02000.0-constant  line 644  `4` -> `5`
+m02015.0-return  line 657  return value replaced with `None`
+m02044.0-constant  line 678  `2` -> `3`
+m02047.0-comparison  line 679  comparison `in` -> `not in`
+m02052.0-constant  line 679  string `'>='` -> `'XX...XX'`
+m02053.0-constant  line 679  string `'<='` -> `'XX...XX'`
+m02054.0-constant  line 679  string `'=='` -> `'XX...XX'`
+m02055.0-constant  line 679  string `'!='` -> `'XX...XX'`
+m02064.0-constant  line 680  `2` -> `3`
+m02067.0-boolean  line 681  `and` -> `or`
+m02071.0-comparison  line 681  comparison `in` -> `not in`
+m02075.0-constant  line 681  `0` -> `1`
+m02079.0-constant  line 681  string `'>'` -> `'XX...XX'`
+m02088.0-constant  line 682  `0` -> `1`
+m02097.0-constant  line 683  `1` -> `2`
+m02103.0-arithmetic  line 686  operator `%` -> `*`
+m02104.0-constant  line 686  string `'match_expr parameter...'` -> `'XX...XX'`
+m02112.0-constant  line 693  string `'>'` -> `'XX...XX'`
+m02119.0-constant  line 693  `1` -> `2`
+m02113.0-constant  line 694  string `'<'` -> `'XX...XX'`
+m02124.0-constant  line 694  `1` -> `2`
+m02114.0-constant  line 695  string `'=='` -> `'XX...XX'`
+m02127.0-constant  line 695  `0` -> `1`
+m02115.0-constant  line 696  string `'!='` -> `'XX...XX'`
+m02132.0-constant  line 696  `1` -> `2`
+m02116.0-constant  line 697  string `'>='` -> `'XX...XX'`
+m02136.0-constant  line 697  `0` -> `1`
+m02137.0-constant  line 697  `1` -> `2`
+m02117.0-constant  line 698  string `'<='` -> `'XX...XX'`
+m02142.0-constant  line 698  `1` -> `2`
+m02143.0-constant  line 698  `0` -> `1`
+m02164.0-return  line 704  return value replaced with `None`
+m02165.0-comparison  line 704  comparison `in` -> `not in`
+m02193.0-comparison  line 725  comparison `is` -> `is not`
+m02202.0-arithmetic  line 726  operator `%` -> `*`
+m02203.0-constant  line 726  string `'%s is not valid SemV...'` -> `'XX...XX'`
+m02219.0-constant  line 730  string `'major'` -> `'XX...XX'`
+m02227.0-constant  line 730  string `'major'` -> `'XX...XX'`
+m02233.0-constant  line 731  string `'minor'` -> `'XX...XX'`
+m02241.0-constant  line 731  string `'minor'` -> `'XX...XX'`
+m02255.0-constant  line 732  string `'patch'` -> `'XX...XX'`
+m02257.0-return  line 734  return value replaced with `None`
+m02289.0-return  line 753  return value replaced with `None`
+m02302.0-arithmetic  line 755  operator `-` -> `+`
+m02320.0-arithmetic  line 756  operator `%` -> `*`
+m02321.0-constant  line 756  string `'replace() got %d une...'` -> `'XX...XX'`
+m02331.0-constant  line 758  string `', '` -> `'XX...XX'`
+m02357.0-return  line 776  return value replaced with `None`
+m02358.0-constant  line 776  `True` -> `False`
+m02362.0-return  line 778  return value replaced with `None`
+m02363.0-constant  line 778  `False` -> `True`
+m02383.0-constant  line 781  string `'semver.VersionInfo.p...'` -> `'XX...XX'`
+m02385.0-constant  line 781  string `'2.10.0'` -> `'XX...XX'`
+m02400.0-constant  line 813  string `'^[0-9]+$'` -> `'XX...XX'`
+m02413.0-return  line 816  return value replaced with `None`
+m02428.0-constant  line 816  string `'.'` -> `'XX...XX'`
+m02434.0-boolean  line 819  `and` -> `or`
+m02450.0-return  line 820  return value replaced with `None`
+m02466.0-return  line 822  return value replaced with `None`
+m02469.0-constant  line 822  `1` -> `2`
+m02478.0-return  line 824  return value replaced with `None`
+m02479.0-constant  line 824  `1` -> `2`
+m02480.0-return  line 826  return value replaced with `None`
+m02496.0-boolean  line 828  `or` -> `and`
+m02500.0-constant  line 828  string `''` -> `'XX...XX'`
+m02501.0-boolean  line 828  `or` -> `and`
+m02505.0-constant  line 828  string `''` -> `'XX...XX'`
+m02555.0-constant  line 832  `0` -> `1`
+m02556.0-return  line 833  return value replaced with `None`
+m02559.0-return  line 835  return value replaced with `None`
+m02601.0-constant  line 838  string `'2.10.0'` -> `'XX...XX'`
+m02589.0-return  line 857  return value replaced with `None`
+m02630.0-constant  line 860  string `'2.10.0'` -> `'XX...XX'`
+m02618.0-return  line 882  return value replaced with `None`
+m02698.0-constant  line 885  string `'max'` -> `'XX...XX'`
+m02700.0-constant  line 885  string `'2.10.2'` -> `'XX...XX'`
+m02680.0-comparison  line 903  comparison `>=` -> `>`
+m02684.0-constant  line 903  `0` -> `1`
+m02685.0-return  line 904  return value replaced with `None`
+m02691.0-return  line 906  return value replaced with `None`
+m02746.0-constant  line 909  string `'min'` -> `'XX...XX'`
+m02748.0-constant  line 909  string `'2.10.2'` -> `'XX...XX'`
+m02732.0-constant  line 924  `0` -> `1`
+m02733.0-return  line 925  return value replaced with `None`
+m02739.0-return  line 927  return value replaced with `None`
+m02781.0-constant  line 930  string `'str(versionobject)'` -> `'XX...XX'`
+m02783.0-constant  line 930  string `'2.10.0'` -> `'XX...XX'`
+m02760.0-return  line 949  return value replaced with `None`
+m02807.0-constant  line 952  string `'2.10.0'` -> `'XX...XX'`
+m02831.0-constant  line 970  string `'2.10.0'` -> `'XX...XX'`
+m02855.0-constant  line 988  string `'2.10.0'` -> `'XX...XX'`
+m02883.0-constant  line 1006  string `'2.10.0'` -> `'XX...XX'`
+m02911.0-constant  line 1025  string `'2.10.0'` -> `'XX...XX'`
+m02888.0-constant  line 1026  string `'build'` -> `'XX...XX'`
+m02940.0-constant  line 1044  string `'2.10.0'` -> `'XX...XX'`
+m02927.0-return  line 1063  return value replaced with `None`
+m02968.0-constant  line 1066  string `'2.10.0'` -> `'XX...XX'`
+m02978.0-constant  line 1104  string `'major'` -> `'XX...XX'`
+m02983.0-constant  line 1104  string `'bump_major'` -> `'XX...XX'`
+m02979.0-constant  line 1105  string `'minor'` -> `'XX...XX'`
+m02984.0-constant  line 1105  string `'bump_minor'` -> `'XX...XX'`
+m02980.0-constant  line 1106  string `'patch'` -> `'XX...XX'`
+m02985.0-constant  line 1106  string `'bump_patch'` -> `'XX...XX'`
+m02981.0-constant  line 1107  string `'prerelease'` -> `'XX...XX'`
+m02986.0-constant  line 1107  string `'bump_prerelease'` -> `'XX...XX'`
+m02987.0-constant  line 1108  string `'bump_build'` -> `'XX...XX'`
+m02989.0-comparison  line 1110  comparison `is` -> `is not`
+m03005.0-constant  line 1113  string `'bump'` -> `'XX...XX'`
+m03006.0-constant  line 1113  string `'-h'` -> `'XX...XX'`
+m03036.0-return  line 1118  return value replaced with `None`
+m03064.0-arithmetic  line 1132  operator `%` -> `*`
+m03065.0-constant  line 1132  string `'Invalid version %r'` -> `'XX...XX'`
+m03108.0-return  line 1157  return value replaced with `None`
+m03150.0-constant  line 1170  string `'%(prog)s '` -> `'XX...XX'`
+m03170.0-constant  line 1175  string `'compare'` -> `'XX...XX'`
+m03172.0-constant  line 1175  string `'Compare two versions'` -> `'XX...XX'`
+m03188.0-constant  line 1177  string `'version1'` -> `'XX...XX'`
+m03190.0-constant  line 1177  string `'First version'` -> `'XX...XX'`
+m03197.0-constant  line 1178  string `'version2'` -> `'XX...XX'`
+m03199.0-constant  line 1178  string `'Second version'` -> `'XX...XX'`
+m03208.0-constant  line 1181  string `'bump'` -> `'XX...XX'`
+m03210.0-constant  line 1181  string `'Bumps a version'` -> `'XX...XX'`
+m03229.0-constant  line 1183  string `'Bump commands'` -> `'XX...XX'`
+m03231.0-constant  line 1183  string `'bump'` -> `'XX...XX'`
+m03241.0-constant  line 1187  string `'major'` -> `'XX...XX'`
+m03243.0-constant  line 1187  string `'Bump the major part ...'` -> `'XX...XX'`
+m03251.0-constant  line 1188  string `'Bump the minor part ...'` -> `'XX...XX'`
+m03257.0-constant  line 1189  string `'patch'` -> `'XX...XX'`
+m03259.0-constant  line 1189  string `'Bump the patch part ...'` -> `'XX...XX'`
+m03265.0-constant  line 1190  string `'prerelease'` -> `'XX...XX'`
+m03267.0-constant  line 1190  string `'Bump the prerelease ...'` -> `'XX...XX'`
+m03273.0-constant  line 1191  string `'build'` -> `'XX...XX'`
+m03275.0-constant  line 1191  string `'Bump the build part ...'` -> `'XX...XX'`
+m03283.0-constant  line 1193  string `'version'` -> `'XX...XX'`
+m03285.0-constant  line 1193  string `'Version to raise'` -> `'XX...XX'`
+m03294.0-constant  line 1197  string `'check'` -> `'XX...XX'`
+m03296.0-constant  line 1197  string `'Checks if a string i...'` -> `'XX...XX'`
+m03312.0-constant  line 1200  string `'version'` -> `'XX...XX'`
+m03314.0-constant  line 1200  string `'Version to check'` -> `'XX...XX'`
+m03323.0-constant  line 1204  string `'nextver'` -> `'XX...XX'`
+m03341.0-constant  line 1207  string `'version'` -> `'XX...XX'`
+m03343.0-constant  line 1207  string `'Version to raise'` -> `'XX...XX'`
+m03350.0-constant  line 1209  string `'part'` -> `'XX...XX'`
+m03352.0-constant  line 1209  string `"One of 'major', 'min..."` -> `'XX...XX'`
+m03362.0-negation  line 1225  removed `not`
+m03369.0-constant  line 1225  string `'func'` -> `'XX...XX'`
+m03382.0-return  line 1230  return value replaced with `None`
+m03430.0-comparison  line 1247  comparison `is not` -> `is`
+m03441.0-return  line 1249  return value replaced with `None`
+m03442.0-constant  line 1249  `0` -> `1`
+m03454.0-constant  line 1252  string `'ERROR'` -> `'XX...XX'`
+m03462.0-return  line 1253  return value replaced with `None`

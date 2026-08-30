@@ -1,0 +1,41 @@
+{
+  "started_utc": "2026-08-30T01:54:54.242121+00:00",
+  "git_revision": "5e9b23d-dirty",
+  "python": "3.12.3",
+  "platform": "Linux-6.18.7-76061807-generic-x86_64-with-glibc2.39",
+  "model": "gpt-4.1-2025-04-14",
+  "temperature": 0.0,
+  "arms": [
+    "human",
+    "golden"
+  ],
+  "modules": [
+    "boltons.strutils",
+    "boltons.mathutils",
+    "boltons.listutils",
+    "boltons.dictutils",
+    "boltons.setutils",
+    "boltons.formatutils",
+    "boltons.timeutils",
+    "boltons.cacheutils",
+    "boltons.statsutils",
+    "boltons.tableutils",
+    "boltons.funcutils",
+    "boltons.namedutils",
+    "semver",
+    "xmltodict"
+  ],
+  "budget": {
+    "max_iterations": 6,
+    "plateau_patience": 2,
+    "min_gain": 0.01,
+    "max_wall_clock_s": 900.0,
+    "max_llm_calls": 20,
+    "pytest_timeout_s": 30.0,
+    "mutant_timeout_multiplier": 4.0,
+    "mutant_timeout_floor_s": 5.0,
+    "flake_reruns": 3,
+    "max_mutants": 400,
+    "mutation_workers": 15
+  }
+}

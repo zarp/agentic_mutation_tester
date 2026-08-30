@@ -16,6 +16,8 @@ import statistics
 from dataclasses import dataclass
 from pathlib import Path
 
+from pindown.config import REPO_ROOT
+
 ARM_LABEL = {
     "human": "Human tests (ceiling)",
     "golden": "Golden fuzz baseline",
@@ -223,6 +225,49 @@ def render(run_dir: Path) -> str:
     return "\n".join(parts) + "\n"
 
 
+README_START = "<!-- RESULTS -->"
+README_END = "<!-- /RESULTS -->"
+
+
+def update_readme(run_dir: Path, readme: Path) -> bool:
+    """Write the current results into the README between the markers.
+
+    The README claims its numbers are never typed by hand. This is what makes
+    that true: the only way a figure gets in there is by coming out of a run log.
+    """
+    if not readme.exists():
+        return False
+    text = readme.read_text()
+    if README_START not in text or README_END not in text:
+        return False
+
+    records = load_records(run_dir)
+    summaries = summarize(records)
+    config = json.loads((run_dir / "config.json").read_text())
+
+    body = "\n".join(
+        [
+            README_START,
+            "",
+            f"From `runs/{run_dir.name}/`: model `{config['model']}` at temperature "
+            f"{config['temperature']}, {len(config['modules'])} modules, "
+            f"{len(config['arms'])} arms, Python {config['python']}, "
+            f"revision `{config['git_revision']}`.",
+            "",
+            headline_table(summaries),
+            "",
+            per_module_table(records),
+            "",
+            README_END,
+        ]
+    )
+
+    head, _, rest = text.partition(README_START)
+    _, _, tail = rest.partition(README_END)
+    readme.write_text(head + body + tail)
+    return True
+
+
 def write_results(run_dir: Path) -> Path:
     text = render(run_dir)
     path = run_dir / "results.md"
@@ -233,4 +278,6 @@ def write_results(run_dir: Path) -> Path:
     (run_dir / "metrics.json").write_text(
         json.dumps({arm: vars(s) for arm, s in summaries.items()}, indent=2)
     )
+
+    update_readme(run_dir, REPO_ROOT / "README.md")
     return path
