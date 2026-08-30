@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pindown"
+version = "0.1.0"
+description = "Characterization tests for untested legacy code, graded by mutation score."
+requires-python = ">=3.11"
+dependencies = [
+    "openai==3.6.0",
+    "pytest==8.3.3",
+    "python-dotenv==1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff==0.6.9",
+]
+
+[project.scripts]
+pindown = "pindown.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The agent's generated suites are run by our own harness, never collected here.
+norecursedirs = ["corpus", "runs", ".venv", "build"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

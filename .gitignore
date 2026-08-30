@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Secrets. Only .env.example is committed.
+.env
+
+# Fetched at setup time from pinned commits, never committed.
+corpus/modules/
+
+# Run artifacts. Committed selectively, by copying into evidence/.
+runs/
