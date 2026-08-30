@@ -49,8 +49,26 @@ class FilterOutcome:
         return len(self.kept)
 
 
+def _is_test_class(node: ast.ClassDef) -> bool:
+    """Would pytest collect tests from this class?
+
+    Two rules, matching pytest's own: a class named `Test*`, or a
+    `unittest.TestCase` subclass regardless of its name. Checking only the name
+    undercounts real suites -- xmltodict's tests live in `XMLToDictTestCase`, and
+    reporting that file as containing zero tests is a quietly wrong number in the
+    results table.
+    """
+    if node.name.startswith("Test"):
+        return True
+    for base in node.bases:
+        name = base.attr if isinstance(base, ast.Attribute) else getattr(base, "id", "")
+        if "TestCase" in name:
+            return True
+    return False
+
+
 def find_tests(source: str) -> list[TestUnit]:
-    """Top-level `test_*` functions and `test_*` methods of `Test*` classes."""
+    """Every test pytest would collect from this file."""
     tree = ast.parse(source)
     units: list[TestUnit] = []
 
@@ -63,7 +81,7 @@ def find_tests(source: str) -> list[TestUnit]:
     for node in tree.body:
         if isinstance(node, ast.FunctionDef | ast.AsyncFunctionDef) and node.name.startswith("test"):
             add(node)
-        elif isinstance(node, ast.ClassDef) and node.name.startswith("Test"):
+        elif isinstance(node, ast.ClassDef) and _is_test_class(node):
             for sub in node.body:
                 if isinstance(sub, ast.FunctionDef | ast.AsyncFunctionDef) and sub.name.startswith(
                     "test"

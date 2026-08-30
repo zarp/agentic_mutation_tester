@@ -18,6 +18,7 @@ constructs a class, and it cannot find the one input that separates `>` from
 
 from __future__ import annotations
 
+import ast
 import json
 import subprocess
 import sys
@@ -34,11 +35,20 @@ MAX_PASSING_PER_FN = 10
 MAX_RAISING_PER_FN = 4
 
 PROBE = '''
+import contextlib
 import importlib
 import inspect
+import io
 import json
+import os
 import signal
 import sys
+
+# Results go to a file, never to stdout. A probed function is free to print --
+# semver's CLI helpers dump an argparse usage message the moment they are called
+# -- and anything on stdout would corrupt the payload.
+OUT_PATH = "probe_out.json"
+MAX_REPR = 200
 
 POOL = [0, 1, -1, 2, 10, "", "a", "abc", "  a b  ", [], [1, 2, 3], (), True, False,
         None, 0.5, -1.5, {}, {"a": 1}, set()]
@@ -94,17 +104,27 @@ for name in sorted(dir(mod)):
     for args in candidates:
         if passing >= MAX_PASSING and raising >= MAX_RAISING:
             break
+
+        # Capture the arguments before the call. A function that mutates what it
+        # is given -- exec_ populating a globals dict, say -- would otherwise be
+        # recorded with the mutated value, producing an assertion that is both
+        # enormous and wrong.
+        args_repr = repr(args)
+        if len(args_repr) > MAX_REPR:
+            continue
+
         signal.setitimer(signal.ITIMER_REAL, 1.0)
         try:
-            value = obj(*args)
+            with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                value = obj(*args)
         except CallTimeout:
             signal.setitimer(signal.ITIMER_REAL, 0)
             break
-        except Exception as exc:
+        except (Exception, SystemExit) as exc:
             signal.setitimer(signal.ITIMER_REAL, 0)
             if raising < MAX_RAISING:
                 records.append({
-                    "fn": name, "args": repr(args), "raises": type(exc).__name__,
+                    "fn": name, "args": args_repr, "raises": type(exc).__name__,
                 })
                 raising += 1
             continue
@@ -113,10 +133,10 @@ for name in sorted(dir(mod)):
         if passing >= MAX_PASSING:
             continue
         # Only keep values whose repr round-trips, so the generated assertion is
-        # a literal rather than something that depends on an address or ordering.
+        # a literal rather than something depending on an address or on ordering.
         try:
             rendered = repr(value)
-            if eval(rendered) != value:
+            if len(rendered) > MAX_REPR or eval(rendered) != value:
                 continue
         except Exception:
             continue
@@ -124,10 +144,11 @@ for name in sorted(dir(mod)):
             continue
         if isinstance(value, float) and value != value:
             continue
-        records.append({"fn": name, "args": repr(args), "value": rendered})
+        records.append({"fn": name, "args": args_repr, "value": rendered})
         passing += 1
 
-json.dump(records, sys.stdout)
+with open(OUT_PATH, "w") as handle:
+    json.dump(records, handle)
 '''
 
 
@@ -142,7 +163,7 @@ def probe(module_name: str, module_source: str, timeout_s: float = 60.0) -> list
         )
         (root / "_probe.py").write_text(script)
         try:
-            proc = subprocess.run(
+            subprocess.run(
                 [sys.executable, "_probe.py"],
                 cwd=root,
                 capture_output=True,
@@ -151,10 +172,12 @@ def probe(module_name: str, module_source: str, timeout_s: float = 60.0) -> list
             )
         except subprocess.TimeoutExpired:
             return []
-        if proc.returncode != 0 or not proc.stdout.strip():
+
+        out_path = root / "probe_out.json"
+        if not out_path.exists():
             return []
         try:
-            return json.loads(proc.stdout)
+            return json.loads(out_path.read_text())
         except json.JSONDecodeError:
             return []
 
@@ -174,6 +197,7 @@ def render_suite(module_name: str, records: list[dict]) -> str:
     ]
 
     counters: dict[str, int] = {}
+    emitted = 0
     for record in records:
         fn = record["fn"]
         counters[fn] = counters.get(fn, 0) + 1
@@ -183,21 +207,29 @@ def render_suite(module_name: str, records: list[dict]) -> str:
         call_args = args[1:-1].rstrip(",") if args.startswith("(") else args
 
         if "raises" in record:
-            lines += [
+            block = [
                 f"def test_golden_{fn}_{n}_raises():",
                 f"    with pytest.raises({record['raises']}):",
                 f"        {module_name}.{fn}({call_args})",
-                "",
-                "",
             ]
         else:
-            lines += [
+            block = [
                 f"def test_golden_{fn}_{n}():",
                 f"    assert {module_name}.{fn}({call_args}) == {record['value']}",
-                "",
-                "",
             ]
 
+        # Validate each test on its own. One unrenderable repr should cost one
+        # test, not the entire file -- which is what happened the first time.
+        try:
+            ast.parse("\n".join(block))
+        except SyntaxError:
+            continue
+
+        lines += block + ["", ""]
+        emitted += 1
+
+    if not emitted:
+        return ""
     return "\n".join(lines).rstrip() + "\n"
 
 
