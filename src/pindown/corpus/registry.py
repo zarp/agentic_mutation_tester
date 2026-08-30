@@ -5,8 +5,7 @@ four rather than trusting this list:
 
 Single file, standard library only. The harness runs a module and a test file
 alone in a temp directory. That keeps a mutation campaign to a few hundred
-subprocess runs instead of a container per mutant, which is the difference
-between an evaluation that finishes in a hackathon and one that does not.
+subprocess runs instead of a container per mutant.
 
 A real human-written test suite. This is the ceiling. Without it the comparison
 is agent-versus-prompt, which tells you which prompt is better but not whether

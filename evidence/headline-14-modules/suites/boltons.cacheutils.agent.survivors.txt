@@ -1,0 +1,102 @@
+m00043.0-constant  line 86  string `'_MISSING'` -> `'XX...XX'`
+m00051.0-constant  line 87  string `'_KWARG_MARK'` -> `'XX...XX'`
+m00149.0-constant  line 128  string `'expected max_size > ...'` -> `'XX...XX'`
+m00207.0-arithmetic  line 135  operator `%` -> `*`
+m00208.0-constant  line 135  string `'expected on_miss to ...'` -> `'XX...XX'`
+m00274.0-constant  line 160  string `'***'` -> `'XX...XX'`
+m00299.0-constant  line 163  string `'***'` -> `'XX...XX'`
+m00317.0-constant  line 169  `True` -> `False`
+m00348.0-comparison  line 172  comparison `is` -> `is not`
+m00356.0-control  line 173  `break` -> `continue`
+m00357.0-return  line 174  return value replaced with `None`
+m01175.0-return  line 324  return value replaced with `None`
+m01176.0-constant  line 324  `True` -> `False`
+m01190.0-return  line 326  return value replaced with `None`
+m01202.0-return  line 328  return value replaced with `None`
+m01203.0-comparison  line 328  comparison `==` -> `!=`
+m01262.0-constant  line 337  string `'%s(max_size=%r, on_m...'` -> `'XX...XX'`
+m01307.0-arithmetic  line 380  augmented assign `+=` -> `-=`
+m01313.0-constant  line 380  `1` -> `2`
+m01315.0-negation  line 381  removed `not`
+m01338.0-return  line 384  return value replaced with `None`
+m01341.0-arithmetic  line 386  augmented assign `+=` -> `-=`
+m01347.0-constant  line 386  `1` -> `2`
+m01348.0-return  line 387  return value replaced with `None`
+m01400.0-return  line 407  return value replaced with `None`
+m01401.0-arithmetic  line 407  operator `%` -> `*`
+m01402.0-constant  line 407  string `'%s(%s)'` -> `'XX...XX'`
+m01581.0-constant  line 454  `True` -> `False`
+m01582.0-constant  line 454  `False` -> `True`
+m01607.0-boolean  line 458  `and` -> `or`
+m01633.0-arithmetic  line 460  operator `%` -> `*`
+m01634.0-constant  line 460  string `'expected cache to be...'` -> `'XX...XX'`
+m01755.0-boolean  line 482  `or` -> `and`
+m01761.0-negation  line 482  removed `not`
+m01767.0-return  line 483  return value replaced with `None`
+m01768.0-arithmetic  line 483  operator `%` -> `*`
+m01769.0-constant  line 483  string `'%s(func=%r, scoped=%...'` -> `'XX...XX'`
+m01789.0-constant  line 485  string `'%s(func=%r)'` -> `'XX...XX'`
+m01812.0-constant  line 492  `True` -> `False`
+m01813.0-constant  line 492  `False` -> `True`
+m01832.0-constant  line 494  string `'__isabstractmethod__'` -> `'XX...XX'`
+m01833.0-constant  line 494  `False` -> `True`
+m01868.0-boolean  line 499  `and` -> `or`
+m01878.0-constant  line 499  string `'__getitem__'` -> `'XX...XX'`
+m01888.0-constant  line 500  string `'__setitem__'` -> `'XX...XX'`
+m01894.0-arithmetic  line 501  operator `%` -> `*`
+m01895.0-constant  line 501  string `'expected cache to be...'` -> `'XX...XX'`
+m01902.0-return  line 506  return value replaced with `None`
+m01955.0-return  line 515  return value replaced with `None`
+m02023.0-constant  line 523  `0` -> `1`
+m02170.0-comparison  line 538  comparison `is not` -> `is`
+m02189.0-constant  line 540  string `'<%s func=%r scoped=%...'` -> `'XX...XX'`
+m02193.0-return  line 541  return value replaced with `None`
+m02194.0-arithmetic  line 541  operator `%` -> `*`
+m02195.0-constant  line 541  string `'%s(func=%r, scoped=%...'` -> `'XX...XX'`
+m02205.0-constant  line 544  `True` -> `False`
+m02206.0-constant  line 544  `False` -> `True`
+m02239.0-constant  line 582  `True` -> `False`
+m02240.0-constant  line 582  `False` -> `True`
+m02297.0-constant  line 636  string `'__isabstractmethod__'` -> `'XX...XX'`
+m02298.0-constant  line 636  `False` -> `True`
+m02318.0-return  line 641  return value replaced with `None`
+m02358.0-return  line 647  return value replaced with `None`
+m02359.0-arithmetic  line 647  operator `%` -> `*`
+m02360.0-constant  line 647  string `'<%s func=%s>'` -> `'XX...XX'`
+m02379.0-constant  line 694  `0.001` -> `1.001`
+m02395.0-constant  line 696  string `'expected threshold b...'` -> `'XX...XX'`
+m02427.0-constant  line 702  `1` -> `2`
+m02436.0-constant  line 703  `1` -> `2`
+m02440.0-return  line 707  return value replaced with `None`
+m02453.0-arithmetic  line 715  augmented assign `+=` -> `-=`
+m02489.0-arithmetic  line 719  operator `-` -> `+`
+m02495.0-constant  line 719  `1` -> `2`
+m02499.0-arithmetic  line 721  operator `%` -> `*`
+m02540.0-comparison  line 723  comparison `>` -> `>=`
+m02551.0-arithmetic  line 724  augmented assign `+=` -> `-=`
+m02557.0-constant  line 724  `1` -> `2`
+m02581.0-return  line 732  return value replaced with `None`
+m02599.0-comparison  line 738  comparison `<=` -> `<`
+m02603.0-constant  line 738  `0` -> `1`
+m02604.0-return  line 739  return value replaced with `None`
+m02625.0-constant  line 740  `1` -> `2`
+m02628.0-constant  line 740  `True` -> `False`
+m02630.0-boolean  line 741  `or` -> `and`
+m02632.0-comparison  line 741  comparison `is` -> `is not`
+m02637.0-comparison  line 741  comparison `>=` -> `>`
+m02646.0-return  line 742  return value replaced with `None`
+m02649.0-return  line 743  return value replaced with `None`
+m02662.0-return  line 749  return value replaced with `None`
+m02688.0-return  line 756  return value replaced with `None`
+m02689.0-arithmetic  line 756  operator `-` -> `+`
+m02705.0-return  line 766  return value replaced with `None`
+m02706.0-arithmetic  line 766  operator `/` -> `*`
+m02763.0-return  line 778  return value replaced with `None`
+m02774.0-return  line 781  return value replaced with `None`
+m02807.0-constant  line 786  `0` -> `1`
+m02812.0-return  line 789  return value replaced with `None`
+m02848.0-constant  line 794  `0` -> `1`
+m02854.0-return  line 797  return value replaced with `None`
+m02893.0-comparison  line 813  comparison `is not` -> `is`
+m02907.0-constant  line 814  string `'iteritems'` -> `'XX...XX'`
+m03007.0-constant  line 842  `0` -> `1`

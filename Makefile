@@ -2,7 +2,7 @@
 PY := .venv/bin/python
 PINDOWN := .venv/bin/pindown
 
-.PHONY: help setup preflight corpus test smoke free eval score demo lint clean
+.PHONY: help setup preflight corpus test smoke free eval score trajectories demo lint clean
 
 help:
 	@echo "Run these in order."
@@ -14,8 +14,9 @@ help:
 	@echo ""
 	@echo "  make free       human ceiling + fuzz baseline, no API key   (~15 min)"
 	@echo "  make smoke      all four arms on two modules                (~6 min, ~\$$0.20)"
-	@echo "  make eval       the headline run: four arms, all modules    (~90 min, ~\$$4)"
+	@echo "  make eval       the headline run: four arms, all modules    (~33 min, ~\$$3)"
 	@echo "  make score      regenerate tables from the last run         (instant)"
+	@echo "  make trajectories  render readable agent trajectories      (instant)"
 	@echo ""
 	@echo "  make demo FILE=path/to/module.py    pin one of your own modules"
 
@@ -39,14 +40,19 @@ test:
 free:
 	$(PINDOWN) run --arms human,golden --tag free
 
+# Two small modules, not the first two in the corpus. `--limit 2` would pick
+# strutils (1311 lines, 400 mutants) and waste most of a smoke budget on one file.
 smoke:
-	$(PINDOWN) run --arms human,golden,baseline,agent --limit 2 --tag smoke
+	$(PINDOWN) run --arms human,golden,baseline,agent --modules boltons.mathutils,boltons.formatutils --tag smoke
 
 eval:
 	$(PINDOWN) run --arms human,golden,baseline,agent --tag headline
 
 score:
 	$(PINDOWN) score --run latest
+
+trajectories:
+	$(PINDOWN) trajectory --run latest
 
 demo:
 	@test -n "$(FILE)" || (echo "usage: make demo FILE=path/to/module.py" && exit 1)

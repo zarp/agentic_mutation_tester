@@ -1,7 +1,7 @@
 """Command line entry point.
 
-`pindown pin FILE` is the product: point it at a module you inherited and get a
-test suite plus an honest statement of what the suite still does not cover.
+`pindown pin FILE` - point it at a module you inherited and get a
+test suite plus a statement of what the suite still does not cover.
 Everything else here exists to measure whether that suite is any good.
 """
 
@@ -15,6 +15,7 @@ from pindown.agent.llm import LLM
 from pindown.agent.loop import run_agent
 from pindown.config import RUNS_DIR, Budget, ModelConfig
 from pindown.corpus.fetch import build_manifest, load_corpus
+from pindown.eval import trajectory
 from pindown.eval.harness import ALL_ARMS, run_eval
 from pindown.eval.score import write_results
 from pindown.models import CorpusModule
@@ -89,6 +90,15 @@ def cmd_score(args: argparse.Namespace) -> int:
     run_dir = _resolve_run(args.run)
     path = write_results(run_dir)
     print(path.read_text())
+    return 0
+
+
+def cmd_trajectory(args: argparse.Namespace) -> int:
+    run_dir = _resolve_run(args.run)
+    out_dir = Path(args.out).resolve() if args.out else run_dir / "trajectories"
+    written = trajectory.export(run_dir, out_dir, module=args.module, arm=args.arm)
+    for path in written:
+        print(path)
     return 0
 
 
@@ -198,6 +208,13 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("score", help="regenerate tables from a run log")
     p.add_argument("--run", default="latest")
     p.set_defaults(func=cmd_score)
+
+    p = sub.add_parser("trajectory", help="render readable agent trajectories from a run")
+    p.add_argument("--run", default="latest")
+    p.add_argument("--module", default="", help="limit to one module id")
+    p.add_argument("--arm", default="", help="limit to one arm")
+    p.add_argument("--out", default="", help="output directory")
+    p.set_defaults(func=cmd_trajectory)
 
     p = sub.add_parser("pin", help="generate a characterization suite for one module")
     p.add_argument("--module", default="", help="corpus module id")

@@ -1,0 +1,33 @@
+m00034.0-constant  line 64  string `'exec code in global_...'` -> `'XX...XX'`
+m00063.0-constant  line 70  string `'namedlist'` -> `'XX...XX'`
+m00064.0-constant  line 70  string `'namedtuple'` -> `'XX...XX'`
+m00088.0-constant  line 138  `False` -> `True`
+m00164.0-comparison  line 169  comparison `==` -> `!=`
+m00168.0-constant  line 169  string `'_'` -> `'XX...XX'`
+m00263.0-constant  line 179  string `'Type names and field...'` -> `'XX...XX'`
+m00278.0-constant  line 183  string `'Type names and field...'` -> `'XX...XX'`
+m00296.0-constant  line 186  string `'Type names and field...'` -> `'XX...XX'`
+m00329.0-constant  line 191  string `'Field names cannot s...'` -> `'XX...XX'`
+m00345.0-constant  line 194  string `'Encountered duplicat...'` -> `'XX...XX'`
+m00501.0-constant  line 214  string `'namedtuple_%s'` -> `'XX...XX'`
+m00530.0-arithmetic  line 221  operator `+` -> `-`
+m00531.0-arithmetic  line 221  operator `+` -> `-`
+m00537.0-constant  line 221  string `':\n'` -> `'XX...XX'`
+m00559.0-constant  line 229  `1` -> `2`
+m00572.0-constant  line 230  string `'__name__'` -> `'XX...XX'`
+m00573.0-constant  line 230  string `'__main__'` -> `'XX...XX'`
+m00595.0-constant  line 297  `False` -> `True`
+m00671.0-comparison  line 328  comparison `==` -> `!=`
+m00675.0-constant  line 328  string `'_'` -> `'XX...XX'`
+m00770.0-constant  line 338  string `'Type names and field...'` -> `'XX...XX'`
+m00785.0-constant  line 342  string `'Type names and field...'` -> `'XX...XX'`
+m00803.0-constant  line 345  string `'Type names and field...'` -> `'XX...XX'`
+m00836.0-constant  line 350  string `'Field names cannot s...'` -> `'XX...XX'`
+m00852.0-constant  line 353  string `'Encountered duplicat...'` -> `'XX...XX'`
+m01030.0-constant  line 379  string `'namedlist_%s'` -> `'XX...XX'`
+m01059.0-arithmetic  line 386  operator `+` -> `-`
+m01060.0-arithmetic  line 386  operator `+` -> `-`
+m01066.0-constant  line 386  string `':\n'` -> `'XX...XX'`
+m01088.0-constant  line 395  `1` -> `2`
+m01101.0-constant  line 396  string `'__name__'` -> `'XX...XX'`
+m01102.0-constant  line 396  string `'__main__'` -> `'XX...XX'`

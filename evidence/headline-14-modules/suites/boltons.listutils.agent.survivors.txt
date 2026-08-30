@@ -1,0 +1,32 @@
+m00023.0-constant  line 51  string `'_MISSING'` -> `'XX...XX'`
+m00062.0-constant  line 105  string `'This size factor is ...'` -> `'XX...XX'`
+m00136.0-comparison  line 118  comparison `<` -> `<=`
+m00140.0-constant  line 118  `0` -> `1`
+m00271.0-comparison  line 135  comparison `>` -> `>=`
+m00283.0-arithmetic  line 136  operator `//` -> `/`
+m00287.0-constant  line 136  `2` -> `3`
+m00289.0-comparison  line 137  comparison `>` -> `>=`
+m00301.0-arithmetic  line 138  operator `+` -> `-`
+m00305.0-constant  line 138  `1` -> `2`
+m00335.0-return  line 141  return value replaced with `None`
+m00336.0-constant  line 141  `True` -> `False`
+m00392.0-comparison  line 150  comparison `is` -> `is not`
+m00533.0-constant  line 167  `1` -> `2`
+m00550.0-comparison  line 169  comparison `>` -> `>=`
+m00666.0-comparison  line 186  comparison `<` -> `<=`
+m00670.0-constant  line 186  `0` -> `1`
+m00690.0-arithmetic  line 188  operator `-` -> `+`
+m00696.0-constant  line 188  `1` -> `2`
+m00722.0-comparison  line 193  comparison `<` -> `<=`
+m00726.0-constant  line 193  `0` -> `1`
+m00763.0-comparison  line 199  comparison `>` -> `>=`
+m00770.0-constant  line 199  `1` -> `2`
+m00782.0-constant  line 200  `0` -> `1`
+m00914.0-comparison  line 218  comparison `<` -> `<=`
+m00927.0-arithmetic  line 219  operator `+` -> `-`
+m00931.0-constant  line 219  `1` -> `2`
+m00964.0-constant  line 223  `False` -> `True`
+m00965.0-constant  line 223  string `'start list index sho...'` -> `'XX...XX'`
+m01061.0-return  line 245  return value replaced with `None`
+m01589.0-constant  line 320  `0` -> `1`
+m01599.0-constant  line 321  `0` -> `1`

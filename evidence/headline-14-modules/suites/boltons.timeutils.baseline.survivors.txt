@@ -1,0 +1,65 @@
+m00152.0-constant  line 139  `1` -> `2`
+m00157.0-constant  line 139  `60` -> `61`
+m00161.0-constant  line 140  `1` -> `2`
+m00166.0-constant  line 140  `3600` -> `3601`
+m00188.0-constant  line 143  `2` -> `3`
+m00193.0-constant  line 143  `30` -> `31`
+m00194.0-constant  line 143  string `'month'` -> `'XX...XX'`
+m00197.0-constant  line 144  `1` -> `2`
+m00202.0-constant  line 144  `365` -> `366`
+m00367.0-constant  line 185  string `'invalid time unit %r...'` -> `'XX...XX'`
+m00394.0-arithmetic  line 190  operator `%` -> `*`
+m00395.0-constant  line 190  string `'invalid time value f...'` -> `'XX...XX'`
+m00450.0-constant  line 207  `0` -> `1`
+m00576.0-constant  line 253  `0` -> `1`
+m00674.0-constant  line 364  string `'start expected datet...'` -> `'XX...XX'`
+m00693.0-constant  line 366  string `'stop expected dateti...'` -> `'XX...XX'`
+m00776.0-arithmetic  line 378  operator `%` -> `*`
+m00777.0-constant  line 378  string `'step expected int, t...'` -> `'XX...XX'`
+m00781.0-arithmetic  line 381  augmented assign `+=` -> `-=`
+m00789.0-constant  line 381  `12` -> `13`
+m00805.0-comparison  line 385  comparison `<=` -> `<`
+m00882.0-constant  line 394  `12` -> `13`
+m00892.0-arithmetic  line 395  operator `+` -> `-`
+m00941.0-constant  line 417  string `'ConstantTZ'` -> `'XX...XX'`
+m01135.0-constant  line 466  `0` -> `1`
+m01138.0-constant  line 466  `1` -> `2`
+m01155.0-return  line 468  return value replaced with `None`
+m01156.0-comparison  line 468  comparison `>` -> `>=`
+m01162.0-constant  line 468  `0` -> `1`
+m01283.0-constant  line 507  `1` -> `2`
+m01284.0-constant  line 507  `3` -> `4`
+m01285.0-constant  line 507  `8` -> `9`
+m01286.0-constant  line 507  `2` -> `3`
+m01293.0-constant  line 509  `1` -> `2`
+m01294.0-constant  line 509  `11` -> `12`
+m01295.0-constant  line 509  `1` -> `2`
+m01296.0-constant  line 509  `1` -> `2`
+m01303.0-constant  line 513  `1` -> `2`
+m01304.0-constant  line 513  `4` -> `5`
+m01305.0-constant  line 513  `1` -> `2`
+m01306.0-constant  line 513  `2` -> `3`
+m01313.0-constant  line 514  `1` -> `2`
+m01314.0-constant  line 514  `10` -> `11`
+m01315.0-constant  line 514  `25` -> `26`
+m01316.0-constant  line 514  `1` -> `2`
+m01323.0-constant  line 519  `1` -> `2`
+m01324.0-constant  line 519  `4` -> `5`
+m01325.0-constant  line 519  `24` -> `25`
+m01326.0-constant  line 519  `2` -> `3`
+m01456.0-comparison  line 558  comparison `<` -> `<=`
+m01457.0-constant  line 558  `2006` -> `2007`
+m01477.0-comparison  line 560  comparison `<` -> `<=`
+m01477.1-comparison  line 560  comparison `<` -> `<=`
+m01478.0-constant  line 560  `1986` -> `1987`
+m01485.0-constant  line 560  `2007` -> `2008`
+m01500.0-comparison  line 562  comparison `<` -> `<=`
+m01500.1-comparison  line 562  comparison `<` -> `<=`
+m01501.0-constant  line 562  `1966` -> `1967`
+m01508.0-constant  line 562  `1987` -> `1988`
+m01558.0-comparison  line 572  comparison `<=` -> `<`
+m01558.1-comparison  line 572  comparison `<` -> `<=`
+m01586.0-constant  line 578  `5` -> `6`
+m01598.0-constant  line 579  `6` -> `7`
+m01610.0-constant  line 580  `7` -> `8`
+m01622.0-constant  line 581  `8` -> `9`

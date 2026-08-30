@@ -13,7 +13,7 @@ import platform
 import time
 import traceback
 from dataclasses import asdict
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from pindown.agent.llm import LLM
@@ -30,7 +30,7 @@ ALL_ARMS = ["human", "golden", "baseline", "agent"]
 
 
 def new_run_dir(tag: str = "") -> Path:
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    stamp = datetime.now(UTC).strftime("%Y%m%d-%H%M%S")
     name = f"{stamp}-{tag}" if tag else stamp
     path = RUNS_DIR / name
     (path / "traces").mkdir(parents=True, exist_ok=True)
@@ -46,7 +46,7 @@ def write_provenance(run_dir: Path, budget: Budget, cfg: ModelConfig, modules: l
     (run_dir / "config.json").write_text(
         json.dumps(
             {
-                "started_utc": datetime.now(timezone.utc).isoformat(),
+                "started_utc": datetime.now(UTC).isoformat(),
                 "git_revision": git_revision(),
                 "python": platform.python_version(),
                 "platform": platform.platform(),

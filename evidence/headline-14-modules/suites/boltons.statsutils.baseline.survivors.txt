@@ -1,0 +1,165 @@
+m00038.0-constant  line 140  string `'_'` -> `'XX...XX'`
+m00051.0-constant  line 142  string `''` -> `'XX...XX'`
+m00066.0-constant  line 143  string `'>>>'` -> `'XX...XX'`
+m00155.0-constant  line 176  `True` -> `False`
+m00239.0-constant  line 189  `0` -> `1`
+m00268.0-negation  line 206  removed `not`
+m00367.0-constant  line 238  string `'count'` -> `'XX...XX'`
+m00399.0-constant  line 251  string `'mean'` -> `'XX...XX'`
+m00436.0-constant  line 263  string `'max'` -> `'XX...XX'`
+m00471.0-constant  line 275  string `'min'` -> `'XX...XX'`
+m00497.0-constant  line 291  string `'median'` -> `'XX...XX'`
+m00526.0-constant  line 305  string `'iqr'` -> `'XX...XX'`
+m00586.0-constant  line 323  string `'trimean'` -> `'XX...XX'`
+m00611.0-constant  line 335  string `'variance'` -> `'XX...XX'`
+m00633.0-constant  line 345  string `'std_dev'` -> `'XX...XX'`
+m00688.0-constant  line 359  string `'median_abs_dev'` -> `'XX...XX'`
+m00723.0-return  line 375  return value replaced with `None`
+m00734.0-constant  line 376  string `'rel_std_dev'` -> `'XX...XX'`
+m00760.0-boolean  line 395  `and` -> `or`
+m00762.0-comparison  line 395  comparison `>` -> `>=`
+m00769.0-constant  line 395  `1` -> `2`
+m00770.0-comparison  line 395  comparison `>` -> `>=`
+m00774.0-constant  line 395  `0` -> `1`
+m00776.0-arithmetic  line 396  operator `/` -> `*`
+m00790.0-arithmetic  line 397  operator `*` -> `/`
+m00791.0-arithmetic  line 397  operator `-` -> `+`
+m00798.0-constant  line 397  `1` -> `2`
+m00800.0-arithmetic  line 397  operator `**` -> `*`
+m00804.0-constant  line 397  `3` -> `4`
+m00805.0-return  line 399  return value replaced with `None`
+m00816.0-constant  line 400  string `'skewness'` -> `'XX...XX'`
+m00842.0-boolean  line 419  `and` -> `or`
+m00844.0-comparison  line 419  comparison `>` -> `>=`
+m00851.0-constant  line 419  `1` -> `2`
+m00852.0-comparison  line 419  comparison `>` -> `>=`
+m00856.0-constant  line 419  `0` -> `1`
+m00858.0-arithmetic  line 420  operator `/` -> `*`
+m00872.0-arithmetic  line 421  operator `*` -> `/`
+m00873.0-arithmetic  line 421  operator `-` -> `+`
+m00880.0-constant  line 421  `1` -> `2`
+m00882.0-arithmetic  line 421  operator `**` -> `*`
+m00886.0-constant  line 421  `4` -> `5`
+m00887.0-return  line 423  return value replaced with `None`
+m00888.0-constant  line 423  `0.0` -> `1.0`
+m00895.0-constant  line 424  string `'kurtosis'` -> `'XX...XX'`
+m00925.0-arithmetic  line 430  operator `**` -> `*`
+m00929.0-constant  line 430  `2.0` -> `3.0`
+m00933.0-arithmetic  line 431  operator `*` -> `/`
+m00937.0-constant  line 431  `1.0` -> `2.0`
+m00941.0-arithmetic  line 435  operator `-` -> `+`
+m00942.0-arithmetic  line 435  operator `*` -> `/`
+m00943.0-constant  line 435  `4` -> `5`
+m00948.0-arithmetic  line 435  operator `*` -> `/`
+m00949.0-constant  line 435  `3` -> `4`
+m00956.0-arithmetic  line 436  operator `*` -> `/`
+m00960.0-arithmetic  line 436  operator `+` -> `-`
+m00964.0-constant  line 436  `3` -> `4`
+m00968.0-arithmetic  line 437  operator `-` -> `+`
+m00969.0-arithmetic  line 437  operator `-` -> `+`
+m00970.0-arithmetic  line 437  operator `*` -> `/`
+m00971.0-constant  line 437  `2` -> `3`
+m00976.0-arithmetic  line 437  operator `*` -> `/`
+m00977.0-constant  line 437  `3` -> `4`
+m00982.0-constant  line 437  `6` -> `7`
+m00984.0-comparison  line 439  comparison `==` -> `!=`
+m00993.0-constant  line 439  `0` -> `1`
+m00995.0-comparison  line 440  comparison `==` -> `!=`
+m01004.0-constant  line 440  `3` -> `4`
+m01005.0-return  line 441  return value replaced with `None`
+m01006.0-constant  line 441  `0` -> `1`
+m01008.0-comparison  line 443  comparison `<` -> `<=`
+m01012.0-constant  line 443  `3` -> `4`
+m01013.0-return  line 444  return value replaced with `None`
+m01014.0-constant  line 444  `2` -> `3`
+m01016.0-comparison  line 445  comparison `>` -> `>=`
+m01020.0-constant  line 445  `3` -> `4`
+m01021.0-return  line 446  return value replaced with `None`
+m01022.0-constant  line 446  `7` -> `8`
+m01024.0-comparison  line 447  comparison `==` -> `!=`
+m01033.0-constant  line 447  `0` -> `1`
+m01034.0-return  line 448  return value replaced with `None`
+m01035.0-constant  line 448  `3` -> `4`
+m01039.0-arithmetic  line 450  operator `/` -> `*`
+m01040.0-arithmetic  line 450  operator `**` -> `*`
+m01044.0-constant  line 450  `2` -> `3`
+m01046.0-arithmetic  line 450  operator `*` -> `/`
+m01047.0-arithmetic  line 450  operator `*` -> `/`
+m01048.0-constant  line 450  `4` -> `5`
+m01056.0-comparison  line 451  comparison `<` -> `<=`
+m01060.0-constant  line 451  `0` -> `1`
+m01061.0-return  line 452  return value replaced with `None`
+m01062.0-constant  line 452  `1` -> `2`
+m01067.0-constant  line 453  string `'missed a spot'` -> `'XX...XX'`
+m01074.0-constant  line 454  string `'pearson_type'` -> `'XX...XX'`
+m01101.0-arithmetic  line 459  operator `/` -> `*`
+m01213.0-constant  line 476  string `'expected q between 0...'` -> `'XX...XX'`
+m01224.0-return  line 478  return value replaced with `None`
+m01273.0-comparison  line 490  comparison `>` -> `>=`
+m01285.0-comparison  line 492  comparison `<` -> `<=`
+m01316.0-constant  line 496  `0.15` -> `1.15`
+m01342.0-constant  line 513  string `'expected amount betw...'` -> `'XX...XX'`
+m01446.0-return  line 531  return value replaced with `None`
+m01448.0-constant  line 531  `0.0` -> `1.0`
+m01484.0-comparison  line 536  comparison `<` -> `<=`
+m01488.0-constant  line 536  `4` -> `5`
+m01502.0-arithmetic  line 539  operator `/` -> `*`
+m01503.0-arithmetic  line 539  operator `-` -> `+`
+m01519.0-arithmetic  line 540  operator `+` -> `-`
+m01567.0-arithmetic  line 544  operator `/` -> `*`
+m01568.0-arithmetic  line 544  operator `*` -> `/`
+m01569.0-constant  line 544  `2` -> `3`
+m01571.0-arithmetic  line 544  operator `-` -> `+`
+m01578.0-arithmetic  line 544  operator `**` -> `*`
+m01582.0-arithmetic  line 544  operator `/` -> `*`
+m01583.0-constant  line 544  `1` -> `2`
+m01585.0-constant  line 544  `3.0` -> `4.0`
+m01592.0-constant  line 545  `1` -> `2`
+m01599.0-arithmetic  line 545  operator `/` -> `*`
+m01600.0-arithmetic  line 545  operator `-` -> `+`
+m01613.0-arithmetic  line 546  operator `+` -> `-`
+m01629.0-arithmetic  line 546  operator `+` -> `-`
+m01633.0-constant  line 546  `1` -> `2`
+m01645.0-comparison  line 547  comparison `<` -> `<=`
+m01654.0-arithmetic  line 549  operator `/` -> `*`
+m01655.0-arithmetic  line 549  operator `-` -> `+`
+m01671.0-arithmetic  line 550  operator `+` -> `-`
+m01726.0-constant  line 575  `1` -> `2`
+m01734.0-arithmetic  line 577  operator `%` -> `*`
+m01735.0-constant  line 577  string `'unexpected keyword a...'` -> `'XX...XX'`
+m01789.0-arithmetic  line 588  operator `%` -> `*`
+m01790.0-constant  line 588  string `'bins expected intege...'` -> `'XX...XX'`
+m01795.0-comparison  line 590  comparison `<` -> `<=`
+m01804.0-constant  line 590  `0` -> `1`
+m01809.0-arithmetic  line 591  operator `+` -> `-`
+m01832.0-arithmetic  line 596  operator `**` -> `*`
+m01833.0-constant  line 596  `10.0` -> `11.0`
+m01937.0-constant  line 608  `0` -> `1`
+m01970.0-constant  line 658  string `'width'` -> `'XX...XX'`
+m02026.0-constant  line 704  string `'dict'` -> `'XX...XX'`
+m02042.0-constant  line 706  string `'invalid format for d...'` -> `'XX...XX'`
+m02098.0-constant  line 715  string `'count'` -> `'XX...XX'`
+m02105.0-constant  line 716  string `'mean'` -> `'XX...XX'`
+m02112.0-constant  line 717  string `'std_dev'` -> `'XX...XX'`
+m02119.0-constant  line 718  string `'mad'` -> `'XX...XX'`
+m02126.0-constant  line 719  string `'min'` -> `'XX...XX'`
+m02148.0-constant  line 722  string `'max'` -> `'XX...XX'`
+m02190.0-constant  line 728  string `'\n'` -> `'XX...XX'`
+m02194.0-constant  line 728  string `'%s%s'` -> `'XX...XX'`
+m02203.0-constant  line 728  string `':'` -> `'XX...XX'`
+m02205.0-constant  line 728  `10` -> `11`
+m02252.0-constant  line 756  `0.0` -> `1.0`
+m02266.0-constant  line 757  `False` -> `True`
+m02305.0-constant  line 764  string `'count'` -> `'XX...XX'`
+m02410.0-constant  line 796  `0` -> `1`
+m02418.0-constant  line 798  `80` -> `81`
+m02468.0-constant  line 804  string `'%s'` -> `'XX...XX'`
+m02501.0-constant  line 806  string `'%s: %s #'` -> `'XX...XX'`
+m02505.0-constant  line 806  string `'x'` -> `'XX...XX'`
+m02518.0-arithmetic  line 808  operator `-` -> `+`
+m02527.0-constant  line 808  `3` -> `4`
+m02531.0-arithmetic  line 809  operator `/` -> `*`
+m02543.0-constant  line 810  string `'{label:>{label_cols}...'` -> `'XX...XX'`
+m02583.0-constant  line 813  string `'#'` -> `'XX...XX'`
+m02587.0-constant  line 813  string `'|'` -> `'XX...XX'`
+m02622.0-constant  line 821  string `'\n'` -> `'XX...XX'`

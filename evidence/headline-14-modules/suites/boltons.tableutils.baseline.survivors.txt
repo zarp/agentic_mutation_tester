@@ -1,0 +1,78 @@
+m00092.0-constant  line 76  string `'_MISSING'` -> `'XX...XX'`
+m00103.0-constant  line 80  string `'\nSome idle feature t...'` -> `'XX...XX'`
+m00108.0-constant  line 98  string `'Table'` -> `'XX...XX'`
+m00160.0-comparison  line 109  comparison `>` -> `>=`
+m00279.0-return  line 135  return value replaced with `None`
+m00423.0-control  line 165  `continue` -> `break`
+m00684.0-constant  line 271  string `'<tr>'` -> `'XX...XX'`
+m00685.0-constant  line 271  string `'</tr>'` -> `'XX...XX'`
+m00717.0-constant  line 274  string `'<thead>'` -> `'XX...XX'`
+m00718.0-constant  line 274  string `'</thead>'` -> `'XX...XX'`
+m00728.0-constant  line 275  string `'<tbody>'` -> `'XX...XX'`
+m00729.0-constant  line 275  string `'</tbody>'` -> `'XX...XX'`
+m00739.0-constant  line 278  string `'<table>'` -> `'XX...XX'`
+m00788.0-constant  line 284  `1` -> `2`
+m00871.0-constant  line 302  `False` -> `True`
+m00971.0-comparison  line 318  comparison `>` -> `>=`
+m00998.0-constant  line 323  `1` -> `2`
+m01035.0-constant  line 333  `1` -> `2`
+m01072.0-constant  line 343  `1` -> `2`
+m01109.0-constant  line 354  `1` -> `2`
+m01120.0-constant  line 377  string `'metadata'` -> `'XX...XX'`
+m01130.0-constant  line 378  string `'_data_type'` -> `'XX...XX'`
+m01138.0-return  line 382  return value replaced with `None`
+m01185.0-negation  line 388  removed `not`
+m01213.0-constant  line 395  `False` -> `True`
+m01220.0-comparison  line 398  comparison `in` -> `not in`
+m01229.0-return  line 401  return value replaced with `None`
+m01280.0-arithmetic  line 409  operator `%` -> `*`
+m01281.0-constant  line 409  string `'unsupported data typ...'` -> `'XX...XX'`
+m01335.0-comparison  line 417  comparison `>` -> `>=`
+m01343.0-arithmetic  line 418  operator `-` -> `+`
+m01347.0-constant  line 418  `1` -> `2`
+m01382.0-control  line 423  `continue` -> `break`
+m01408.0-control  line 428  `continue` -> `break`
+m01480.0-return  line 442  return value replaced with `None`
+m01481.0-arithmetic  line 442  operator `%` -> `*`
+m01482.0-constant  line 442  string `'%s(%r)'` -> `'XX...XX'`
+m01504.0-constant  line 445  `True` -> `False`
+m01505.0-constant  line 446  `False` -> `True`
+m01506.0-constant  line 446  `1` -> `2`
+m01520.0-boolean  line 476  `and` -> `or`
+m01557.0-constant  line 481  `False` -> `True`
+m01566.0-constant  line 483  string `'bottom'` -> `'XX...XX'`
+m01581.0-constant  line 485  string `'<br />'` -> `'XX...XX'`
+m01583.0-boolean  line 487  `and` -> `or`
+m01612.0-arithmetic  line 489  operator `-` -> `+`
+m01667.0-comparison  line 495  comparison `>` -> `>=`
+m01674.0-constant  line 495  `1` -> `2`
+m01722.0-constant  line 503  string `"expected one of 'aut..."` -> `'XX...XX'`
+m01727.0-boolean  line 505  `and` -> `or`
+m01735.0-comparison  line 505  comparison `==` -> `!=`
+m01739.0-constant  line 505  string `'bottom'` -> `'XX...XX'`
+m01746.0-constant  line 506  string `'<br />'` -> `'XX...XX'`
+m01774.0-constant  line 511  string `'\n'` -> `'XX...XX'`
+m01775.0-constant  line 511  string `''` -> `'XX...XX'`
+m01813.0-comparison  line 524  comparison `>` -> `>=`
+m01817.0-constant  line 524  `1` -> `2`
+m01818.0-arithmetic  line 524  operator `-` -> `+`
+m01822.0-constant  line 524  `1` -> `2`
+m01826.0-comparison  line 525  comparison `>` -> `>=`
+m01830.0-constant  line 525  `1` -> `2`
+m01834.0-arithmetic  line 526  operator `-` -> `+`
+m01838.0-constant  line 526  `1` -> `2`
+m01980.0-comparison  line 539  comparison `>` -> `>=`
+m01984.0-constant  line 539  `1` -> `2`
+m02092.0-comparison  line 553  comparison `>` -> `>=`
+m02096.0-constant  line 553  `1` -> `2`
+m02097.0-arithmetic  line 553  operator `-` -> `+`
+m02101.0-constant  line 553  `1` -> `2`
+m02205.0-comparison  line 561  comparison `>` -> `>=`
+m02209.0-constant  line 561  `1` -> `2`
+m02213.0-arithmetic  line 562  operator `-` -> `+`
+m02217.0-constant  line 562  `1` -> `2`
+m02451.0-constant  line 594  string `' | '` -> `'XX...XX'`
+m02485.0-constant  line 596  string `'-|-'` -> `'XX...XX'`
+m02489.0-constant  line 596  string `'-'` -> `'XX...XX'`
+m02511.0-constant  line 598  string `' | '` -> `'XX...XX'`
+m02540.0-constant  line 600  string `'\n'` -> `'XX...XX'`

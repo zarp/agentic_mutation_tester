@@ -1,0 +1,13 @@
+m00039.0-constant  line 70  string `'expected upper bound...'` -> `'XX...XX'`
+m00113.0-arithmetic  line 96  operator `%` -> `*`
+m00114.0-constant  line 96  string `'no ceil options grea...'` -> `'XX...XX'`
+m00173.0-arithmetic  line 123  operator `%` -> `*`
+m00174.0-constant  line 123  string `'no floor options les...'` -> `'XX...XX'`
+m00235.0-constant  line 152  `0` -> `1`
+m00367.0-constant  line 169  `0` -> `1`
+m00384.0-constant  line 171  string `'initialized with bad...'` -> `'XX...XX'`
+m00403.0-constant  line 173  string `'Bits cannot represen...'` -> `'XX...XX'`
+m00423.0-comparison  line 176  comparison `>` -> `>=`
+m00438.0-constant  line 177  string `'value {0} cannot be ...'` -> `'XX...XX'`
+m00611.0-return  line 200  return value replaced with `None`
+m00656.0-return  line 205  return value replaced with `None`

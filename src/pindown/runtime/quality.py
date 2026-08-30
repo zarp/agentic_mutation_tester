@@ -8,7 +8,7 @@ kill no mutants, so they cost the user review time and buy nothing.
 
 Failing tests, which contradict current behavior. A characterization suite exists
 to record what the code does today, so a failing test is either a mistake or a
-bug report -- and in both cases it is not a characterization test.
+bug report - and in both cases it is not a characterization test.
 
 Order-dependent and non-deterministic tests, which pass once and then fail in CI
 next week. These are the expensive ones, because they teach a team to distrust

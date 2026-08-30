@@ -1,0 +1,318 @@
+m00112.0-constant  line 75  string `'camel2under'` -> `'XX...XX'`
+m00113.0-constant  line 75  string `'under2camel'` -> `'XX...XX'`
+m00115.0-constant  line 75  string `'split_punct_ws'` -> `'XX...XX'`
+m00117.0-constant  line 76  string `'ordinalize'` -> `'XX...XX'`
+m00118.0-constant  line 76  string `'cardinalize'` -> `'XX...XX'`
+m00120.0-constant  line 76  string `'singularize'` -> `'XX...XX'`
+m00122.0-constant  line 77  string `'is_ascii'` -> `'XX...XX'`
+m00124.0-constant  line 77  string `'html2text'` -> `'XX...XX'`
+m00125.0-constant  line 77  string `'strip_ansi'` -> `'XX...XX'`
+m00127.0-constant  line 78  string `'find_hashtags'` -> `'XX...XX'`
+m00129.0-constant  line 78  string `'gzip_bytes'` -> `'XX...XX'`
+m00131.0-constant  line 79  string `'iter_splitlines'` -> `'XX...XX'`
+m00132.0-constant  line 79  string `'indent'` -> `'XX...XX'`
+m00134.0-constant  line 80  string `'args2cmd'` -> `'XX...XX'`
+m00136.0-constant  line 80  string `'parse_int_list'` -> `'XX...XX'`
+m00138.0-constant  line 81  string `'int_list_complement'` -> `'XX...XX'`
+m00139.0-constant  line 81  string `'int_list_to_int_tupl...'` -> `'XX...XX'`
+m00141.0-constant  line 82  string `'multi_replace'` -> `'XX...XX'`
+m00181.0-constant  line 87  string `'((?<=[a-z0-9])[A-Z]|...'` -> `'XX...XX'`
+m00195.0-constant  line 97  string `'_\\1'` -> `'XX...XX'`
+m00207.0-constant  line 107  string `''` -> `'XX...XX'`
+m00226.0-constant  line 107  string `'_'` -> `'XX...XX'`
+m00234.0-constant  line 110  `True` -> `False`
+m00357.0-constant  line 168  string `'3'` -> `'XX...XX'`
+m00412.0-constant  line 193  string `'1'` -> `'XX...XX'`
+m00432.0-constant  line 197  string `'th'` -> `'XX...XX'`
+m00513.0-negation  line 237  removed `not`
+m00564.0-constant  line 245  `2` -> `3`
+m00577.0-boolean  line 247  `and` -> `or`
+m00584.0-constant  line 247  string `'ies'` -> `'XX...XX'`
+m00592.0-constant  line 247  `4` -> `5`
+m00598.0-constant  line 247  string `'aeiou'` -> `'XX...XX'`
+m00609.0-constant  line 248  `3` -> `4`
+m00612.0-constant  line 248  string `'y'` -> `'XX...XX'`
+m00621.0-constant  line 249  string `'es'` -> `'XX...XX'`
+m00628.0-constant  line 249  `3` -> `4`
+m00641.0-constant  line 250  `2` -> `3`
+m00652.0-constant  line 252  `1` -> `2`
+m00728.0-constant  line 273  string `'y'` -> `'XX...XX'`
+m00736.0-constant  line 273  `2` -> `3`
+m00742.0-constant  line 273  string `'aeiou'` -> `'XX...XX'`
+m00746.0-arithmetic  line 274  operator `+` -> `-`
+m00756.0-constant  line 274  string `'ies'` -> `'XX...XX'`
+m00769.0-constant  line 275  string `'s'` -> `'XX...XX'`
+m00775.0-constant  line 275  string `'ch'` -> `'XX...XX'`
+m00791.0-constant  line 276  string `'es'` -> `'XX...XX'`
+m00798.0-constant  line 276  string `'es'` -> `'XX...XX'`
+m00827.0-return  line 284  return value replaced with `None`
+m00856.0-return  line 288  return value replaced with `None`
+m00863.0-comparison  line 289  comparison `==` -> `!=`
+m00878.0-return  line 291  return value replaced with `None`
+m00886.0-constant  line 295  string `'alga'` -> `'XX...XX'`
+m00990.0-constant  line 295  string `'addenda'` -> `'XX...XX'`
+m00992.0-constant  line 295  string `'alumnae'` -> `'XX...XX'`
+m00888.0-constant  line 296  string `'alumnus'` -> `'XX...XX'`
+m00889.0-constant  line 296  string `'analysis'` -> `'XX...XX'`
+m00994.0-constant  line 296  string `'analyses'` -> `'XX...XX'`
+m00891.0-constant  line 297  string `'appendix'` -> `'XX...XX'`
+m00893.0-constant  line 297  string `'bacillus'` -> `'XX...XX'`
+m00996.0-constant  line 297  string `'appendices'` -> `'XX...XX'`
+m00997.0-constant  line 297  string `'axes'` -> `'XX...XX'`
+m00895.0-constant  line 298  string `'basis'` -> `'XX...XX'`
+m00896.0-constant  line 298  string `'beau'` -> `'XX...XX'`
+m00999.0-constant  line 298  string `'bacteria'` -> `'XX...XX'`
+m01001.0-constant  line 298  string `'beaux'` -> `'XX...XX'`
+m00898.0-constant  line 299  string `'bureau'` -> `'XX...XX'`
+m01003.0-constant  line 299  string `'bureaus'` -> `'XX...XX'`
+m01004.0-constant  line 299  string `'cacti'` -> `'XX...XX'`
+m00900.0-constant  line 300  string `'calf'` -> `'XX...XX'`
+m00902.0-constant  line 300  string `'corps'` -> `'XX...XX'`
+m01006.0-constant  line 300  string `'children'` -> `'XX...XX'`
+m00903.0-constant  line 301  string `'corpus'` -> `'XX...XX'`
+m00905.0-constant  line 301  string `'criterion'` -> `'XX...XX'`
+m01008.0-constant  line 301  string `'corpora'` -> `'XX...XX'`
+m01010.0-constant  line 301  string `'criteria'` -> `'XX...XX'`
+m00907.0-constant  line 302  string `'datum'` -> `'XX...XX'`
+m01011.0-constant  line 302  string `'curricula'` -> `'XX...XX'`
+m01013.0-constant  line 302  string `'deer'` -> `'XX...XX'`
+m00909.0-constant  line 303  string `'diagnosis'` -> `'XX...XX'`
+m00910.0-constant  line 303  string `'die'` -> `'XX...XX'`
+m01015.0-constant  line 303  string `'dice'` -> `'XX...XX'`
+m00912.0-constant  line 304  string `'echo'` -> `'XX...XX'`
+m00914.0-constant  line 304  string `'ellipsis'` -> `'XX...XX'`
+m01017.0-constant  line 304  string `'echoes'` -> `'XX...XX'`
+m01018.0-constant  line 304  string `'elves'` -> `'XX...XX'`
+m00915.0-constant  line 305  string `'embargo'` -> `'XX...XX'`
+m00917.0-constant  line 305  string `'erratum'` -> `'XX...XX'`
+m01020.0-constant  line 305  string `'embargoes'` -> `'XX...XX'`
+m01022.0-constant  line 305  string `'errata'` -> `'XX...XX'`
+m00919.0-constant  line 306  string `'fish'` -> `'XX...XX'`
+m01024.0-constant  line 306  string `'fish'` -> `'XX...XX'`
+m01025.0-constant  line 306  string `'foci'` -> `'XX...XX'`
+m00921.0-constant  line 307  string `'foot'` -> `'XX...XX'`
+m00922.0-constant  line 307  string `'formula'` -> `'XX...XX'`
+m01027.0-constant  line 307  string `'formulae'` -> `'XX...XX'`
+m00924.0-constant  line 308  string `'fungus'` -> `'XX...XX'`
+m00926.0-constant  line 308  string `'goose'` -> `'XX...XX'`
+m01029.0-constant  line 308  string `'fungi'` -> `'XX...XX'`
+m01030.0-constant  line 308  string `'genera'` -> `'XX...XX'`
+m00928.0-constant  line 309  string `'hero'` -> `'XX...XX'`
+m00929.0-constant  line 309  string `'hippopotamus'` -> `'XX...XX'`
+m01032.0-constant  line 309  string `'halves'` -> `'XX...XX'`
+m01034.0-constant  line 309  string `'hippopotami'` -> `'XX...XX'`
+m00931.0-constant  line 310  string `'hypothesis'` -> `'XX...XX'`
+m01036.0-constant  line 310  string `'hypotheses'` -> `'XX...XX'`
+m01037.0-constant  line 310  string `'indices'` -> `'XX...XX'`
+m00933.0-constant  line 311  string `'knife'` -> `'XX...XX'`
+m00935.0-constant  line 311  string `'life'` -> `'XX...XX'`
+m01039.0-constant  line 311  string `'leaves'` -> `'XX...XX'`
+m00936.0-constant  line 312  string `'loaf'` -> `'XX...XX'`
+m00938.0-constant  line 312  string `'man'` -> `'XX...XX'`
+m01041.0-constant  line 312  string `'loaves'` -> `'XX...XX'`
+m01043.0-constant  line 312  string `'men'` -> `'XX...XX'`
+m00940.0-constant  line 313  string `'means'` -> `'XX...XX'`
+m01044.0-constant  line 313  string `'matrices'` -> `'XX...XX'`
+m01046.0-constant  line 313  string `'media'` -> `'XX...XX'`
+m00942.0-constant  line 314  string `'memorandum'` -> `'XX...XX'`
+m00943.0-constant  line 314  string `'millennium'` -> `'XX...XX'`
+m01048.0-constant  line 314  string `'milennia'` -> `'XX...XX'`
+m00945.0-constant  line 315  string `'mosquito'` -> `'XX...XX'`
+m00947.0-constant  line 315  string `'nebula'` -> `'XX...XX'`
+m01050.0-constant  line 315  string `'mosquitoes'` -> `'XX...XX'`
+m01051.0-constant  line 315  string `'mice'` -> `'XX...XX'`
+m00949.0-constant  line 316  string `'nucleus'` -> `'XX...XX'`
+m00950.0-constant  line 316  string `'oasis'` -> `'XX...XX'`
+m01053.0-constant  line 316  string `'neuroses'` -> `'XX...XX'`
+m01055.0-constant  line 316  string `'oases'` -> `'XX...XX'`
+m00952.0-constant  line 317  string `'offspring'` -> `'XX...XX'`
+m01057.0-constant  line 317  string `'offspring'` -> `'XX...XX'`
+m01058.0-constant  line 317  string `'ova'` -> `'XX...XX'`
+m00954.0-constant  line 318  string `'ox'` -> `'XX...XX'`
+m00956.0-constant  line 318  string `'parenthesis'` -> `'XX...XX'`
+m01060.0-constant  line 318  string `'paralyses'` -> `'XX...XX'`
+m00957.0-constant  line 319  string `'person'` -> `'XX...XX'`
+m00959.0-constant  line 319  string `'potato'` -> `'XX...XX'`
+m01062.0-constant  line 319  string `'people'` -> `'XX...XX'`
+m01064.0-constant  line 319  string `'potatoes'` -> `'XX...XX'`
+m00961.0-constant  line 320  string `'scarf'` -> `'XX...XX'`
+m01065.0-constant  line 320  string `'radii'` -> `'XX...XX'`
+m01067.0-constant  line 320  string `'scissors'` -> `'XX...XX'`
+m00963.0-constant  line 321  string `'self'` -> `'XX...XX'`
+m00964.0-constant  line 321  string `'sense'` -> `'XX...XX'`
+m00966.0-constant  line 321  string `'sheep'` -> `'XX...XX'`
+m01069.0-constant  line 321  string `'senses'` -> `'XX...XX'`
+m00968.0-constant  line 322  string `'species'` -> `'XX...XX'`
+m01071.0-constant  line 322  string `'sheep'` -> `'XX...XX'`
+m01072.0-constant  line 322  string `'shelves'` -> `'XX...XX'`
+m00970.0-constant  line 323  string `'stratum'` -> `'XX...XX'`
+m00971.0-constant  line 323  string `'syllabus'` -> `'XX...XX'`
+m01074.0-constant  line 323  string `'stimuli'` -> `'XX...XX'`
+m01076.0-constant  line 323  string `'syllabi'` -> `'XX...XX'`
+m00973.0-constant  line 324  string `'synopsis'` -> `'XX...XX'`
+m01078.0-constant  line 324  string `'synopses'` -> `'XX...XX'`
+m01079.0-constant  line 324  string `'syntheses'` -> `'XX...XX'`
+m00975.0-constant  line 325  string `'tableau'` -> `'XX...XX'`
+m00976.0-constant  line 325  string `'that'` -> `'XX...XX'`
+m01081.0-constant  line 325  string `'those'` -> `'XX...XX'`
+m00978.0-constant  line 326  string `'thief'` -> `'XX...XX'`
+m00980.0-constant  line 326  string `'tomato'` -> `'XX...XX'`
+m01083.0-constant  line 326  string `'thieves'` -> `'XX...XX'`
+m01085.0-constant  line 326  string `'tomatoes'` -> `'XX...XX'`
+m00982.0-constant  line 327  string `'torpedo'` -> `'XX...XX'`
+m00983.0-constant  line 327  string `'vertebra'` -> `'XX...XX'`
+m01086.0-constant  line 327  string `'teeth'` -> `'XX...XX'`
+m01088.0-constant  line 327  string `'vertebrae'` -> `'XX...XX'`
+m00985.0-constant  line 328  string `'vita'` -> `'XX...XX'`
+m00987.0-constant  line 328  string `'wife'` -> `'XX...XX'`
+m01090.0-constant  line 328  string `'vitae'` -> `'XX...XX'`
+m01091.0-constant  line 328  string `'watches'` -> `'XX...XX'`
+m00989.0-constant  line 329  string `'woman'` -> `'XX...XX'`
+m01093.0-constant  line 329  string `'wolves'` -> `'XX...XX'`
+m01128.0-constant  line 335  string `'(?:^|\\s)[＃#]{1}(\\w+)'` -> `'XX...XX'`
+m01201.0-constant  line 375  string `'\n    \\x1B           ...'` -> `'XX...XX'`
+m01267.0-constant  line 422  string `''` -> `'XX...XX'`
+m01292.0-constant  line 426  string `'utf-8'` -> `'XX...XX'`
+m01300.0-constant  line 431  `False` -> `True`
+m01323.0-constant  line 453  string `'utf-8'` -> `'XX...XX'`
+m01330.0-constant  line 454  string `'ascii'` -> `'XX...XX'`
+m01344.0-constant  line 458  string `'ignore'` -> `'XX...XX'`
+m01369.0-constant  line 460  string `'ascii'` -> `'XX...XX'`
+m01372.0-return  line 461  return value replaced with `None`
+m01399.0-return  line 480  return value replaced with `None`
+m01416.0-constant  line 483  string `'ascii'` -> `'XX...XX'`
+m01421.0-constant  line 485  `False` -> `True`
+m01456.0-comparison  line 495  comparison `is not` -> `is`
+m01492.0-constant  line 499  string `' '` -> `'XX...XX'`
+m01494.0-comparison  line 500  comparison `==` -> `!=`
+m01502.0-constant  line 500  `776` -> `777`
+m01550.0-return  line 507  return value replaced with `None`
+m01580.0-return  line 518  return value replaced with `None`
+m01595.0-constant  line 528  `198` -> `199`
+m01642.0-constant  line 528  string `'AE'` -> `'XX...XX'`
+m01597.0-constant  line 530  `216` -> `217`
+m01644.0-constant  line 530  string `'OE'` -> `'XX...XX'`
+m01599.0-constant  line 532  `196` -> `197`
+m01646.0-constant  line 532  string `'Ae'` -> `'XX...XX'`
+m01600.0-constant  line 533  `214` -> `215`
+m01648.0-constant  line 534  string `'Ue'` -> `'XX...XX'`
+m01602.0-constant  line 535  `192` -> `193`
+m01649.0-constant  line 535  string `'A'` -> `'XX...XX'`
+m01604.0-constant  line 537  `195` -> `196`
+m01651.0-constant  line 537  string `'A'` -> `'XX...XX'`
+m01606.0-constant  line 539  `200` -> `201`
+m01653.0-constant  line 539  string `'E'` -> `'XX...XX'`
+m01607.0-constant  line 540  `201` -> `202`
+m01654.0-constant  line 540  string `'E'` -> `'XX...XX'`
+m01609.0-constant  line 542  `204` -> `205`
+m01656.0-constant  line 542  string `'I'` -> `'XX...XX'`
+m01611.0-constant  line 544  `210` -> `211`
+m01658.0-constant  line 544  string `'O'` -> `'XX...XX'`
+m01613.0-constant  line 546  `213` -> `214`
+m01660.0-constant  line 546  string `'O'` -> `'XX...XX'`
+m01614.0-constant  line 547  `217` -> `218`
+m01661.0-constant  line 547  string `'U'` -> `'XX...XX'`
+m01616.0-constant  line 549  `223` -> `224`
+m01663.0-constant  line 549  string `'ss'` -> `'XX...XX'`
+m01618.0-constant  line 551  `240` -> `241`
+m01665.0-constant  line 551  string `'d'` -> `'XX...XX'`
+m01620.0-constant  line 553  `254` -> `255`
+m01667.0-constant  line 553  string `'th'` -> `'XX...XX'`
+m01621.0-constant  line 554  `228` -> `229`
+m01668.0-constant  line 554  string `'ae'` -> `'XX...XX'`
+m01623.0-constant  line 556  `252` -> `253`
+m01670.0-constant  line 556  string `'ue'` -> `'XX...XX'`
+m01625.0-constant  line 558  `225` -> `226`
+m01672.0-constant  line 558  string `'a'` -> `'XX...XX'`
+m01627.0-constant  line 560  `231` -> `232`
+m01674.0-constant  line 560  string `'c'` -> `'XX...XX'`
+m01628.0-constant  line 561  `232` -> `233`
+m01675.0-constant  line 561  string `'e'` -> `'XX...XX'`
+m01630.0-constant  line 563  `234` -> `235`
+m01677.0-constant  line 563  string `'e'` -> `'XX...XX'`
+m01632.0-constant  line 565  `237` -> `238`
+m01679.0-constant  line 565  string `'i'` -> `'XX...XX'`
+m01634.0-constant  line 567  `243` -> `244`
+m01681.0-constant  line 567  string `'o'` -> `'XX...XX'`
+m01635.0-constant  line 568  `245` -> `246`
+m01682.0-constant  line 568  string `'o'` -> `'XX...XX'`
+m01637.0-constant  line 570  `250` -> `251`
+m01684.0-constant  line 570  string `'u'` -> `'XX...XX'`
+m01639.0-constant  line 572  `8217` -> `8218`
+m01686.0-constant  line 572  string `"'"` -> `'XX...XX'`
+m01641.0-constant  line 574  `8221` -> `8222`
+m01688.0-constant  line 574  string `'"'` -> `'XX...XX'`
+m01703.0-constant  line 581  string `'M'` -> `'XX...XX'`
+m01705.0-constant  line 581  string `'T'` -> `'XX...XX'`
+m01707.0-constant  line 581  string `'E'` -> `'XX...XX'`
+m01708.0-constant  line 581  string `'Z'` -> `'XX...XX'`
+m01751.0-constant  line 583  `1` -> `2`
+m01786.0-comparison  line 600  comparison `<=` -> `<`
+m01836.0-constant  line 611  `False` -> `True`
+m01869.0-boolean  line 619  `or` -> `and`
+m01871.0-comparison  line 619  comparison `==` -> `!=`
+m01878.0-constant  line 619  string `'x'` -> `'XX...XX'`
+m01883.0-constant  line 619  `0` -> `1`
+m01886.0-constant  line 619  string `'X'` -> `'XX...XX'`
+m01899.0-constant  line 620  `16` -> `17`
+m01949.0-arithmetic  line 629  operator `+` -> `-`
+m01955.0-constant  line 629  string `';'` -> `'XX...XX'`
+m02027.0-arithmetic  line 667  operator `+` -> `-`
+m02038.0-constant  line 670  `6` -> `7`
+m02089.0-constant  line 693  string `'(\\r\\n|\\n|\\x0b|\\f|\\r|...'` -> `'XX...XX'`
+m02137.0-constant  line 716  `1` -> `2`
+m02146.0-comparison  line 718  comparison `<=` -> `<`
+m02164.0-comparison  line 720  comparison `==` -> `!=`
+m02202.0-constant  line 729  string `'\n'` -> `'XX...XX'`
+m02283.0-boolean  line 764  `and` -> `or`
+m02298.0-return  line 765  return value replaced with `None`
+m02300.0-return  line 766  return value replaced with `None`
+m02301.0-constant  line 766  `True` -> `False`
+m02326.0-constant  line 785  string `'win32'` -> `'XX...XX'`
+m02349.0-constant  line 789  string `'cmd'` -> `'XX...XX'`
+m02363.0-arithmetic  line 792  operator `%` -> `*`
+m02364.0-constant  line 792  string `'style expected one o...'` -> `'XX...XX'`
+m02383.0-constant  line 798  string `' '` -> `'XX...XX'`
+m02407.0-constant  line 820  string `"''"` -> `'XX...XX'`
+m02408.0-control  line 821  `continue` -> `break`
+m02442.0-constant  line 827  string `"'"` -> `'XX...XX'`
+m02443.0-constant  line 827  string `'\'"\'"\''` -> `'XX...XX'`
+m02457.0-constant  line 832  string `' '` -> `'XX...XX'`
+m02470.0-constant  line 872  `False` -> `True`
+m02530.0-constant  line 885  string `'\\'` -> `'XX...XX'`
+m02544.0-constant  line 888  string `'"'` -> `'XX...XX'`
+m02552.0-arithmetic  line 890  operator `*` -> `/`
+m02553.0-constant  line 890  string `'\\'` -> `'XX...XX'`
+m02573.0-constant  line 892  string `'\\"'` -> `'XX...XX'`
+m02639.0-constant  line 911  string `','` -> `'XX...XX'`
+m02640.0-constant  line 911  string `'-'` -> `'XX...XX'`
+m02686.0-arithmetic  line 935  augmented assign `+=` -> `-=`
+m02708.0-constant  line 935  `1` -> `2`
+m02714.0-control  line 939  `continue` -> `break`
+m02765.0-comparison  line 973  comparison `<` -> `<=`
+m02782.0-comparison  line 977  comparison `>` -> `>=`
+m02823.0-constant  line 985  `1` -> `2`
+m02829.0-constant  line 986  string `'{0:d}{1}{2:d}'` -> `'XX...XX'`
+m02879.0-comparison  line 1002  comparison `==` -> `!=`
+m02883.0-constant  line 1002  `1` -> `2`
+m02897.0-constant  line 1006  `1` -> `2`
+m02921.0-control  line 1012  `continue` -> `break`
+m02930.0-constant  line 1018  `1` -> `2`
+m02939.0-constant  line 1019  string `'{0:d}'` -> `'XX...XX'`
+m02960.0-constant  line 1023  `1` -> `2`
+m03002.0-arithmetic  line 1031  operator `+` -> `-`
+m03030.0-constant  line 1039  `0` -> `1`
+m03033.0-constant  line 1040  string `'-'` -> `'XX...XX'`
+m03063.0-arithmetic  line 1118  operator `+` -> `-`
+m03116.0-constant  line 1126  string `','` -> `'XX...XX'`
+m03151.0-constant  line 1152  string `','` -> `'XX...XX'`
+m03154.0-constant  line 1153  string `'-'` -> `'XX...XX'`
+m03170.0-constant  line 1154  string `'-'` -> `'XX...XX'`
+m03226.0-constant  line 1221  `False` -> `True`
+m03280.0-constant  line 1232  string `'group{0}'` -> `'XX...XX'`
+m03322.0-constant  line 1238  `0` -> `1`
+m03342.0-constant  line 1242  string `'(?P<{}>{})'` -> `'XX...XX'`
+m03418.0-return  line 1254  return value replaced with `None`
+m03477.0-constant  line 1283  string `'\n\n'` -> `'XX...XX'`
+m03545.0-constant  line 1308  string `' '` -> `'XX...XX'`
+m03555.0-return  line 1310  return value replaced with `None`

@@ -1,0 +1,17 @@
+m00025.0-constant  line 80  string `'DeferredValue'` -> `'XX...XX'`
+m00026.0-constant  line 80  string `'get_format_args'` -> `'XX...XX'`
+m00027.0-constant  line 80  string `'tokenize_format_str'` -> `'XX...XX'`
+m00028.0-constant  line 81  string `'construct_format_fie...'` -> `'XX...XX'`
+m00029.0-constant  line 81  string `'infer_positional_for...'` -> `'XX...XX'`
+m00030.0-constant  line 82  string `'BaseFormatField'` -> `'XX...XX'`
+m00142.0-control  line 117  `continue` -> `break`
+m00196.0-constant  line 133  `0` -> `1`
+m00197.0-constant  line 133  `0` -> `1`
+m00237.0-comparison  line 136  comparison `<` -> `<=`
+m00320.0-constant  line 149  string `'bcdoxXn'` -> `'XX...XX'`
+m00324.0-constant  line 150  string `'eEfFgGn%'` -> `'XX...XX'`
+m00398.0-constant  line 175  string `'s'` -> `'XX...XX'`
+m00517.0-constant  line 189  string `'encountered compound...'` -> `'XX...XX'`
+m00544.0-constant  line 194  string `'encountered anonymou...'` -> `'XX...XX'`
+m00654.0-control  line 218  `continue` -> `break`
+m01180.0-constant  line 355  `1` -> `2`

@@ -1,0 +1,68 @@
+m00037.0-comparison  line 20  comparison `<` -> `<=`
+m00053.0-constant  line 20  `2` -> `3`
+m00057.0-constant  line 20  `3` -> `4`
+m00058.0-constant  line 20  `7` -> `8`
+m00095.0-constant  line 34  string `'Martin Blech'` -> `'XX...XX'`
+m00099.0-constant  line 35  string `'0.13.0'` -> `'XX...XX'`
+m00103.0-constant  line 36  string `'MIT'` -> `'XX...XX'`
+m00132.0-constant  line 46  `True` -> `False`
+m00137.0-constant  line 51  string `''` -> `'XX...XX'`
+m00142.0-constant  line 55  string `':'` -> `'XX...XX'`
+m00368.0-return  line 91  return value replaced with `None`
+m00397.0-return  line 97  return value replaced with `None`
+m00414.0-constant  line 98  `2` -> `3`
+m00421.0-constant  line 98  `2` -> `3`
+m00434.0-boolean  line 101  `or` -> `and`
+m00438.0-constant  line 101  string `''` -> `'XX...XX'`
+m00480.0-constant  line 107  string `'xmlns'` -> `'XX...XX'`
+m00507.0-boolean  line 109  `or` -> `and`
+m00514.0-comparison  line 110  comparison `>` -> `>=`
+m00822.0-comparison  line 146  comparison `is` -> `is not`
+m00920.0-negation  line 160  removed `not`
+m01018.0-return  line 174  return value replaced with `None`
+m01131.0-return  line 193  return value replaced with `None`
+m01143.0-return  line 195  return value replaced with `None`
+m01175.0-constant  line 199  `1` -> `2`
+m01194.0-constant  line 202  `False` -> `True`
+m01196.0-constant  line 203  `True` -> `False`
+m01197.0-constant  line 203  `False` -> `True`
+m01240.0-negation  line 342  removed `not`
+m01266.0-constant  line 349  `True` -> `False`
+m01324.0-constant  line 359  `True` -> `False`
+m01332.0-constant  line 363  string `'http://apache.org/xm...'` -> `'XX...XX'`
+m01343.0-constant  line 364  `True` -> `False`
+m01364.0-constant  line 370  `1` -> `2`
+m01371.0-constant  line 371  string `'read'` -> `'XX...XX'`
+m01407.0-constant  line 376  `True` -> `False`
+m01416.0-constant  line 378  `True` -> `False`
+m01428.0-constant  line 382  string `':'` -> `'XX...XX'`
+m01429.0-constant  line 382  string `'@'` -> `'XX...XX'`
+m01453.0-constant  line 386  `1` -> `2`
+m01523.0-constant  line 400  `0` -> `1`
+m01525.0-constant  line 402  `False` -> `True`
+m01526.0-constant  line 403  string `'\n'` -> `'XX...XX'`
+m01527.0-constant  line 404  string `'\t'` -> `'XX...XX'`
+m01528.0-constant  line 405  string `':'` -> `'XX...XX'`
+m01530.0-constant  line 407  `True` -> `False`
+m01636.0-constant  line 420  `0` -> `1`
+m01641.0-constant  line 421  string `'document with multip...'` -> `'XX...XX'`
+m01699.0-constant  line 430  string `'__iter__'` -> `'XX...XX'`
+m01700.0-negation  line 430  removed `not`
+m01792.0-control  line 442  `continue` -> `break`
+m01816.0-boolean  line 446  `and` -> `or`
+m01818.0-comparison  line 446  comparison `==` -> `!=`
+m01822.0-constant  line 446  string `'@xmlns'` -> `'XX...XX'`
+m01847.0-constant  line 448  string `'xmlns{}'` -> `'XX...XX'`
+m01854.0-constant  line 448  string `':{}'` -> `'XX...XX'`
+m01858.0-constant  line 448  string `''` -> `'XX...XX'`
+m01871.0-control  line 450  `continue` -> `break`
+m01873.0-negation  line 451  removed `not`
+m01949.0-boolean  line 459  `and` -> `or`
+m01986.0-arithmetic  line 463  operator `+` -> `-`
+m01990.0-constant  line 463  `1` -> `2`
+m02023.0-boolean  line 469  `and` -> `or`
+m02050.0-boolean  line 472  `and` -> `or`
+m02073.0-constant  line 476  string `'utf-8'` -> `'XX...XX'`
+m02075.0-constant  line 477  `False` -> `True`
+m02095.0-constant  line 494  string `'Document must have e...'` -> `'XX...XX'`
+m02099.0-constant  line 495  `False` -> `True`

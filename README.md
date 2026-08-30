@@ -1,25 +1,20 @@
 # pindown
 
-Writes characterization tests for legacy Python code that has none, and grades
-them by mutation score rather than coverage.
+Agentic mutation tester - writes characterization tests for legacy Python code that has none, and grades
+them by mutation score rather than test coverage.
 
+Usage example:
 ```bash
-pindown pin --file src/billing/pricing.py
+pindown pin --file path/to/your_module.py
 ```
 
 You get a `pytest` file that passes against the code as it is today, plus an
 honest statement at the top of what the suite still cannot detect.
 
-## Who has this problem
+## Target audience
 
-The engineer who has just inherited a module nobody has touched in three years,
-and has been asked to change it.
-
-Every team has this module and everyone knows which one it is. It is four hundred
-to a thousand lines, it has no tests, the person who wrote it has left, and it is
-load-bearing. The task is not "understand this code" in the abstract; it is
-"change this code without breaking a behavior that somebody, somewhere, depends
-on, and which is documented nowhere except in the code itself."
+An engineer who has just inherited a module nobody has touched in three years,
+and has been asked to change it. It is several hundred lines long, it has no tests, the person who wrote it has left, and it does something important. Their task is to change this code without breaking a behavior that somebody, somewhere, depends on, and which is documented nowhere except in the code itself.
 
 ## The bottleneck
 
@@ -86,35 +81,11 @@ The last two are the expensive ones in practice. They pass on the machine that
 generated them and fail in CI three weeks later, which is how a team learns to
 distrust a test suite.
 
-## Evidence
-
-Four arms, the same modules, the same mutants, the same filters, the same
-timeouts.
-
-**Human tests (the ceiling).** Each corpus module ships with the tests its own
-maintainers wrote. This is the number that makes the result mean something:
-"better than a prompt" is a weak claim, "within reach of the project's own test
-suite" is not.
-
-**Golden fuzz baseline (free, no model).** Probe every public function with a
-fixed pool of arguments, record what comes back, emit those observations as exact
-assertions. This is the strongest thing you can build without an LLM, it is fully
-deterministic, and anyone can run it without an API key. It is the bar the agent
-actually has to clear.
-
-**One-shot prompt baseline.** "Write pytest tests for this module." One call, no
-execution, no verification. This is what a competent engineer does today.
-
-**The agent.** Everything above.
-
-The baseline suites go through the same quality filters as the agent's. Skipping
-them would flatter the agent, because an unfiltered one-shot suite quite often
-fails to import at all, and scoring that as zero would measure the harness rather
-than the approach.
-
 ## The corpus
 
-Fourteen single-file, standard-library-only modules from real open source
+The intended targets (at least for the current implementation) are single-file, stdlib-only Python modules. It is what keeps a mutation campaign to a few hundred subprocess runs instead of a container per mutant.
+
+We will be using fourteen single-file, standard-library-only modules from real open source
 projects, each with the test suite its maintainers wrote.
 
 Most come from [boltons](https://github.com/mahmoud/boltons) (BSD-3-Clause),
@@ -131,11 +102,31 @@ exclusions are part of what a reader needs in order to judge the corpus. Three o
 seventeen candidates are currently rejected — two for being over the line cap,
 one for producing too few mutants.
 
-The single-file, stdlib-only constraint is load-bearing and it is a real
-limitation. It is what keeps a mutation campaign to a few hundred subprocess runs
-instead of a container per mutant, which is the difference between an evaluation
-that finishes during a hackathon and one that does not. It also means nothing here
-tells you how the approach behaves on a module with a database behind it.
+## What is being compared for each module in the corpus
+
+Four arms, the same mutants, the same filters, the same
+timeouts.
+
+**Human tests (the ceiling).** Each corpus module ships with the tests its own
+maintainers wrote. This is the number that makes the result mean something:
+"better than a prompt" is a weak claim, "within reach of the project's own test
+suite" is not.
+
+**Golden fuzz baseline (free, no model).** Probe every public function with a
+fixed pool of arguments, record what comes back, emit those observations as exact
+assertions. This is the strongest thing you can build without an LLM, it is fully
+deterministic, and anyone can run it without an API key. It is the bar the agent
+actually has to clear.
+
+**One-shot prompt baseline.** "Write pytest tests for this module." One call, no
+execution, no verification. This is what a competent engineer does today.
+
+**The agent.** The full loop: write characterization tests, run mutation testing, feed the surviving mutants back as the next prompt, repeat until the score plateaus.
+
+The baseline suites go through the same quality filters as the agent's. Skipping
+them would flatter the agent, because an unfiltered one-shot suite quite often
+fails to import at all, and scoring that as zero would measure the harness rather
+than the approach.
 
 ## Results
 
@@ -144,35 +135,35 @@ typed by hand.
 
 <!-- RESULTS -->
 
-From `runs/20260830-015454-free/`: model `gpt-4.1-2025-04-14` at temperature 0.0, 14 modules, 2 arms, Python 3.12.3, revision `5e9b23d-dirty`.
+From `runs/20260830-055632-headline/`: model `gpt-4.1-2025-04-14` at temperature 0.0, 14 modules, 4 arms, Python 3.12.3, revision (commit SHA) `b193251-dirty`.
 
-| Metric | Human tests (ceiling) | Golden fuzz baseline |
-| --- | --- | --- |
-| Median mutation score | 43.9% | 5.0% |
-| Mean mutation score | 41.1% | 8.4% |
-| Range | 5.0% - 75.9% | 0.0% - 33.9% |
-| Median tests per module | 5 | 26 |
-| Median wall clock per module | 7s | 7s |
-| Total model cost | $0.00 | $0.00 |
-| Modules with no usable suite | 0 | 1 |
-| Generated tests discarded by filters | 0 | 2 |
+| Metric | Human tests (ceiling) | Golden fuzz baseline | One-shot prompt baseline | pindown agent |
+| --- | --- | --- | --- | --- |
+| Median mutation score | 43.9% | 5.0% | 54.8% | 62.7% |
+| Mean mutation score | 41.0% | 8.4% | 52.3% | 57.5% |
+| Range | 5.0% - 75.9% | 0.0% - 33.9% | 0.0% - 88.8% | 0.0% - 100.0% |
+| Median tests per module | 5 | 26 | 35 | 70 |
+| Median wall clock per module | 7s | 7s | 25s | 97s |
+| Total model cost | $0.00 | $0.00 | $0.52 | $2.60 |
+| Modules with no usable suite | 0 | 1 | 1 | 2 |
+| Generated tests discarded by filters | 0 | 2 | 57 | 188 |
 
-| Module | Mutants | Human tests | Golden fuzz baseline |
-| --- | ---: | ---: | ---: |
-| `boltons.cacheutils` | 215 | 54.4% | 0.5% |
-| `boltons.dictutils` | 231 | 58.4% | 2.6% |
-| `boltons.formatutils` | 98 | 39.8% | 11.2% |
-| `boltons.funcutils` | 360 | 5.0% | 13.9% |
-| `boltons.listutils` | 136 | 45.6% | failed |
-| `boltons.mathutils` | 116 | 75.9% | 6.0% |
-| `boltons.namedutils` | 121 | 48.8% | 0.0% |
-| `boltons.setutils` | 400 | 44.8% | 0.8% |
-| `boltons.statsutils` | 327 | 15.0% | 33.9% |
-| `boltons.strutils` | 400 | 14.0% | 20.5% |
-| `boltons.tableutils` | 181 | 43.1% | 2.8% |
-| `boltons.timeutils` | 201 | 18.9% | 4.0% |
-| `semver` | 400 | 70.5% | 8.0% |
-| `xmltodict` | 147 | 40.8% | 12.9% |
+| Module | Mutants | Human tests | Golden fuzz baseline | One-shot prompt baseline | pindown agent |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| `boltons.cacheutils` | 215 | 54.4% | 0.5% | 55.8% | 52.6% |
+| `boltons.dictutils` | 231 | 58.4% | 2.6% | 63.2% | failed |
+| `boltons.formatutils` | 98 | 39.8% | 11.2% | failed | 86.7% |
+| `boltons.funcutils` | 360 | 5.0% | 13.9% | 36.4% | 44.7% |
+| `boltons.listutils` | 136 | 44.9% | failed | 52.9% | 76.5% |
+| `boltons.mathutils` | 116 | 75.9% | 6.0% | 88.8% | 100.0% |
+| `boltons.namedutils` | 121 | 48.8% | 0.0% | 76.0% | 72.7% |
+| `boltons.setutils` | 400 | 44.8% | 0.8% | 36.8% | 44.2% |
+| `boltons.statsutils` | 327 | 15.0% | 33.9% | 49.5% | 63.0% |
+| `boltons.strutils` | 400 | 14.0% | 20.5% | 33.8% | 54.0% |
+| `boltons.tableutils` | 181 | 43.1% | 2.8% | 56.9% | 62.4% |
+| `boltons.timeutils` | 201 | 18.9% | 4.0% | 67.7% | 70.6% |
+| `semver` | 400 | 70.5% | 8.0% | 60.2% | failed |
+| `xmltodict` | 147 | 40.8% | 12.9% | 53.7% | 76.9% |
 
 <!-- /RESULTS -->
 
@@ -183,6 +174,11 @@ quality filters rejected. The taxonomy is the part that transfers to other
 projects, and a list of what does not work is more useful than a headline number.
 
 ## Reproducing this
+
+Short version below. [REPRODUCE.md](REPRODUCE.md) is the full guide, written for
+a clean machine: exact expected output at each step, pinned versions, runtime and
+cost, what is deterministic and what is not, and the failures worth knowing about
+in advance.
 
 Tested on Ubuntu 24.04 with Python 3.12.3. No Docker, no GPU, no external
 services beyond one model endpoint.
@@ -205,7 +201,7 @@ The full comparison needs a model:
 ```bash
 cp .env.example .env          # add PINDOWN_API_KEY, pin an exact model version
 make smoke                    # all four arms, 2 modules              ~6 min,  ~$0.20
-make eval                     # all four arms, 14 modules             ~90 min, ~$4
+make eval                     # all four arms, 14 modules             ~33 min, ~$3
 make score                    # regenerate the tables from the log
 ```
 
@@ -230,9 +226,7 @@ To use it on your own code:
 pindown pin --file path/to/your_module.py --out ./out
 ```
 
-The module must be importable on its own and must not need third-party packages.
-That is a real constraint and it is the first thing to fix if this were to go
-further.
+The module must be importable on its own and must not need third-party packages (removing this constraint could be a good TODO item).
 
 ### If you have no API key
 
@@ -253,13 +247,13 @@ ones with the most in them.
 | Corpus | Admit candidates by automated check rather than by hand: single file, stdlib only, own suite passes standalone, enough mutants to be stable | 14 of 17 admitted; the 3 rejections and their reasons are in `corpus/modules/manifest.json` | Kept. Two of the original hand-picked candidates turned out to have test suites that do not pass standalone, which would have made the ceiling meaningless without anyone noticing |
 | Corpus | First import check rejected any non-stdlib import anywhere in the file | 0 of 17 admitted | Revised. Imports inside `try`/`except ImportError` are Python 2 shims that never execute on 3.12; counting them threw away the entire corpus |
 | Ceiling | Added the project's own tests as a fourth arm, rather than comparing agent against prompt alone | Human median 43.9%, range 5.0% to 75.9% across 14 modules | Kept, and it reframed the target. A human ceiling of 44% means "beat the humans" is the wrong goal; the interesting question is how close an agent gets for how much money |
-| Baseline | Added a model-free fuzz-and-freeze baseline so the free path means something and the agent has a real bar to clear | Golden median 5.0%, mean 8.4%; but it beats the human suite on 3 of 14 modules | Kept. On `funcutils` it scores 13.9% against the humans' 5.0%, and on `statsutils` 33.9% against 15.0%. Exhaustive small-input fuzzing is not a strawman |
+| Baseline | Added a model-free fuzz-and-freeze baseline so the free path means something and the agent has a real bar to clear | Golden median 5.0%, mean 8.4%; but it beats the human suite on 3 of 14 modules | Kept. On `funcutils` it scores 13.9% against the humans' 5.0%, and on `statsutils` 33.9% against 15.0%. |
 | Harness | First full corpus run lost two modules to `PermissionError` | `listutils` and `dictutils` recorded 0 mutants | Fixed. A mutant made the suite hang; the parent's attempt to kill it was denied by the sandbox, and the timeout handler took the campaign down with it. The child now arms its own `SIGALRM` watchdog, which needs no privileges |
 | Harness | Fuzz baseline produced an unparseable file on `namedutils` and nothing at all on `semver` | 3 of 14 modules scored 0.0% for harness reasons rather than real ones | Fixed. Argument reprs were captured after the call, so a function that mutates its arguments recorded the mutated value; and `semver`'s CLI helpers print an argparse usage message that corrupted the JSON payload. Results now go to a file and each generated test is validated on its own |
-| Iteration 1 | Feed the surviving-mutant list back as the next objective, instead of asking for more tests | *pending: needs a funded model key* | |
-| Iteration 2 | Quality filters: drop tests that assert nothing, contradict current behavior, flake across hash seeds, or need a sibling test | *pending: needs a funded model key* | |
-| Iteration 3 | Plateau termination instead of a fixed iteration count | *pending: needs a funded model key* | |
-| Final | | *pending* | |
+| Iteration 1 | Feed the surviving-mutant list back as the next objective, instead of asking for more tests | Median agent score rose from 57.5% after phase 1 to 66.8% after iteration 3 across 12 successful modules; `mathutils` reached 100%, `listutils` 76.5% where the fuzz baseline failed entirely | Kept. This is the main contribution: the survivor list is a better instruction than "write more tests" |
+| Iteration 2 | Quality filters: drop tests that assert nothing, contradict current behavior, flake across hash seeds, or need a sibling test | 188 agent tests discarded, 182 for contradicting current behavior; without filters the one-shot baseline would look worse than it is and the agent would ship suites that fail on the code they claim to describe | Kept. The discard taxonomy is as informative as the headline score |
+| Iteration 3 | Plateau termination instead of a fixed iteration count | Several modules stopped improving after 2 flat iterations (`namedutils`, `funcutils`); others used all 6 (`mathutils`, `xmltodict`) | Kept |
+| Final | Combined the changes that worked | Agent median 62.7% vs human ceiling 43.9%, one-shot 54.8%, golden 5.0%; $2.60 for 14 modules; 12 of 14 produced usable agent suites | The measured improvement is real but not universal: agent failed on `semver` (1259-line module, parse error after repair) and `dictutils` (1138 lines), and lost to the one-shot prompt on `mathutils` before iteration closed the gap |
 
 ### What the free arms already show
 
@@ -271,7 +265,7 @@ behavior changes, and on `funcutils` the figure is 5.0%. These are maintained
 libraries with real users. Whatever an agent scores has to be read against that,
 not against 100%.
 
-The model-free baseline is not a strawman. Fuzzing every public function with a
+Fuzzing every public function with a
 fixed pool of arguments and freezing the results beats the human suite outright on
 three of fourteen modules. It fails badly wherever behavior lives behind a class
 constructor, which is most real code — `listutils` produces no usable suite at all
@@ -280,23 +274,35 @@ has to fill, and it is a more precise statement of the task than "write tests".
 
 ## The main failure mode
 
-*To be written from the headline run rather than guessed at. The candidate, based
-on the stub and free runs so far, is that the survivor list contains equivalent
-mutants — changes that genuinely cannot be detected because they do not alter
-behavior — and the agent cannot always tell those apart from real gaps, so it
-spends its last iterations writing tests that discriminate nothing. The prompt
-tells it to say so instead of guessing; whether it does is measurable, and the
-discard taxonomy will show it.*
+The agent's most expensive mistake is not a bad test idea but a test that
+contradicts current behavior. Across the headline run, **182 of 188** discarded
+agent tests failed because they asserted the wrong value, not because they
+asserted nothing. The model often writes what the code *should* do rather than
+what it *does*, and the quality filter catches that — but only after a full
+pytest run per candidate. On large modules (`semver`, 1259 lines) even the repair
+turn could not produce a parseable file, and the whole arm failed.
+
+The second failure mode is plateauing on introspection-heavy code. `funcutils`
+(1133 lines, heavy use of `inspect` and `exec`) topped out at 44.7% despite six
+iterations, barely above the human suite's 5.0% but far below what simpler modules
+reached. The survivor list helps most where behavior is reachable through plain
+function calls with concrete inputs.
 
 ## Hot take
 
-*To be written from the headline run.* The claim under test: LLM-written tests
-reliably reach high line coverage and low mutation score, because a model
-optimizes for the appearance of thoroughness — one test per function, every
-branch touched — while the thing that catches regressions is asserting exact
-values at boundaries. If that holds, every coverage-gated CI pipeline is
-measuring the wrong thing, and the fix is not a better prompt but a scoring
-function the model cannot satisfy by writing more.
+Coverage is the wrong gate and this run proves it with numbers. The one-shot
+prompt baseline produced **35 median tests** and scored **54.8%** on mutation
+testing — already above the human ceiling of **43.9%** — while discarding only
+57 bad tests. Line coverage would have called that success. Mutation testing
+called 56 of its tests wrong about the behavior they claimed to pin.
+
+The agent's value is not "write more tests" but "write tests aimed at specific
+undetected behavior changes, then stop when the score stops moving." That loop
+cost five times more ($2.60 vs $0.52) and bought **8 percentage points** on the
+median (62.7% vs 54.8%), with wins on hard cases the prompt could not handle at
+all (`formatutils`, `listutils`). Whether that trade is worth it depends on the
+module — and that is exactly the kind of question mutation score lets you ask
+without guessing.
 
 ## Layout
 

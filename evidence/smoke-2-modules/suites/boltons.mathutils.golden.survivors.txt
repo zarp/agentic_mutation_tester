@@ -1,0 +1,109 @@
+m00028.0-comparison  line 69  comparison `<` -> `<=`
+m00038.0-arithmetic  line 70  operator `%` -> `*`
+m00039.0-constant  line 70  string `'expected upper bound...'` -> `'XX...XX'`
+m00100.0-comparison  line 95  comparison `==` -> `!=`
+m00113.0-arithmetic  line 96  operator `%` -> `*`
+m00114.0-constant  line 96  string `'no ceil options grea...'` -> `'XX...XX'`
+m00118.0-return  line 97  return value replaced with `None`
+m00165.0-negation  line 122  removed `not`
+m00173.0-arithmetic  line 123  operator `%` -> `*`
+m00174.0-constant  line 123  string `'no floor options les...'` -> `'XX...XX'`
+m00178.0-return  line 124  return value replaced with `None`
+m00182.0-arithmetic  line 124  operator `-` -> `+`
+m00186.0-constant  line 124  `1` -> `2`
+m00227.0-constant  line 150  string `'val'` -> `'XX...XX'`
+m00228.0-constant  line 150  string `'len'` -> `'XX...XX'`
+m00235.0-constant  line 152  `0` -> `1`
+m00238.0-comparison  line 153  comparison `not in` -> `in`
+m00248.0-comparison  line 154  comparison `is` -> `is not`
+m00262.0-constant  line 155  string `''` -> `'XX...XX'`
+m00268.0-constant  line 155  string `'1'` -> `'XX...XX'`
+m00269.0-constant  line 155  string `'0'` -> `'XX...XX'`
+m00276.0-comparison  line 156  comparison `is` -> `is not`
+m00293.0-constant  line 157  string `'ascii'` -> `'XX...XX'`
+m00295.0-comparison  line 158  comparison `is` -> `is not`
+m00305.0-comparison  line 159  comparison `is` -> `is not`
+m00324.0-constant  line 161  string `'0x'` -> `'XX...XX'`
+m00328.0-arithmetic  line 162  operator `*` -> `/`
+m00329.0-arithmetic  line 162  operator `-` -> `+`
+m00333.0-constant  line 162  `2` -> `3`
+m00335.0-constant  line 162  `4` -> `5`
+m00342.0-constant  line 163  string `'0x'` -> `'XX...XX'`
+m00351.0-constant  line 164  `16` -> `17`
+m00363.0-constant  line 167  `2` -> `3`
+m00367.0-constant  line 169  `0` -> `1`
+m00369.0-comparison  line 170  comparison `not in` -> `in`
+m00384.0-constant  line 171  string `'initialized with bad...'` -> `'XX...XX'`
+m00394.0-comparison  line 172  comparison `<` -> `<=`
+m00398.0-constant  line 172  `0` -> `1`
+m00403.0-constant  line 173  string `'Bits cannot represen...'` -> `'XX...XX'`
+m00405.0-comparison  line 174  comparison `is` -> `is not`
+m00418.0-constant  line 175  string `'{0:b}'` -> `'XX...XX'`
+m00423.0-comparison  line 176  comparison `>` -> `>=`
+m00427.0-arithmetic  line 176  operator `**` -> `*`
+m00428.0-constant  line 176  `2` -> `3`
+m00438.0-constant  line 177  string `'value {0} cannot be ...'` -> `'XX...XX'`
+m00463.0-comparison  line 182  comparison `is` -> `is not`
+m00472.0-return  line 183  return value replaced with `None`
+m00486.0-comparison  line 184  comparison `is` -> `is not`
+m00496.0-comparison  line 185  comparison `>=` -> `>`
+m00510.0-return  line 187  return value replaced with `None`
+m00514.0-arithmetic  line 187  operator `&` -> `|`
+m00515.0-arithmetic  line 187  operator `<<` -> `>>`
+m00516.0-constant  line 187  `1` -> `2`
+m00518.0-arithmetic  line 187  operator `-` -> `+`
+m00519.0-arithmetic  line 187  operator `-` -> `+`
+m00528.0-constant  line 187  `1` -> `2`
+m00546.0-return  line 191  return value replaced with `None`
+m00556.0-comparison  line 194  comparison `is not` -> `is`
+m00568.0-return  line 195  return value replaced with `None`
+m00571.0-return  line 196  return value replaced with `None`
+m00572.0-boolean  line 196  `and` -> `or`
+m00574.0-comparison  line 196  comparison `==` -> `!=`
+m00584.0-comparison  line 196  comparison `==` -> `!=`
+m00599.0-comparison  line 199  comparison `is not` -> `is`
+m00611.0-return  line 200  return value replaced with `None`
+m00614.0-return  line 201  return value replaced with `None`
+m00618.0-arithmetic  line 201  operator `|` -> `&`
+m00644.0-comparison  line 204  comparison `is not` -> `is`
+m00656.0-return  line 205  return value replaced with `None`
+m00659.0-return  line 206  return value replaced with `None`
+m00663.0-arithmetic  line 206  operator `&` -> `|`
+m00688.0-return  line 209  return value replaced with `None`
+m00692.0-arithmetic  line 209  operator `<<` -> `>>`
+m00700.0-arithmetic  line 209  operator `+` -> `-`
+m00712.0-return  line 212  return value replaced with `None`
+m00716.0-arithmetic  line 212  operator `>>` -> `<<`
+m00724.0-arithmetic  line 212  operator `-` -> `+`
+m00735.0-return  line 215  return value replaced with `None`
+m00746.0-return  line 218  return value replaced with `None`
+m00748.0-comparison  line 218  comparison `==` -> `!=`
+m00752.0-constant  line 218  string `'1'` -> `'XX...XX'`
+m00764.0-return  line 221  return value replaced with `None`
+m00769.0-constant  line 221  string `'{{0:0{0}b}}'` -> `'XX...XX'`
+m00788.0-constant  line 225  string `'%0{0}X'` -> `'XX...XX'`
+m00790.0-arithmetic  line 225  operator `*` -> `/`
+m00791.0-constant  line 225  `2` -> `3`
+m00793.0-arithmetic  line 225  operator `+` -> `-`
+m00794.0-arithmetic  line 225  operator `//` -> `/`
+m00800.0-constant  line 225  `8` -> `9`
+m00802.0-comparison  line 225  comparison `!=` -> `==`
+m00803.0-arithmetic  line 225  operator `%` -> `*`
+m00809.0-constant  line 225  `8` -> `9`
+m00811.0-constant  line 225  `0` -> `1`
+m00815.0-arithmetic  line 226  operator `%` -> `*`
+m00823.0-return  line 227  return value replaced with `None`
+m00829.0-return  line 230  return value replaced with `None`
+m00837.0-return  line 233  return value replaced with `None`
+m00852.0-return  line 237  return value replaced with `None`
+m00864.0-return  line 241  return value replaced with `None`
+m00892.0-constant  line 246  string `'ascii'` -> `'XX...XX'`
+m00894.0-negation  line 247  removed `not`
+m00901.0-constant  line 247  string `'0x'` -> `'XX...XX'`
+m00905.0-arithmetic  line 248  operator `+` -> `-`
+m00906.0-constant  line 248  string `'0x'` -> `'XX...XX'`
+m00910.0-return  line 249  return value replaced with `None`
+m00924.0-return  line 253  return value replaced with `None`
+m00938.0-return  line 257  return value replaced with `None`
+m00965.0-return  line 261  return value replaced with `None`
+m00968.0-constant  line 261  string `"{0}('{1}')"` -> `'XX...XX'`

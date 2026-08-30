@@ -1,0 +1,64 @@
+m00023.0-constant  line 51  string `'_MISSING'` -> `'XX...XX'`
+m00049.0-constant  line 62  string `'BList'` -> `'XX...XX'`
+m00050.0-constant  line 62  string `'BarrelList'` -> `'XX...XX'`
+m00060.0-constant  line 104  `1520` -> `1521`
+m00062.0-constant  line 105  string `'This size factor is ...'` -> `'XX...XX'`
+m00116.0-arithmetic  line 115  operator `*` -> `/`
+m00127.0-constant  line 115  `2` -> `3`
+m00128.0-constant  line 115  `2` -> `3`
+m00136.0-comparison  line 118  comparison `<` -> `<=`
+m00140.0-constant  line 118  `0` -> `1`
+m00189.0-comparison  line 123  comparison `<` -> `<=`
+m00195.0-control  line 124  `break` -> `continue`
+m00208.0-return  line 127  return value replaced with `None`
+m00230.0-arithmetic  line 132  augmented assign `+=` -> `-=`
+m00271.0-comparison  line 135  comparison `>` -> `>=`
+m00283.0-arithmetic  line 136  operator `//` -> `/`
+m00287.0-constant  line 136  `2` -> `3`
+m00289.0-comparison  line 137  comparison `>` -> `>=`
+m00301.0-arithmetic  line 138  operator `+` -> `-`
+m00305.0-constant  line 138  `1` -> `2`
+m00335.0-return  line 141  return value replaced with `None`
+m00336.0-constant  line 141  `True` -> `False`
+m00345.0-comparison  line 145  comparison `==` -> `!=`
+m00354.0-constant  line 145  `1` -> `2`
+m00392.0-comparison  line 150  comparison `is` -> `is not`
+m00478.0-comparison  line 164  comparison `==` -> `!=`
+m00485.0-constant  line 164  `1` -> `2`
+m00514.0-boolean  line 167  `or` -> `and`
+m00533.0-constant  line 167  `1` -> `2`
+m00548.0-boolean  line 169  `and` -> `or`
+m00550.0-comparison  line 169  comparison `>` -> `>=`
+m00557.0-constant  line 169  `1` -> `2`
+m00558.0-negation  line 169  removed `not`
+m00565.0-constant  line 169  `1` -> `2`
+m00643.0-constant  line 183  `0` -> `1`
+m00666.0-comparison  line 186  comparison `<` -> `<=`
+m00670.0-constant  line 186  `0` -> `1`
+m00690.0-arithmetic  line 188  operator `-` -> `+`
+m00696.0-constant  line 188  `1` -> `2`
+m00707.0-comparison  line 190  comparison `<` -> `<=`
+m00711.0-constant  line 190  `0` -> `1`
+m00722.0-comparison  line 193  comparison `<` -> `<=`
+m00726.0-constant  line 193  `0` -> `1`
+m00763.0-comparison  line 199  comparison `>` -> `>=`
+m00770.0-constant  line 199  `1` -> `2`
+m00782.0-constant  line 200  `0` -> `1`
+m00804.0-constant  line 202  `0` -> `1`
+m00816.0-constant  line 203  `0` -> `1`
+m00827.0-constant  line 206  `0` -> `1`
+m00914.0-comparison  line 218  comparison `<` -> `<=`
+m00927.0-arithmetic  line 219  operator `+` -> `-`
+m00931.0-constant  line 219  `1` -> `2`
+m00964.0-constant  line 223  `False` -> `True`
+m00965.0-constant  line 223  string `'start list index sho...'` -> `'XX...XX'`
+m01061.0-return  line 245  return value replaced with `None`
+m01302.0-comparison  line 280  comparison `==` -> `!=`
+m01311.0-constant  line 280  `1` -> `2`
+m01435.0-comparison  line 298  comparison `==` -> `!=`
+m01444.0-constant  line 298  `1` -> `2`
+m01589.0-constant  line 320  `0` -> `1`
+m01599.0-constant  line 321  `0` -> `1`
+m01683.0-arithmetic  line 338  augmented assign `+=` -> `-=`
+m01697.0-constant  line 339  string `'%r is not in list'` -> `'XX...XX'`
+m01718.0-constant  line 352  `0` -> `1`

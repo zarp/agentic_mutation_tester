@@ -1,0 +1,121 @@
+m00034.0-constant  line 64  string `'exec code in global_...'` -> `'XX...XX'`
+m00063.0-constant  line 70  string `'namedlist'` -> `'XX...XX'`
+m00064.0-constant  line 70  string `'namedtuple'` -> `'XX...XX'`
+m00069.0-constant  line 74  string `'{name}=%r'` -> `'XX...XX'`
+m00073.0-constant  line 76  string `'    {name} = _proper...'` -> `'XX...XX'`
+m00077.0-constant  line 80  string `'    {name} = _proper...'` -> `'XX...XX'`
+m00081.0-constant  line 88  string `'class {typename}(tup...'` -> `'XX...XX'`
+m00088.0-constant  line 138  `False` -> `True`
+m00089.0-constant  line 138  `False` -> `True`
+m00110.0-constant  line 164  string `','` -> `'XX...XX'`
+m00111.0-constant  line 164  string `' '` -> `'XX...XX'`
+m00149.0-boolean  line 169  `or` -> `and`
+m00151.0-negation  line 169  removed `not`
+m00157.0-boolean  line 169  `or` -> `and`
+m00164.0-comparison  line 169  comparison `==` -> `!=`
+m00168.0-constant  line 169  string `'_'` -> `'XX...XX'`
+m00179.0-negation  line 171  removed `not`
+m00188.0-constant  line 172  `0` -> `1`
+m00196.0-constant  line 173  string `'_'` -> `'XX...XX'`
+m00197.0-comparison  line 174  comparison `in` -> `not in`
+m00210.0-arithmetic  line 175  operator `%` -> `*`
+m00211.0-constant  line 175  string `'_%d'` -> `'XX...XX'`
+m00226.0-arithmetic  line 177  operator `+` -> `-`
+m00235.0-negation  line 178  removed `not`
+m00241.0-boolean  line 178  `or` -> `and`
+m00248.0-comparison  line 178  comparison `==` -> `!=`
+m00252.0-constant  line 178  string `'_'` -> `'XX...XX'`
+m00262.0-arithmetic  line 179  operator `%` -> `*`
+m00263.0-constant  line 179  string `'Type names and field...'` -> `'XX...XX'`
+m00277.0-arithmetic  line 183  operator `%` -> `*`
+m00278.0-constant  line 183  string `'Type names and field...'` -> `'XX...XX'`
+m00288.0-constant  line 185  `0` -> `1`
+m00295.0-arithmetic  line 186  operator `%` -> `*`
+m00296.0-constant  line 186  string `'Type names and field...'` -> `'XX...XX'`
+m00312.0-boolean  line 190  `and` -> `or`
+m00319.0-constant  line 190  string `'_'` -> `'XX...XX'`
+m00320.0-negation  line 190  removed `not`
+m00328.0-arithmetic  line 191  operator `%` -> `*`
+m00329.0-constant  line 191  string `'Field names cannot s...'` -> `'XX...XX'`
+m00334.0-comparison  line 193  comparison `in` -> `not in`
+m00344.0-arithmetic  line 194  operator `%` -> `*`
+m00345.0-constant  line 194  string `'Encountered duplicat...'` -> `'XX...XX'`
+m00361.0-constant  line 198  string `'typename'` -> `'XX...XX'`
+m00368.0-constant  line 199  string `'field_names'` -> `'XX...XX'`
+m00379.0-constant  line 200  string `'num_fields'` -> `'XX...XX'`
+m00390.0-constant  line 201  string `'arg_list'` -> `'XX...XX'`
+m00404.0-constant  line 201  string `"'"` -> `'XX...XX'`
+m00405.0-constant  line 201  string `''` -> `'XX...XX'`
+m00407.0-constant  line 201  `1` -> `2`
+m00410.0-constant  line 201  `1` -> `2`
+m00416.0-constant  line 202  string `'repr_fmt'` -> `'XX...XX'`
+m00420.0-constant  line 202  string `', '` -> `'XX...XX'`
+m00440.0-constant  line 204  string `'field_defs'` -> `'XX...XX'`
+m00444.0-constant  line 204  string `'\n'` -> `'XX...XX'`
+m00500.0-arithmetic  line 214  operator `%` -> `*`
+m00501.0-constant  line 214  string `'namedtuple_%s'` -> `'XX...XX'`
+m00530.0-arithmetic  line 221  operator `+` -> `-`
+m00531.0-arithmetic  line 221  operator `+` -> `-`
+m00537.0-constant  line 221  string `':\n'` -> `'XX...XX'`
+m00559.0-constant  line 229  `1` -> `2`
+m00572.0-constant  line 230  string `'__name__'` -> `'XX...XX'`
+m00573.0-constant  line 230  string `'__main__'` -> `'XX...XX'`
+m00582.0-return  line 234  return value replaced with `None`
+m00588.0-constant  line 241  string `'class {typename}(lis...'` -> `'XX...XX'`
+m00595.0-constant  line 297  `False` -> `True`
+m00596.0-constant  line 297  `False` -> `True`
+m00617.0-constant  line 323  string `','` -> `'XX...XX'`
+m00618.0-constant  line 323  string `' '` -> `'XX...XX'`
+m00656.0-boolean  line 328  `or` -> `and`
+m00658.0-negation  line 328  removed `not`
+m00664.0-boolean  line 328  `or` -> `and`
+m00671.0-comparison  line 328  comparison `==` -> `!=`
+m00675.0-constant  line 328  string `'_'` -> `'XX...XX'`
+m00686.0-negation  line 330  removed `not`
+m00695.0-constant  line 331  `0` -> `1`
+m00703.0-constant  line 332  string `'_'` -> `'XX...XX'`
+m00704.0-comparison  line 333  comparison `in` -> `not in`
+m00717.0-arithmetic  line 334  operator `%` -> `*`
+m00718.0-constant  line 334  string `'_%d'` -> `'XX...XX'`
+m00733.0-arithmetic  line 336  operator `+` -> `-`
+m00742.0-negation  line 337  removed `not`
+m00748.0-boolean  line 337  `or` -> `and`
+m00755.0-comparison  line 337  comparison `==` -> `!=`
+m00759.0-constant  line 337  string `'_'` -> `'XX...XX'`
+m00769.0-arithmetic  line 338  operator `%` -> `*`
+m00770.0-constant  line 338  string `'Type names and field...'` -> `'XX...XX'`
+m00784.0-arithmetic  line 342  operator `%` -> `*`
+m00785.0-constant  line 342  string `'Type names and field...'` -> `'XX...XX'`
+m00795.0-constant  line 344  `0` -> `1`
+m00802.0-arithmetic  line 345  operator `%` -> `*`
+m00803.0-constant  line 345  string `'Type names and field...'` -> `'XX...XX'`
+m00819.0-boolean  line 349  `and` -> `or`
+m00826.0-constant  line 349  string `'_'` -> `'XX...XX'`
+m00827.0-negation  line 349  removed `not`
+m00835.0-arithmetic  line 350  operator `%` -> `*`
+m00836.0-constant  line 350  string `'Field names cannot s...'` -> `'XX...XX'`
+m00841.0-comparison  line 352  comparison `in` -> `not in`
+m00851.0-arithmetic  line 353  operator `%` -> `*`
+m00852.0-constant  line 353  string `'Encountered duplicat...'` -> `'XX...XX'`
+m00868.0-constant  line 357  string `'typename'` -> `'XX...XX'`
+m00875.0-constant  line 358  string `'field_names'` -> `'XX...XX'`
+m00886.0-constant  line 359  string `'num_fields'` -> `'XX...XX'`
+m00897.0-constant  line 360  string `'arg_list'` -> `'XX...XX'`
+m00911.0-constant  line 360  string `"'"` -> `'XX...XX'`
+m00912.0-constant  line 360  string `''` -> `'XX...XX'`
+m00914.0-constant  line 360  `1` -> `2`
+m00917.0-constant  line 360  `1` -> `2`
+m00923.0-constant  line 361  string `'repr_fmt'` -> `'XX...XX'`
+m00927.0-constant  line 361  string `', '` -> `'XX...XX'`
+m00947.0-constant  line 363  string `'field_defs'` -> `'XX...XX'`
+m00951.0-constant  line 363  string `'\n'` -> `'XX...XX'`
+m01013.0-return  line 373  return value replaced with `None`
+m01029.0-arithmetic  line 379  operator `%` -> `*`
+m01030.0-constant  line 379  string `'namedlist_%s'` -> `'XX...XX'`
+m01059.0-arithmetic  line 386  operator `+` -> `-`
+m01060.0-arithmetic  line 386  operator `+` -> `-`
+m01066.0-constant  line 386  string `':\n'` -> `'XX...XX'`
+m01088.0-constant  line 395  `1` -> `2`
+m01101.0-constant  line 396  string `'__name__'` -> `'XX...XX'`
+m01102.0-constant  line 396  string `'__main__'` -> `'XX...XX'`
+m01111.0-return  line 400  return value replaced with `None`

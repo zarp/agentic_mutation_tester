@@ -1,0 +1,58 @@
+{
+  "human": {
+    "arm": "human",
+    "n_modules": 14,
+    "median_score": 0.4392196132596685,
+    "mean_score": 0.41012989534289473,
+    "min_score": 0.05,
+    "max_score": 0.7586206896551724,
+    "total_tests": 220,
+    "median_tests": 5.0,
+    "total_cost": 0.0,
+    "median_wall_clock": 7.075,
+    "failures": 0,
+    "discarded_tests": 0
+  },
+  "golden": {
+    "arm": "golden",
+    "n_modules": 14,
+    "median_score": 0.05007291130554126,
+    "mean_score": 0.08362359639862997,
+    "min_score": 0.0,
+    "max_score": 0.3394495412844037,
+    "total_tests": 772,
+    "median_tests": 26.0,
+    "total_cost": 0.0,
+    "median_wall_clock": 7.2,
+    "failures": 1,
+    "discarded_tests": 2
+  },
+  "baseline": {
+    "arm": "baseline",
+    "n_modules": 14,
+    "median_score": 0.5477772504350578,
+    "mean_score": 0.5226958523167801,
+    "min_score": 0.0,
+    "max_score": 0.8879310344827587,
+    "total_tests": 455,
+    "median_tests": 35.0,
+    "total_cost": 0.5235,
+    "median_wall_clock": 25.155,
+    "failures": 1,
+    "discarded_tests": 57
+  },
+  "agent": {
+    "arm": "agent",
+    "n_modules": 14,
+    "median_score": 0.627139405612719,
+    "mean_score": 0.574577365848744,
+    "min_score": 0.0,
+    "max_score": 1.0,
+    "total_tests": 934,
+    "median_tests": 70.5,
+    "total_cost": 2.6035,
+    "median_wall_clock": 96.665,
+    "failures": 2,
+    "discarded_tests": 188
+  }
+}

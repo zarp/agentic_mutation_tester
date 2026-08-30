@@ -1,0 +1,310 @@
+m00057.0-constant  line 54  `False` -> `True`
+m00061.0-constant  line 56  `True` -> `False`
+m00079.0-constant  line 63  `False` -> `True`
+m00090.0-constant  line 68  string `'NO_DEFAULT'` -> `'XX...XX'`
+m00113.0-comparison  line 78  comparison `>=` -> `>`
+m00121.0-constant  line 78  `5` -> `6`
+m00159.0-arithmetic  line 92  operator `+` -> `-`
+m00160.0-constant  line 92  string `'*'` -> `'XX...XX'`
+m00167.0-arithmetic  line 93  operator `+` -> `-`
+m00168.0-constant  line 93  string `'**'` -> `'XX...XX'`
+m00175.0-arithmetic  line 94  operator `+` -> `-`
+m00176.0-constant  line 94  string `'='` -> `'XX...XX'`
+m00186.0-arithmetic  line 95  operator `+` -> `-`
+m00187.0-constant  line 95  string `' -> '` -> `'XX...XX'`
+m00213.0-arithmetic  line 108  augmented assign `+=` -> `-=`
+m00217.0-arithmetic  line 108  operator `+` -> `-`
+m00218.0-constant  line 108  string `': '` -> `'XX...XX'`
+m00243.0-arithmetic  line 112  operator `-` -> `+`
+m00280.0-comparison  line 115  comparison `>=` -> `>`
+m00289.0-arithmetic  line 116  operator `+` -> `-`
+m00299.0-arithmetic  line 116  operator `-` -> `+`
+m00343.0-constant  line 122  string `'*'` -> `'XX...XX'`
+m00361.0-boolean  line 126  `and` -> `or`
+m00365.0-comparison  line 126  comparison `in` -> `not in`
+m00371.0-arithmetic  line 127  augmented assign `+=` -> `-=`
+m00429.0-constant  line 132  string `'return'` -> `'XX...XX'`
+m00433.0-arithmetic  line 133  augmented assign `+=` -> `-=`
+m00446.0-constant  line 133  string `'return'` -> `'XX...XX'`
+m00506.0-control  line 148  `continue` -> `break`
+m00521.0-control  line 152  `continue` -> `break`
+m00535.0-comparison  line 157  comparison `!=` -> `==`
+m00543.0-control  line 158  `continue` -> `break`
+m00576.0-return  line 163  return value replaced with `None`
+m00615.0-constant  line 178  `False` -> `True`
+m00652.0-return  line 191  return value replaced with `None`
+m00659.0-constant  line 194  `True` -> `False`
+m00687.0-constant  line 216  string `'__defaults__'` -> `'XX...XX'`
+m00695.0-constant  line 217  string `'__closure__'` -> `'XX...XX'`
+m00703.0-constant  line 218  string `'__kwdefaults__'` -> `'XX...XX'`
+m00728.0-return  line 222  return value replaced with `None`
+m00740.0-return  line 256  return value replaced with `None`
+m00741.0-boolean  line 256  `and` -> `or`
+m00743.0-comparison  line 256  comparison `<=` -> `<`
+m00749.0-negation  line 256  removed `not`
+m00751.0-comparison  line 256  comparison `>=` -> `>`
+m00761.0-return  line 257  return value replaced with `None`
+m00762.0-boolean  line 257  `and` -> `or`
+m00764.0-comparison  line 257  comparison `>=` -> `>`
+m00770.0-negation  line 257  removed `not`
+m00772.0-comparison  line 257  comparison `<=` -> `<`
+m00782.0-return  line 258  return value replaced with `None`
+m00783.0-boolean  line 258  `and` -> `or`
+m00785.0-comparison  line 258  comparison `>=` -> `>`
+m00791.0-comparison  line 258  comparison `<=` -> `<`
+m00856.0-comparison  line 283  comparison `is not` -> `is`
+m00864.0-return  line 286  return value replaced with `None`
+m00890.0-return  line 289  return value replaced with `None`
+m00908.0-comparison  line 303  comparison `is not` -> `is`
+m00916.0-return  line 306  return value replaced with `None`
+m00938.0-comparison  line 308  comparison `>=` -> `>`
+m00945.0-constant  line 308  `3` -> `4`
+m00946.0-constant  line 308  `6` -> `7`
+m00975.0-constant  line 315  string `'__name__'` -> `'XX...XX'`
+m01007.0-comparison  line 322  comparison `is` -> `is not`
+m01025.0-comparison  line 324  comparison `is` -> `is not`
+m01041.0-comparison  line 326  comparison `is` -> `is not`
+m01046.0-return  line 327  return value replaced with `None`
+m01057.0-return  line 331  return value replaced with `None`
+m01089.0-return  line 334  return value replaced with `None`
+m01117.0-constant  line 352  string `'repr'` -> `'XX...XX'`
+m01127.0-arithmetic  line 354  operator `%` -> `*`
+m01128.0-constant  line 354  string `'unexpected keyword a...'` -> `'XX...XX'`
+m01132.0-constant  line 354  string `', '` -> `'XX...XX'`
+m01205.0-constant  line 361  string `', '` -> `'XX...XX'`
+m01208.0-arithmetic  line 361  operator `%` -> `*`
+m01209.0-constant  line 361  string `'%s=%s'` -> `'XX...XX'`
+m01241.0-arithmetic  line 365  augmented assign `+=` -> `-=`
+m01245.0-constant  line 365  string `', '` -> `'XX...XX'`
+m01326.0-comparison  line 414  comparison `in` -> `not in`
+m01332.0-control  line 415  `continue` -> `break`
+m01361.0-comparison  line 420  comparison `is` -> `is not`
+m01429.0-negation  line 427  removed `not`
+m01431.0-boolean  line 427  `and` -> `or`
+m01433.0-comparison  line 427  comparison `in` -> `not in`
+m01516.0-comparison  line 465  comparison `in` -> `not in`
+m01522.0-control  line 466  `continue` -> `break`
+m01551.0-comparison  line 471  comparison `is` -> `is not`
+m01587.0-arithmetic  line 475  operator `%` -> `*`
+m01588.0-constant  line 475  string `'%s=%r'` -> `'XX...XX'`
+m01605.0-negation  line 476  removed `not`
+m01607.0-boolean  line 476  `and` -> `or`
+m01609.0-comparison  line 476  comparison `in` -> `not in`
+m01649.0-constant  line 479  string `' '` -> `'XX...XX'`
+m01667.0-return  line 522  return value replaced with `None`
+m01701.0-comparison  line 597  comparison `is` -> `is not`
+m01758.0-arithmetic  line 607  operator `%` -> `*`
+m01759.0-constant  line 607  string `'wraps does not suppo...'` -> `'XX...XX'`
+m01767.0-constant  line 610  string `'__func__'` -> `'XX...XX'`
+m01778.0-constant  line 612  string `'update_dict'` -> `'XX...XX'`
+m01779.0-constant  line 612  `True` -> `False`
+m01788.0-constant  line 613  string `'inject_to_varkw'` -> `'XX...XX'`
+m01789.0-constant  line 613  `True` -> `False`
+m01798.0-constant  line 614  string `'hide_wrapped'` -> `'XX...XX'`
+m01799.0-constant  line 614  `False` -> `True`
+m01807.0-arithmetic  line 616  operator `%` -> `*`
+m01808.0-constant  line 616  string `'unexpected kwargs: %...'` -> `'XX...XX'`
+m01827.0-comparison  line 618  comparison `is` -> `is not`
+m01838.0-boolean  line 619  `or` -> `and`
+m01852.0-boolean  line 621  `or` -> `and`
+m01876.0-boolean  line 627  `and` -> `or`
+m01880.0-comparison  line 627  comparison `is not` -> `is`
+m01887.0-control  line 628  `continue` -> `break`
+m01918.0-arithmetic  line 635  operator `%` -> `*`
+m01919.0-constant  line 635  string `'return await _call(%...'` -> `'XX...XX'`
+m01931.0-arithmetic  line 637  operator `%` -> `*`
+m01932.0-constant  line 637  string `'return _call(%s)'` -> `'XX...XX'`
+m01965.0-boolean  line 642  `and` -> `or`
+m01974.0-constant  line 642  string `'__wrapped__'` -> `'XX...XX'`
+m01981.0-constant  line 643  string `'__wrapped__'` -> `'XX...XX'`
+m01984.0-negation  line 644  removed `not`
+m01995.0-return  line 647  return value replaced with `None`
+m02052.0-arithmetic  line 664  operator `%` -> `*`
+m02053.0-constant  line 664  string `'"expected" takes str...'` -> `'XX...XX'`
+m02113.0-constant  line 679  string `'"expected" takes str...'` -> `'XX...XX'`
+m02115.0-negation  line 682  removed `not`
+m02128.0-arithmetic  line 683  operator `%` -> `*`
+m02129.0-constant  line 683  string `'all "expected" argna...'` -> `'XX...XX'`
+m02147.0-return  line 687  return value replaced with `None`
+m02162.0-constant  line 755  string `'args'` -> `'XX...XX'`
+m02163.0-constant  line 756  string `'varargs'` -> `'XX...XX'`
+m02164.0-constant  line 757  string `'varkw'` -> `'XX...XX'`
+m02165.0-constant  line 758  string `'defaults'` -> `'XX...XX'`
+m02199.0-return  line 763  return value replaced with `None`
+m02201.0-constant  line 763  string `'args'` -> `'XX...XX'`
+m02202.0-constant  line 764  string `'varargs'` -> `'XX...XX'`
+m02203.0-constant  line 765  string `'varkw'` -> `'XX...XX'`
+m02204.0-constant  line 766  string `'defaults'` -> `'XX...XX'`
+m02219.0-constant  line 769  string `'args'` -> `'XX...XX'`
+m02220.0-constant  line 770  string `'varargs'` -> `'XX...XX'`
+m02221.0-constant  line 771  string `'varkw'` -> `'XX...XX'`
+m02222.0-constant  line 772  string `'defaults'` -> `'XX...XX'`
+m02223.0-constant  line 773  string `'kwonlyargs'` -> `'XX...XX'`
+m02224.0-constant  line 774  string `'kwonlydefaults'` -> `'XX...XX'`
+m02225.0-constant  line 775  string `'annotations'` -> `'XX...XX'`
+m02257.0-return  line 780  return value replaced with `None`
+m02286.0-constant  line 783  string `'doc'` -> `'XX...XX'`
+m02287.0-constant  line 784  string `'dict'` -> `'XX...XX'`
+m02288.0-constant  line 785  string `'is_async'` -> `'XX...XX'`
+m02300.0-constant  line 785  `False` -> `True`
+m02289.0-constant  line 786  string `'module'` -> `'XX...XX'`
+m02290.0-constant  line 787  string `'body'` -> `'XX...XX'`
+m02306.0-constant  line 787  string `'pass'` -> `'XX...XX'`
+m02291.0-constant  line 788  string `'indent'` -> `'XX...XX'`
+m02309.0-constant  line 788  `4` -> `5`
+m02292.0-constant  line 789  string `'annotations'` -> `'XX...XX'`
+m02293.0-constant  line 790  string `'filename'` -> `'XX...XX'`
+m02314.0-constant  line 790  string `'boltons.funcutils.Fu...'` -> `'XX...XX'`
+m02369.0-comparison  line 800  comparison `is` -> `is not`
+m02397.0-arithmetic  line 805  operator `%` -> `*`
+m02398.0-constant  line 805  string `'unexpected kwargs: %...'` -> `'XX...XX'`
+m02413.0-constant  line 811  `True` -> `False`
+m02416.0-return  line 817  return value replaced with `None`
+m02437.0-return  line 821  return value replaced with `None`
+m02457.0-constant  line 822  `1` -> `2`
+m02460.0-constant  line 822  `1` -> `2`
+m02466.0-constant  line 824  `True` -> `False`
+m02483.0-return  line 835  return value replaced with `None`
+m02516.0-constant  line 843  string `'\n        \\*     # a ...'` -> `'XX...XX'`
+m02561.0-constant  line 856  string `'formatvalue'` -> `'XX...XX'`
+m02566.0-arithmetic  line 856  operator `+` -> `-`
+m02567.0-constant  line 856  string `'='` -> `'XX...XX'`
+m02609.0-constant  line 866  string `''` -> `'XX...XX'`
+m02612.0-return  line 867  return value replaced with `None`
+m02617.0-constant  line 867  `1` -> `2`
+m02620.0-constant  line 867  `1` -> `2`
+m02640.0-arithmetic  line 878  operator `%` -> `*`
+m02641.0-constant  line 878  string `'expected callable ob...'` -> `'XX...XX'`
+m02664.0-constant  line 882  string `'Cannot build Functio...'` -> `'XX...XX'`
+m02669.0-constant  line 883  string `'name'` -> `'XX...XX'`
+m02670.0-constant  line 884  string `'doc'` -> `'XX...XX'`
+m02671.0-constant  line 885  string `'module'` -> `'XX...XX'`
+m02693.0-constant  line 885  string `'__module__'` -> `'XX...XX'`
+m02672.0-constant  line 886  string `'annotations'` -> `'XX...XX'`
+m02702.0-constant  line 886  string `'__annotations__'` -> `'XX...XX'`
+m02673.0-constant  line 887  string `'dict'` -> `'XX...XX'`
+m02711.0-constant  line 887  string `'__dict__'` -> `'XX...XX'`
+m02717.0-constant  line 889  string `'name'` -> `'XX...XX'`
+m02718.0-constant  line 890  string `'doc'` -> `'XX...XX'`
+m02719.0-constant  line 891  string `'module'` -> `'XX...XX'`
+m02735.0-constant  line 891  string `'__module__'` -> `'XX...XX'`
+m02720.0-constant  line 892  string `'annotations'` -> `'XX...XX'`
+m02742.0-constant  line 892  string `'__annotations__'` -> `'XX...XX'`
+m02721.0-constant  line 893  string `'dict'` -> `'XX...XX'`
+m02749.0-constant  line 893  string `'__dict__'` -> `'XX...XX'`
+m02774.0-constant  line 898  string `'is_async'` -> `'XX...XX'`
+m02776.0-constant  line 898  `True` -> `False`
+m02777.0-return  line 900  return value replaced with `None`
+m02793.0-constant  line 902  `True` -> `False`
+m02794.0-constant  line 902  `True` -> `False`
+m02800.0-boolean  line 919  `or` -> `and`
+m02808.0-boolean  line 920  `or` -> `and`
+m02821.0-constant  line 922  string `'def {name}{sig_str}:'` -> `'XX...XX'`
+m02822.0-arithmetic  line 923  augmented assign `+=` -> `-=`
+m02826.0-constant  line 923  string `'\n{body}'` -> `'XX...XX'`
+m02835.0-arithmetic  line 926  operator `+` -> `-`
+m02836.0-constant  line 926  string `'async '` -> `'XX...XX'`
+m02850.0-arithmetic  line 928  operator `*` -> `/`
+m02851.0-constant  line 928  string `' '` -> `'XX...XX'`
+m02869.0-constant  line 930  string `'<'` -> `'XX...XX'`
+m02870.0-constant  line 930  string `'_'` -> `'XX...XX'`
+m02872.0-constant  line 930  string `'>'` -> `'XX...XX'`
+m02873.0-constant  line 930  string `'_'` -> `'XX...XX'`
+m02892.0-constant  line 931  `False` -> `True`
+m02948.0-negation  line 939  removed `not`
+m03004.0-return  line 951  return value replaced with `None`
+m03037.0-boolean  line 958  `or` -> `and`
+m03053.0-constant  line 959  string `'kwonlydefaults'` -> `'XX...XX'`
+m03066.0-return  line 962  return value replaced with `None`
+m03073.0-constant  line 964  `False` -> `True`
+m03077.0-arithmetic  line 965  operator `+` -> `-`
+m03094.0-constant  line 965  string `'kwonlyargs'` -> `'XX...XX'`
+m03122.0-comparison  line 968  comparison `not in` -> `in`
+m03128.0-return  line 969  return value replaced with `None`
+m03144.0-comparison  line 974  comparison `in` -> `not in`
+m03156.0-arithmetic  line 975  operator `%` -> `*`
+m03157.0-constant  line 975  string `'arg %r already in fu...'` -> `'XX...XX'`
+m03178.0-comparison  line 977  comparison `is not` -> `is`
+m03189.0-arithmetic  line 978  operator `+` -> `-`
+m03190.0-boolean  line 978  `or` -> `and`
+m03212.0-constant  line 981  `False` -> `True`
+m03216.0-comparison  line 986  comparison `in` -> `not in`
+m03228.0-arithmetic  line 987  operator `%` -> `*`
+m03229.0-constant  line 987  string `'arg %r already in fu...'` -> `'XX...XX'`
+m03240.0-comparison  line 988  comparison `in` -> `not in`
+m03252.0-arithmetic  line 989  operator `%` -> `*`
+m03253.0-constant  line 989  string `'arg %r already in fu...'` -> `'XX...XX'`
+m03264.0-negation  line 990  removed `not`
+m03279.0-comparison  line 992  comparison `is not` -> `is`
+m03290.0-arithmetic  line 993  operator `+` -> `-`
+m03291.0-boolean  line 993  `or` -> `and`
+m03315.0-comparison  line 996  comparison `is not` -> `is`
+m03390.0-arithmetic  line 1020  operator `%` -> `*`
+m03391.0-constant  line 1020  string `'arg %r not found in ...'` -> `'XX...XX'`
+m03453.0-comparison  line 1028  comparison `in` -> `not in`
+m03468.0-arithmetic  line 1033  operator `%` -> `*`
+m03469.0-constant  line 1033  string `'<%s-%d>'` -> `'XX...XX'`
+m03495.0-constant  line 1036  string `'single'` -> `'XX...XX'`
+m03508.0-return  line 1040  return value replaced with `None`
+m03525.0-constant  line 1051  string `'\n'` -> `'XX...XX'`
+m03540.0-arithmetic  line 1053  operator `+` -> `-`
+m03556.0-return  line 1055  return value replaced with `None`
+m03579.0-constant  line 1070  string `'__lt__'` -> `'XX...XX'`
+m03585.0-constant  line 1071  string `'__gt__'` -> `'XX...XX'`
+m03590.0-negation  line 1072  removed `not`
+m03592.0-boolean  line 1072  `or` -> `and`
+m03594.0-comparison  line 1072  comparison `<` -> `<=`
+m03600.0-comparison  line 1072  comparison `==` -> `!=`
+m03608.0-constant  line 1073  string `'__le__'` -> `'XX...XX'`
+m03613.0-boolean  line 1074  `or` -> `and`
+m03615.0-comparison  line 1074  comparison `<` -> `<=`
+m03621.0-comparison  line 1074  comparison `==` -> `!=`
+m03629.0-constant  line 1075  string `'__ge__'` -> `'XX...XX'`
+m03634.0-negation  line 1076  removed `not`
+m03636.0-comparison  line 1076  comparison `<` -> `<=`
+m03580.0-constant  line 1077  string `'__le__'` -> `'XX...XX'`
+m03646.0-constant  line 1078  string `'__ge__'` -> `'XX...XX'`
+m03651.0-boolean  line 1079  `or` -> `and`
+m03653.0-negation  line 1079  removed `not`
+m03655.0-comparison  line 1079  comparison `<=` -> `<`
+m03661.0-comparison  line 1079  comparison `==` -> `!=`
+m03669.0-constant  line 1080  string `'__lt__'` -> `'XX...XX'`
+m03674.0-boolean  line 1081  `and` -> `or`
+m03676.0-comparison  line 1081  comparison `<=` -> `<`
+m03682.0-negation  line 1081  removed `not`
+m03684.0-comparison  line 1081  comparison `==` -> `!=`
+m03692.0-constant  line 1082  string `'__gt__'` -> `'XX...XX'`
+m03697.0-negation  line 1083  removed `not`
+m03699.0-comparison  line 1083  comparison `<=` -> `<`
+m03581.0-constant  line 1084  string `'__gt__'` -> `'XX...XX'`
+m03709.0-constant  line 1085  string `'__lt__'` -> `'XX...XX'`
+m03714.0-negation  line 1086  removed `not`
+m03716.0-boolean  line 1086  `or` -> `and`
+m03718.0-comparison  line 1086  comparison `>` -> `>=`
+m03724.0-comparison  line 1086  comparison `==` -> `!=`
+m03732.0-constant  line 1087  string `'__ge__'` -> `'XX...XX'`
+m03737.0-boolean  line 1088  `or` -> `and`
+m03739.0-comparison  line 1088  comparison `>` -> `>=`
+m03745.0-comparison  line 1088  comparison `==` -> `!=`
+m03753.0-constant  line 1089  string `'__le__'` -> `'XX...XX'`
+m03758.0-negation  line 1090  removed `not`
+m03760.0-comparison  line 1090  comparison `>` -> `>=`
+m03582.0-constant  line 1091  string `'__ge__'` -> `'XX...XX'`
+m03770.0-constant  line 1092  string `'__le__'` -> `'XX...XX'`
+m03775.0-boolean  line 1093  `or` -> `and`
+m03777.0-negation  line 1093  removed `not`
+m03779.0-comparison  line 1093  comparison `>=` -> `>`
+m03785.0-comparison  line 1093  comparison `==` -> `!=`
+m03793.0-constant  line 1094  string `'__gt__'` -> `'XX...XX'`
+m03798.0-boolean  line 1095  `and` -> `or`
+m03800.0-comparison  line 1095  comparison `>=` -> `>`
+m03806.0-negation  line 1095  removed `not`
+m03808.0-comparison  line 1095  comparison `==` -> `!=`
+m03816.0-constant  line 1096  string `'__lt__'` -> `'XX...XX'`
+m03821.0-negation  line 1097  removed `not`
+m03823.0-comparison  line 1097  comparison `>=` -> `>`
+m03834.0-arithmetic  line 1099  operator `&` -> `|`
+m03850.0-negation  line 1100  removed `not`
+m03858.0-constant  line 1101  string `'must define at least...'` -> `'XX...XX'`
+m03881.0-comparison  line 1105  comparison `not in` -> `in`
+m03918.0-return  line 1109  return value replaced with `None`

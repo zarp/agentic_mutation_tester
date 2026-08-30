@@ -1,0 +1,85 @@
+m00011.0-constant  line 74  `True` -> `False`
+m00022.0-constant  line 77  `False` -> `True`
+m00043.0-constant  line 88  string `'_MISSING'` -> `'XX...XX'`
+m00076.0-constant  line 96  string `'MultiDict'` -> `'XX...XX'`
+m00077.0-constant  line 96  string `'OMD'` -> `'XX...XX'`
+m00078.0-constant  line 96  string `'OrderedMultiDict'` -> `'XX...XX'`
+m00079.0-constant  line 96  string `'OneToOne'` -> `'XX...XX'`
+m00080.0-constant  line 96  string `'ManyToMany'` -> `'XX...XX'`
+m00081.0-constant  line 96  string `'subdict'` -> `'XX...XX'`
+m00082.0-constant  line 96  string `'FrozenDict'` -> `'XX...XX'`
+m00146.0-constant  line 184  `1` -> `2`
+m00151.0-arithmetic  line 185  operator `%` -> `*`
+m00152.0-constant  line 185  string `'%s expected at most ...'` -> `'XX...XX'`
+m00209.0-return  line 196  return value replaced with `None`
+m00219.0-constant  line 196  `True` -> `False`
+m00532.0-return  line 267  return value replaced with `None`
+m00711.0-constant  line 308  `True` -> `False`
+m00729.0-constant  line 310  string `'keys'` -> `'XX...XX'`
+m00775.0-boolean  line 317  `and` -> `or`
+m00777.0-comparison  line 317  comparison `not in` -> `in`
+m00783.0-comparison  line 317  comparison `in` -> `not in`
+m00871.0-constant  line 334  `True` -> `False`
+m00878.0-constant  line 335  string `'keys'` -> `'XX...XX'`
+m01041.0-return  line 359  return value replaced with `None`
+m01042.0-constant  line 359  `True` -> `False`
+m01057.0-return  line 362  return value replaced with `None`
+m01062.0-return  line 364  return value replaced with `None`
+m01063.0-constant  line 364  `False` -> `True`
+m01139.0-return  line 371  return value replaced with `None`
+m01144.0-boolean  line 372  `and` -> `or`
+m01168.0-return  line 375  return value replaced with `None`
+m01169.0-constant  line 375  `False` -> `True`
+m01186.0-comparison  line 380  comparison `==` -> `!=`
+m01203.0-return  line 382  return value replaced with `None`
+m01204.0-constant  line 382  `False` -> `True`
+m01207.0-return  line 384  return value replaced with `None`
+m01208.0-constant  line 384  `False` -> `True`
+m01234.0-return  line 391  return value replaced with `None`
+m01329.0-return  line 415  return value replaced with `None`
+m01376.0-comparison  line 428  comparison `is` -> `is not`
+m01386.0-arithmetic  line 429  operator `%` -> `*`
+m01387.0-constant  line 429  string `'empty %r'` -> `'XX...XX'`
+m01394.0-return  line 430  return value replaced with `None`
+m01410.0-comparison  line 434  comparison `is` -> `is not`
+m01422.0-return  line 436  return value replaced with `None`
+m01449.0-negation  line 439  removed `not`
+m01530.0-negation  line 447  removed `not`
+m01881.0-constant  line 516  `False` -> `True`
+m01904.0-constant  line 539  `True` -> `False`
+m02279.0-constant  line 647  string `', '` -> `'XX...XX'`
+m02467.0-comparison  line 691  comparison `is` -> `is not`
+m02491.0-comparison  line 696  comparison `is` -> `is not`
+m02557.0-comparison  line 703  comparison `is not` -> `is`
+m02658.0-negation  line 715  removed `not`
+m02689.0-comparison  line 719  comparison `is` -> `is not`
+m02729.0-comparison  line 721  comparison `is` -> `is not`
+m02845.0-comparison  line 730  comparison `is` -> `is not`
+m02885.0-comparison  line 732  comparison `is` -> `is not`
+m02994.0-constant  line 738  `False` -> `True`
+m03022.0-comparison  line 742  comparison `is not` -> `is`
+m03057.0-constant  line 746  `False` -> `True`
+m03085.0-comparison  line 750  comparison `is not` -> `is`
+m03128.0-comparison  line 757  comparison `is not` -> `is`
+m03135.0-comparison  line 758  comparison `is not` -> `is`
+m03159.0-comparison  line 760  comparison `is` -> `is not`
+m03165.0-control  line 761  `break` -> `continue`
+m03214.0-constant  line 801  `False` -> `True`
+m03438.0-comparison  line 829  comparison `>` -> `>=`
+m03445.0-constant  line 829  `1` -> `2`
+m03451.0-constant  line 831  string `'expected unique valu...'` -> `'XX...XX'`
+m03658.0-comparison  line 878  comparison `is not` -> `is`
+m03664.0-return  line 879  return value replaced with `None`
+m03970.0-return  line 940  return value replaced with `None`
+m03980.0-return  line 942  return value replaced with `None`
+m04109.0-negation  line 960  removed `not`
+m04164.0-comparison  line 968  comparison `not in` -> `in`
+m04219.0-comparison  line 973  comparison `not in` -> `in`
+m04283.0-constant  line 977  string `'keys'` -> `'XX...XX'`
+m04464.0-negation  line 998  removed `not`
+m04590.0-return  line 1019  return value replaced with `None`
+m04614.0-return  line 1025  return value replaced with `None`
+m04625.0-return  line 1028  return value replaced with `None`
+m04638.0-boolean  line 1031  `and` -> `or`
+m04970.0-arithmetic  line 1130  operator `%` -> `*`
+m04971.0-constant  line 1130  string `'%s object is immutab...'` -> `'XX...XX'`
