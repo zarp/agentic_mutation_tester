@@ -37,8 +37,8 @@ deliberately.
 Mutation testing gives this problem something rare: a scoring function that is
 objective, mechanical, and hard to fool.
 
-The tool makes hundreds of small changes to the module, one at a time — flip a
-comparison, swap an operator, replace a return value with `None` — and runs the
+The tool makes hundreds of small changes to the module, one at a time - flip a
+comparison, swap an operator, replace a return value with `None` - and runs the
 suite against each. If the suite still passes, that change went undetected, and
 the mutant survives. The score is the fraction detected. A test that asserts
 nothing scores zero no matter how many lines it covers, which is exactly the
@@ -99,7 +99,7 @@ then validates it: single file, no third-party imports, its own test suite passe
 standalone, and it generates enough mutants for a score to be stable. Candidates
 that fail are reported with the reason rather than dropped quietly, because the
 exclusions are part of what a reader needs in order to judge the corpus. Three of
-seventeen candidates are currently rejected — two for being over the line cap,
+seventeen candidates are currently rejected - two for being over the line cap,
 one for producing too few mutants.
 
 ## What is being compared for each module in the corpus
@@ -233,7 +233,7 @@ The module must be importable on its own and must not need third-party packages 
 `PINDOWN_STUB_LLM=1` runs the entire pipeline against a canned response. It
 exercises the mutation engine, the quality filters, the merge logic, the loop and
 the scoring for free, and it is what the tests and `make preflight` use. It is not
-a baseline — the canned suite is deliberately weak. `make free` is the free arm
+a baseline - the canned suite is deliberately weak. `make free` is the free arm
 that means something.
 
 ## Improvement changelog
@@ -268,7 +268,7 @@ not against 100%.
 Fuzzing every public function with a
 fixed pool of arguments and freezing the results beats the human suite outright on
 three of fourteen modules. It fails badly wherever behavior lives behind a class
-constructor, which is most real code — `listutils` produces no usable suite at all
+constructor, which is most real code - `listutils` produces no usable suite at all
 because everything in it hangs off `BarrelList`. That is the specific gap an agent
 has to fill, and it is a more precise statement of the task than "write tests".
 
@@ -278,7 +278,7 @@ The agent's most expensive mistake is not a bad test idea but a test that
 contradicts current behavior. Across the headline run, **182 of 188** discarded
 agent tests failed because they asserted the wrong value, not because they
 asserted nothing. The model often writes what the code *should* do rather than
-what it *does*, and the quality filter catches that — but only after a full
+what it *does*, and the quality filter catches that - but only after a full
 pytest run per candidate. On large modules (`semver`, 1259 lines) even the repair
 turn could not produce a parseable file, and the whole arm failed.
 
@@ -292,7 +292,7 @@ function calls with concrete inputs.
 
 Coverage is the wrong gate and this run proves it with numbers. The one-shot
 prompt baseline produced **35 median tests** and scored **54.8%** on mutation
-testing — already above the human ceiling of **43.9%** — while discarding only
+testing - already above the human ceiling of **43.9%** - while discarding only
 57 bad tests. Line coverage would have called that success. Mutation testing
 called 56 of its tests wrong about the behavior they claimed to pin.
 
@@ -301,7 +301,7 @@ undetected behavior changes, then stop when the score stops moving." That loop
 cost five times more ($2.60 vs $0.52) and bought **8 percentage points** on the
 median (62.7% vs 54.8%), with wins on hard cases the prompt could not handle at
 all (`formatutils`, `listutils`). Whether that trade is worth it depends on the
-module — and that is exactly the kind of question mutation score lets you ask
+module - and that is exactly the kind of question mutation score lets you ask
 without guessing.
 
 ## Layout
@@ -346,8 +346,8 @@ there now.
 
 Mutation testing is decades old; `mutmut` and `cosmic-ray` are the established
 Python tools. The engine here is purpose-built rather than wrapping one of them,
-for determinism — stable mutant ids across runs, so survivor sets from two arms
-are directly comparable — and because driving those tools programmatically at this
+for determinism - stable mutant ids across runs, so survivor sets from two arms
+are directly comparable - and because driving those tools programmatically at this
 granularity fights their design. `tests/test_operators.py` is what makes that
 choice defensible, and swapping in an external engine behind the same interface
 would be a reasonable cross-check.

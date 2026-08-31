@@ -17,8 +17,8 @@ the buggy behavior exactly as it is and move on. Someone else decides whether to
 change it; your job is to make sure that if it changes, a test notices.
 
 The suite you write will be graded by mutation testing, not by coverage. A tool
-will make hundreds of small changes to the module — flipping `<` to `<=`,
-turning `+` into `-`, replacing a return value with `None` — and count how many
+will make hundreds of small changes to the module - flipping `<` to `<=`,
+turning `+` into `-`, replacing a return value with `None` - and count how many
 of them your tests catch. A test that calls a function and asserts nothing about
 the result scores zero, no matter how many lines it touches.
 
@@ -58,7 +58,7 @@ iteration that reaches it.
 
 ---
 
-## Step 1 — phase `pin`
+## Step 1 - phase `pin`
 
 ### What the agent was asked (call 1, `pin`)
 
@@ -191,7 +191,7 @@ def test_barrellist_pop_negative_index():
 
 ---
 
-## Step 2 — phase `kill`
+## Step 2 - phase `kill`
 
 ### The second-phase instructions
 
@@ -361,7 +361,7 @@ Gain of +8.8%, so the loop continued.
 
 ---
 
-## Step 3 — phase `kill`
+## Step 3 - phase `kill`
 
 ### What the agent was asked (call 3, `kill-3`)
 
@@ -499,7 +499,7 @@ Gain of +14.0%, so the loop continued.
 
 ---
 
-## Step 4 — phase `kill`
+## Step 4 - phase `kill`
 
 ### What the agent was asked (call 4, `kill-4`)
 
@@ -630,7 +630,7 @@ Gain of +1.5%, so the loop continued.
 
 ---
 
-## Step 5 — phase `kill`
+## Step 5 - phase `kill`
 
 ### What the agent was asked (call 5, `kill-5`)
 
@@ -762,7 +762,7 @@ No gain (+0.0%). One flat iteration counted toward the plateau budget; two in a 
 
 ---
 
-## Step 6 — phase `kill`
+## Step 6 - phase `kill`
 
 ### What the agent was asked (call 6, `kill-6`)
 

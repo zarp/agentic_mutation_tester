@@ -2,7 +2,7 @@
 
 Written for someone starting from a clean machine with nothing installed but
 Python and git. No Docker, no GPU, no database, no accounts beyond one model
-endpoint — and the first half of this guide needs no account at all.
+endpoint - and the first half of this guide needs no account at all.
 
 ## What you need
 
@@ -29,7 +29,7 @@ httpx==0.28.1        pydantic==2.13.5     Python 3.12.3 (GCC 13.3.0)
 `httpx>=0.28` with `Client.__init__() got an unexpected keyword argument
 'proxies'`, which is worth knowing if you pin differently.
 
-## Step 1 — Setup
+## Step 1 - Setup
 
 ```bash
 git clone <this repo> && cd pindown
@@ -42,7 +42,7 @@ Creates `.venv` and installs the package. Takes about a minute. Expect:
 Done. Copy .env.example to .env and add a key, or export PINDOWN_STUB_LLM=1.
 ```
 
-## Step 2 — Fetch the corpus
+## Step 2 - Fetch the corpus
 
 ```bash
 make corpus
@@ -80,7 +80,7 @@ The three rejections are expected and are part of the result. Each admitted
 module lands in `corpus/modules/<id>/` with the module, its upstream test suite,
 and a `PROVENANCE.txt` recording the source URL, tag and license.
 
-## Step 3 — Check the environment before spending anything
+## Step 3 - Check the environment before spending anything
 
 ```bash
 make test        # pindown's own suite: 45 tests, ~10 s
@@ -102,7 +102,7 @@ during development, which is why it exists.
 Without a key, run `PINDOWN_STUB_LLM=1 make preflight`; the last check is skipped
 and everything else still applies.
 
-## Step 4a — The free path, no API key
+## Step 4a - The free path, no API key
 
 ```bash
 make free
@@ -128,7 +128,7 @@ and Python version, because temperature does not enter into either arm:
 If your medians land within a point or two of these, the harness is working. A
 large deviation usually means a corpus module resolved to a different tag.
 
-## Step 4b — The full comparison, needs a model
+## Step 4b - The full comparison, needs a model
 
 ```bash
 cp .env.example .env
@@ -163,7 +163,7 @@ Expected headline result after `make eval` completes (~33 minutes, ~$3 on
 
 The agent should beat the human ceiling on most modules but fail on `semver`
 (parse error on a 1259-line module) and `dictutils`. That is expected and
-documented in the README changelog — do not treat it as a broken run.
+documented in the README changelog - do not treat it as a broken run.
 
 To compare exactly without re-spending API credits, use the committed run in
 `evidence/headline-14-modules/` (records, suites, traces, and trajectories).
@@ -179,7 +179,7 @@ PINDOWN_BASE_URL=https://openrouter.ai/api/v1
 PINDOWN_MODEL=anthropic/claude-sonnet-4
 ```
 
-## Step 5 — Read the results
+## Step 5 - Read the results
 
 ```bash
 make score                                    # regenerate every table
@@ -218,7 +218,7 @@ The module must import on its own and must not require third-party packages.
 
 Deterministic: mutant generation and ids, mutant selection under a cap, the human
 arm, the fuzz baseline, and every filter decision except where a genuinely
-non-deterministic test is involved — which is the point of that filter.
+non-deterministic test is involved - which is the point of that filter.
 
 Not deterministic: the model arms. Temperature is 0 and the model version is
 pinned. However providers do not guarantee identical outputs
@@ -233,24 +233,24 @@ numbers produced under different caps.
 
 ## Troubleshooting
 
-**`No corpus manifest. Run make corpus first.`** — Step 2 has not been run, or it
+**`No corpus manifest. Run make corpus first.`** - Step 2 has not been run, or it
 failed partway. Re-run it; downloads are cached per module.
 
-**A corpus module is rejected that the guide says should be admitted.** — The
+**A corpus module is rejected that the guide says should be admitted.** - The
 upstream tag moved, or GitHub was unreachable. `corpus/modules/manifest.json`
 records the reason for every rejection.
 
-**`Client.__init__() got an unexpected keyword argument 'proxies'`** — `openai`
+**`Client.__init__() got an unexpected keyword argument 'proxies'`** - `openai`
 1.x against `httpx` 0.28+. `pip install -U openai`.
 
-**A run reports `Modules with no usable suite`.** — Expected in small numbers, and
+**A run reports `Modules with no usable suite`.** - Expected in small numbers, and
 it is a result rather than an error. `runs/latest/crashes/` has the traceback if
 an arm crashed rather than merely failing to produce a suite.
 
-**The campaign hangs.** — It should not, each child arms its own watchdog and the
+**The campaign hangs.** - It should not, each child arms its own watchdog and the
 parent has a backstop. If it does, lower `PINDOWN_PYTEST_TIMEOUT_S` and open an
 issue with the module id.
 
-**`make free` takes far longer than five minutes.** — Fewer cores. Set
+**`make free` takes far longer than five minutes.** - Fewer cores. Set
 `PINDOWN_MUTATION_WORKERS` higher if the machine can take it, or lower
 `PINDOWN_MAX_MUTANTS` to 150 for a faster, coarser run.

@@ -121,7 +121,7 @@ def render(run_dir: Path, record: dict) -> str:
     for iteration in record.get("iterations", []):
         n = iteration["n"]
         phase = iteration["phase"]
-        out += ["---", "", f"## Step {n} — phase `{phase}`", ""]
+        out += ["---", "", f"## Step {n} - phase `{phase}`", ""]
 
         for purpose in _purpose_for(iteration):
             trace = traces.get(purpose)
