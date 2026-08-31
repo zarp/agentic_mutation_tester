@@ -32,7 +32,7 @@ httpx==0.28.1        pydantic==2.13.5     Python 3.12.3 (GCC 13.3.0)
 ## Step 1 - Setup
 
 ```bash
-git clone <this repo> && cd pindown
+git clone <this repo>
 make setup
 ```
 
